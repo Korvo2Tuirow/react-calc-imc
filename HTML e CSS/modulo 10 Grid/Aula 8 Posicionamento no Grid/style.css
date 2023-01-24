@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  height: 800px;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  background-color: rgb(190, 178, 178);
+  gap: 10px; /*linha coluna*/
+  grid-auto-rows: 100px;
+  justify-content: center; /*mesmo usado no flex */
+  align-content: center; /*centraliza*/
+}
+
+.item {
+  background-image: linear-gradient(to right, #00ff22, transparent, #1202f0);
+  border: 2px solid black;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  
+  
+}

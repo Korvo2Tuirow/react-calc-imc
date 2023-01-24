@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(131, 231, 145);
+}
+
+@media(min-width:1000px){
+    body{
+        background-color: #00f;
+    }
+    h1{
+        font-size: 65px;
+    }
+}
+
+@media (min-width:700px) and (max-width:999px){
+    body{
+        background-color:blueviolet;
+    }
+    h1{
+        font-size: 45px;
+    }
+}
+
+
+@media(max-width:600px) {
+    body{
+        background-color: #f00;
+    }
+    h1{
+        font-size: 15px;
+    }
+}
+
+@media only print {
+    h1{
+        font-size: 80px;
+        font-weight: normal;
+        color: red;
+    }
+
+}

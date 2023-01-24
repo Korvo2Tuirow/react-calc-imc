@@ -1,0 +1,46 @@
+/*Banner*/
+
+@media (max-width: 1334px) {
+    header{
+        flex-direction: column;
+        height: auto;
+    }
+    #nome{
+        order: 1;
+    }
+   
+}
+
+@media ( max-width:672px) {
+    #nome h1{
+        font-size: 80px;
+    }
+    
+    img {
+        height: 300px;
+    }
+}
+
+ @media ( max-width:537px) {
+ 
+    img {
+        height: 200px;
+    }
+    #frase p{
+        font-size: 30px;
+    } 
+ }
+
+@media ( max-width:434px) {
+ 
+    img {
+        height: 180px;
+    }
+
+    #nome h1{
+        font-size: 50px;
+    }
+    #frase p{
+        font-size: 25px;
+    } 
+}

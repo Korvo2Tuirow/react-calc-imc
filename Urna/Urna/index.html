@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Urna Eletrônica</title>
+  </head>
+
+  <body>
+    <div id="urna">
+      <div>
+        <h1>URNA ELETRÔNICA</h1>
+      </div>
+
+      <section id="conteiner">
+        <div id="foto">
+          <div id="image"></div>
+
+          <div id="name"></div>
+        </div>
+        <div id="displayTeclado">
+          <div id="display">
+            <div class="numbers" id="number1" maxlength="1"></div>
+            <div class="numbers" id="number2" maxlength="1"></div>
+          </div>
+
+          <div id="btn">
+            <button class="number" onclick="inserir(7)">7</button>
+            <button class="number" onclick="inserir(8)">8</button>
+            <button class="number" onclick="inserir(9)">9</button>
+
+            <button class="number" onclick="inserir(4)">4</button>
+            <button class="number" onclick="inserir(5)">5</button>
+            <button class="number" onclick="inserir(6)">6</button>
+
+            <button class="number" onclick="inserir(1)">1</button>
+            <button class="number" onclick="inserir(2)">2</button>
+            <button class="number" onclick="inserir(3)">3</button>
+            
+            <button class="number" onclick="inserir(0)">0</button>
+          </div>
+          <div id="ok">
+            <button id="confirm">Confirma</button>
+            <button id="clear">Corrige</button>
+          </div>
+        </div>
+      </section>
+      <section id="fim">FIM
+        <button id="back">&#8678;</button>
+      </section>
+    </div>
+ 
+
+    
+    
+    <script src="script.js"></script>
+    <script src="data-base.js"></script>
+  </body>
+</html>

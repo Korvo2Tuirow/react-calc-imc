@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fieldset e Legend</title>
+</head>
+<body>
+
+    <!-- usar o MAXLENGTH para máximo de caracteres permitido no texto-->
+
+    <form action="" method="post" enctype="multipart/form-data">
+
+        <input type="hidden" value="usuario1551">
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="name">
+                Primeiro Nome:
+                <br>
+                <input type="text" name="name" id="name" required minlength="2">
+            </label>
+            <br>
+            <label for="sobrenome">
+                Segundo Nome:
+                <br>
+                <input type="text" name="sobrenome" id="sobrenome" required maxlength="2">
+            </label>
+            <br>
+
+            <label for="idade">
+                Idade:
+                <br>
+                <input type="number" id="idade" required step="2" min="18" max="120" >
+            </label>
+            <br>
+
+            <label for="nasc">
+                Data de Nascimento:
+                <br>
+                <input type="date" id="nasc" required min="2022-09-07" max="2022-09-30">
+            </label>
+            <br>
+
+            <label for="email">
+                E-mail:
+                <br>
+                <input type="text" id="email" required  pattern=""><!--Estudar Expressão regular para validação de e-mail-->
+            </label>
+            <br>
+
+            <!--Quando enviar arquivos o FORM tem que ter enctype="multipart/form-data">-->
+            <label for="foto">
+                Envie uma foto:
+                <br>
+                <input type="file" id="foto" required accept="image/*">
+            </label>
+            <br>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label for="empresa">
+                Empresa:
+                <br>
+                <input type="text" name="empresa" id="empresa" required minlength="2">
+            </label>
+            <br>
+            <label for="cargo">
+                Cargo:
+                <br>
+                <input type="text" name="gargo" id="cargo" required minlength="2">
+            </label>
+        </fieldset>
+        <br>
+
+        <input type="submit" value="Cadastrar" >
+
+    </form>
+
+
+
+    
+</body>
+</html>

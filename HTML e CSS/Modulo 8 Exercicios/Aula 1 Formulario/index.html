@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1 class="central_font">Escola Virtual</h1>
+        </div>
+        <div>
+            <h2 class="central_font">Formulário de Pré-Matricula</h2>
+        </div>
+    </header>
+
+    <section>
+        <div>
+
+            <form action="" method="post">
+
+                <!--DADOS PESSOAIS-->
+                <div id="dados_p">
+                    <h3 class="central_font">Dados Pessoais</h3>
+
+                    <div class="dados_pessoais">
+                        Nome do Aluno: <input type="text" required style="width:100%;">
+                    </div>
+                    <div class="dados_pessoais">
+                        Nascimento: <input type="date" required>
+                    </div>
+                    <div class="dados_pessoais">
+                        Nome da Mãe: <input type="text" required style="width:100%;">
+                    </div>
+                    <div class="dados_pessoais">
+                        Nome do Pai: <input type="text" required
+                        style="width:100%;">
+                    </div>
+                    <div class="dados_pessoais">
+                        Telefone: <input type="number" required
+                        style="width:100%;">
+                    </div>
+                    <div class="dados_pessoais">
+                        E-Mail: <input type="email" required style="width:100%;">
+                    </div>
+                </div>
+
+                <!--INFORMAÇÃO ACADÊMICA-->
+                <div id="form_acad">
+                    <h3 class="central_font">Informações da Matricula</h3>
+                    <div id="serie">
+                        Série: <select name="nivel" id="" required>
+                            <option value="primario">Ensino Primário</option>
+                            <option value="fundamental">Ensino Fundamental</option>
+                            <option value="medio">Ensino Médio</option>
+                        </select>
+                    </div>
+
+                    <div id="turno">
+                        Turno:
+                        <label for="manha">
+                        <input id="manha" type="radio" value="manha" name="turno">Manhã
+                    </label>
+                         
+                        <label for="tarde">
+                        <input id="tarde" type="radio" value="tarde" name="turno">Tarde
+                    </label>
+                        
+                        <label for="noite">
+                        <input id="noite" type="radio" value="noite" name="turno">Noite
+                    </label>
+                    </div>
+
+                    <div id="extra">
+                        Atividades Extracurriculares:
+                        <label for="info">
+                            <input id="info" type="checkbox" value="Informática">Informática
+                        </label>
+
+                        <label for="music">
+                            <input id="music" type="checkbox" value="Musica">Musica
+                        </label>
+
+                        <label for="ballet">
+                            <input id="ballet" type="checkbox" value="Ballet">Ballet
+                        </label>
+
+                        <label for="pint">
+                            <input id="pint" type="checkbox" value="Pintura">Pintura
+                        </label>
+
+                        <label for="judo">
+                            <input id="judo" type="checkbox" value="Judo">Judo
+                        </label>
+
+                        <label for="fut">
+                            <input id="fut" type="checkbox" value="Futebol">Futebol
+                        </label>
+                    </div>
+                </div>
+
+                <div id="button">
+                    <input type="submit">
+                </div>
+
+            </form>
+
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+
+.container{
+  display: grid;
+  gap: 10px;
+
+  grid-template-areas:
+  
+  "header header header header"
+  "menu content content content"
+  "anuncio content content content"
+  "footer footer footer footer"
+  ;
+
+
+}
+
+.item{
+  background-color: aqua;
+  padding: 20px;
+  border: 2px solid #000;
+}
+
+header{
+  grid-area: header;
+}
+
+nav{
+  grid-area: menu;
+}
+
+section{
+  grid-area: content;
+}
+
+footer{
+  grid-area: footer;
+}
+
+.anuncio{
+  grid-area: anuncio;
+}
+
+
+@media (max-width:750px){
+  .container{
+    grid-template-areas: 
+    
+  "header header header menu"
+  "content content content content"
+  "anuncio anuncio anuncio anuncio "
+  "footer footer footer footer";    
+     
+  }
+}
+

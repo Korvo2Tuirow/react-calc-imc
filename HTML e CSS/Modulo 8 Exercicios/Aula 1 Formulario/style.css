@@ -1,0 +1,73 @@
+body{
+    background-color: rgb(121, 197, 241);
+}
+
+.central_font{
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+
+}
+label{
+    padding: 5px;
+}
+
+header, #form_acad, #dados_p{
+    background-color: #fff;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    max-width: 600px;    
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    box-shadow: #555 2px 2px 2px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#extra, #turno, #serie{
+    max-width: 600px;    
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    margin-top: 5px;
+    flex-direction: column;
+    border-top: 1px solid #aaa;
+}
+
+select{
+    width: 150px;
+    margin-top: 10px;
+}
+
+#button{
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    max-width: 600px;
+    justify-content: center;
+    
+}
+
+#button input{
+    padding: 20px;
+    border-radius: 5px;
+    border: #aaa solid 1px;
+    transition: 0.3s;
+    font-weight: bolder;qg
+}
+
+#button input:hover{
+    box-shadow: #555 3px 3px 3px;
+}
+
+.dados_pessoais{
+    padding: 5px;
+}
+
+#dados_p h3{
+    padding-bottom: 20px;
+    border-bottom: #aaa 1px solid;
+}

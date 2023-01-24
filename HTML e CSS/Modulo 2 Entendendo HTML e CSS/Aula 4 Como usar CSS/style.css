@@ -1,0 +1,28 @@
+
+
+h1{
+    color: blue;
+    font-size: 15px;
+}
+
+a{
+    color: green;
+    font-size: 50px;
+}
+
+img{
+    width: 500px;
+}
+
+p{
+    font-weight: bolder;
+    color: blueviolet;
+}
+
+/*Fonte Externa*/
+#fonte{
+    font-family: 'MedievalSharp', cursive;
+    color: black;
+    font-size: 20pt;
+
+}

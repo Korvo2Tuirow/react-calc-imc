@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto Site Flexbox Semântico</title>
+</head>
+
+<body>
+
+    <!--https://quanticalabs.com/Medicenter/Template/ -->
+
+    <!-----------------CABEÇALHO-------------------->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="media/logo.png" alt="logo"></a>
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li class="active"><a href="">Home</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Pages</a></li>
+                        <li><a href="">Departments</a></li>
+                        <li><a href="">Timetable</a></li>
+                        <li><a href="">Gallery</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-------------------BANNER------------------->
+
+    <section id="banner">
+        <div class="container column">
+            <div class="banner_headline">
+                <h1>Top notch experience </h1>
+                <h2>Medicenter is a responsive template perfect for all screen sizes</h2>
+            </div>
+
+            <div class="banner_options">
+                <div class="banner1">
+                    <div class="banner_title">Emergency Case</div>
+                    <div class="banner_desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    <a href="">Read More →</a>
+                </div>
+                <div class="banner2">
+                    <div class="banner_title">Doctors Timetable</div>
+                    <div class="banner_desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    <a href="">Read More →</a>
+
+                </div>
+                <div class="banner3">
+                    <div class="banner_title">Opening Hours</div>
+                    <table class="table_hours">
+                        <tr>
+                            <td class="date">Monday - Friday</td>
+                            <td class="hours">8.00 - 17.00</td>
+                        </tr>
+                        <tr>
+                            <td class="date">Saturday</td>
+                            <td class="hours">9.30 - 17.30</td>
+                        </tr>
+                        <tr>
+                            <td class="date">Sunday</td>
+                            <td class="hours">9.30 - 15.00</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+    </section>
+
+    <!---------------INFORMAÇÃO PRINCIPAL------------>
+
+    <section id="geral">
+        <div class="container">
+            <section>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Latest News</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body flex">
+                        <article>
+
+                            <div class="news_data">
+                                <div class="news_posted_at">12 DEC 12</div>
+                                <div class="news_comments">2</div>
+                            </div>
+                            <a href="">
+                                <div class="news_thumbnail">
+                                    <img src="media/doctor.jpg">
+                                </div>
+                            </a>
+                            <div class="news_title">
+                                Lorem ipsum dolor sit
+                            </div>
+                            <div class="news_resume">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                                nulla ratione molestias laudantium explicabo ipsum vel fugit commodi eveniet, facilis
+                                tempora iure rerum libero placeat quia repellendus animi eaque ex?</div>
+
+                            <div class="comment">
+                                <ul>
+                                    <li>Posted in</li>
+                                    <a href="">
+                                        <li>General,</li>
+                                    </a>
+                                    <a href="">
+                                        <li>Dental Clinic</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="news_2">
+
+                            <div class="news_data">
+                                <div class="news_posted_at">12 DEC 12</div>
+                                <div class="news_comments">3</div>
+                            </div>
+
+                            <div class="news_title">
+                                Lorem ipsum dolor sit
+                            </div>
+                            <div class="news_resume">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                                nulla ratione molestias laudantium explicabo Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Neque consectetur accusantium ullam maiores laudantium. Possimus quis
+                                id exercitationem sapiente enim aspernatur nostrum! Quam neque ad molestias? Maiores
+                                sapiente ipsum dicta. ipsum vel fugit commodi eveniet, facilis tempora iure rerum libero
+                                placeat quia repellendus animi eaque ex?</div>
+                            </a>
+                            <div class="comment">
+                                <ul>
+                                    <li>Posted in</li>
+                                    <a href="">
+                                        <li>General,</li>
+                                    </a>
+                                    <a href="">
+                                        <li>Dental Clinic</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="news_2">
+
+                            <div class="news_data">
+                                <div class="news_posted_at">12 DEC 12</div>
+                                <div class="news_comments">2</div>
+                            </div>
+
+                            <div class="news_title">
+                                Lorem ipsum dolor sit
+                            </div>
+                            <div class="news_resume">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                                nulla ratione molestias laudantium explicabo ipsum vel fugit commodi eveniet, facilis
+                                tempora iure rerum libero placeat quia repellendus animi eaque ex Lorem ipsum dolor sit
+                                amet consectetur adipisicing elit. Ex possimus eos iusto in nemo officiis perferendis
+                                illo tenetur neque ullam aliquid earum sint esse molestiae totam, id incidunt vero
+                                natus. ?</div>
+
+                            <div class="comment">
+                                <ul>
+                                    <li>Posted in</li>
+                                    <a href="">
+                                        <li>General,</li>
+                                    </a>
+                                    <a href="">
+                                        <li>Dental Clinic</li>
+                                    </a>
+                                </ul>
+                            </div>
+
+                        </article>
+
+                        <article>
+
+                            <div class="news_data">
+                                <div class="news_posted_at">12 DEC 12</div>
+                                <div class="news_comments">2</div>
+                            </div>
+                            <a href="">
+                                <div class="news_thumbnail">
+                                    <img src="media/image_02.jpg">
+                                </div>
+                            </a>
+                            <div class="news_title">
+                                Lorem ipsum dolor sit
+                            </div>
+                            <div class="news_resume">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                                nulla ratione molestias laudantium explicabo ipsum vel fugit commodi eveniet, facilis
+                                tempora iure rerum libero placeat quia repellendus lo animi eaque ex?</div>
+
+                            <div class="comment">
+                                <ul>
+                                    <li>Posted in</li>
+                                    <a href="">
+                                        <li>General,</li>
+                                    </a>
+                                    <a href="">
+                                        <li>Dental Clinic</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <aside>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Departments</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body">
+                        <div class="sub_title">
+                            <h3>Primary Health Care</h3>
+                        </div>
+
+                        <div class="phc">
+                            <div>
+                                <img src="media/image_08.jpg" alt="">
+                            </div>
+
+                            <div>
+                                <p>Mauris adisciping fringila turpis intend tellus ornare etos pelim. Pulvunar est
+                                    cardio neque vitae elit. Lorem vulputat paentra nunc gravida.</p>
+                            </div>                           
+                        </div>
+
+                        <div class="pnc_button">
+                            <a href="#">Details</a>
+                            <a href="#">Timetable</a>
+                        </div>
+
+                        <div>
+                            <ul class="phc_list">
+                                <a href="">
+                                    <li>Pediatric Clinic</li>
+                                </a>
+                                <a href="">
+                                    <li>Gynaecological Clinic</li>
+                                </a>
+                                <a href="">
+                                    <li>Ophthalmology Clinic</li>
+                                </a>
+                                <a href="">
+                                    <li>Outpatient Surgery</li>
+                                </a>
+                                <a href="">
+                                    <li>Cardiac Clinic</li>
+                                </a>
+                                <a href="">
+                                    <li>Laryngological Clinic</li>
+                                </a>
+                                <a href="">
+                                    <li>Ophthalmology Clinic</li>
+                                </a>
+                                <a href="">
+                                    <li>Dental Clinic</li>
+                                </a>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="widget" id="widget_make">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Make An Appointment</div>
+                        <div class="widget_title_bar"></div>
+                       
+                    </div>
+                    
+                    <div class="widget_body">
+                        <div class="widget_content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat rutrum eros sit amet sollicitudin.</p>
+                        </div>
+                        
+                        <div class="widget_contact">
+                            <p>by phone: <span>1-800643-4300</span></p>
+
+                        </div>
+                        <div class="widget_contact">
+                            <p>by e-mail : <a href="#">medicenter@gmail.com</a></p>
+
+                        </div>
+
+                        <div class="widget_contact">
+                            <p>or <a href="#">fill in the form</a>  on our contact page</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </aside>
+        </div>
+    </section>
+
+    <!---------FOOTER-------->
+
+    <footer>
+        <div class="container flexColumn">
+            <div class="footer_menu">
+                <div class="fm_1">
+                    <p>Health Insurance</p>
+                    <div class="link_fm">
+                        <a href="#" class="footer_menu_descricion">Here in medicenter we have individual →</a>
+                    </div>
+                </div>
+                <div class="fm_2">
+                    <p>Medical Records</p>
+                    <div class="link_fm">
+                        <a href="#" class="footer_menu_descricion">Here in medicenter we have individual →</a>
+                    </div>
+                </div>
+                <div class="fm_3">
+                    <p>Online Bill Pay</p>
+                    <div class="link_fm">
+                        <a href="#" class="footer_menu_descricion">Here in medicenter we have individual →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_area">
+                <div class="area_item">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Medicenter Clinic</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body">
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="area_item">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Last Posts</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body">
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="area_item">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Lasted Tweeds</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body">
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="footer_copy">dffg</div>
+        </div>
+
+
+
+    </footer>
+</body>
+
+</html>

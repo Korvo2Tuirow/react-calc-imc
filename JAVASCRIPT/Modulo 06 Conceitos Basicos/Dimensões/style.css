@@ -1,0 +1,29 @@
+body{
+    overflow: scroll;
+    height: 1500px;
+}
+.texto{
+    width: 200px;
+    height: 500px;
+    background-color: antiquewhite;
+    overflow: auto;
+    padding: 20px;
+}
+
+button{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    display: none;
+    margin: 50px;
+}
+
+.div{
+    width: 100px;
+    height: 100px;
+    display: none;
+    background-color: #f00;
+   
+}
+

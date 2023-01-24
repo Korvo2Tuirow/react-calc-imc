@@ -1,0 +1,23 @@
+*{
+   
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    /* grid-row-gap: 10px;
+    grid-column-gap: 30px; código obsoleto*/
+    gap: 30px 10px; /*linha coluna*/
+   
+
+    grid-template-columns: auto 100px 300px;
+    grid-template-rows: 100px 200px auto 300px;
+}
+
+.item{
+    background-color: rgb(127, 246, 255);
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    
+}

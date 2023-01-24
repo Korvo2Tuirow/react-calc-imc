@@ -1,0 +1,33 @@
+:root{
+
+    --bg-color: #000;
+    --bg-second: #444;
+    --font-color: #fff;
+    --font-size: 30px;    
+
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+h1{
+    color: var(--font-color);
+}
+
+.container{
+    --verde: #0f0;
+
+    background-color: var(--bg-second);
+    color: var(--font-color);
+    border: var(--verde) solid 1px;
+    font-size: var(--font-size);
+}
+
+@media(max-width: 450px) {
+    
+    :root{
+        --font-size: 15px;
+        --bg-color: #550055;
+    }
+}

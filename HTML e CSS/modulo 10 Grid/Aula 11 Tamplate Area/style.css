@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  background-color: rgb(190, 178, 189);
+  gap: 10px; 
+  
+  grid-template-areas: 
+  
+  "item1 item1 item2"
+  "item3 item4 item2"
+  
+  
+  ;
+  
+}
+
+.item {
+  background-color: #0f2;
+  border: 2px solid black;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  border-radius: 10px;
+  
+  
+}
+
+.item1{
+  grid-area: item1;
+}
+
+.item2{
+  grid-area: item2;
+}
+
+.item3{
+  grid-area: item3;
+}
+
+.item4{
+  grid-area: item4;
+}

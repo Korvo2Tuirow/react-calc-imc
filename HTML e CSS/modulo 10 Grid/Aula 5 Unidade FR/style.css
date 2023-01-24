@@ -1,0 +1,31 @@
+*{
+   
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+   grid-template-columns:  1fr 2fr 1fr;
+    gap: 10px; /*linha coluna*/
+   
+
+}
+
+.item{
+    background-image: linear-gradient(to right, #00ff22, transparent , #1202f0);
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    box-shadow: #ae00ff 5px 5px 8px;
+    transition: 0.3s;
+    
+    
+}
+
+.item:hover{
+    background-image: linear-gradient(to right, #ff0000, #fffb00 , #1202f0);
+    transform: scale(1.075);
+    
+}

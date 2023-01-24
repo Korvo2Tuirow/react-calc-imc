@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 50px;
+}
+
+label{
+    display: block;
+    margin: 15px;
+}
+button{
+    margin: 15px;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    
+}
+
+button:hover{
+    background-color: rgb(174, 197, 240);
+}
+
+input[type=text], textarea, select{ 
+    padding: 10px;
+    width: 500px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    outline: 0;
+    margin-top: 5px;
+}
+
+textarea{
+    height: 200px;
+    resize: none;
+}
+
+.termos_link{
+    text-decoration:none;
+    color: black;
+}
+
+.termos_link:hover{
+    text-decoration: underline;
+}

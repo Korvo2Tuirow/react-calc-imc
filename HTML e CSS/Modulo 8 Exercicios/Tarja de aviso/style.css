@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+#tarja{display: flex;
+    height: 50px;
+    width: 300px;
+    background-color: #4080b8;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 4px #444;
+    transform: rotate(-45deg);
+    position: relative;
+    left: -80px;
+    top: 50px;
+    
+}
+#tarja a{
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    width: 280px;
+    height: 40px;
+    background-color: #4080b8;
+    align-items: center;
+    justify-content: center;
+    border: #fff 1px solid;
+    text-align: center;
+    text-shadow: 1px 1px 2px #444;
+}
