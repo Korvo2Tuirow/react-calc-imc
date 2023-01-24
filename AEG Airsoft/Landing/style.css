@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: #535353;
+}
+
+header {
+  display: flex;
+  max-width: 1300px;
+  height: 100px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+#logo {
+  height: 100px;
+  width: auto;
+  margin-left: 40px;
+}
+
+#inicio ul {
+  display: flex;
+  margin-right: 30px;
+}
+
+#inicio ul a li {
+  font-size: 10px;
+  text-transform: uppercase;
+  margin-right: 10px;
+  padding: 10px;
+  border: 2px solid #aaa;
+  border-radius: 5px;
+  list-style: none;
+  color: #535353;
+}
+
+#inicio ul a li:hover {
+  transform: scale(1.1);
+  box-shadow: #bbb 2px 2px 2px;
+}
+
+/*-----------------------------------*/
+
+#menu {
+  display: flex;
+  max-width: 1300px;
+  height: 42px;
+  margin: auto;
+  justify-content: space-around;
+}
+
+#menu ul {
+  display: flex;
+  max-width: 1300px;
+  list-style: none;
+  align-items: center;
+}
+
+#menu ul li {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 10px;
+  color: #535353;
+}
+
+#menu ul li:hover {
+  border-top: 1px solid #535353;
+  border-bottom: 1px solid #535353;
+  transform: scale(1.1);
+}
+
+/*------------AEG-----------*/
+
+#present {
+  display: flex;
+  max-width: 1300px;
+  height: 485px;
+  padding-top: 20px;
+  margin: auto;
+  margin-top: 10px;
+  border-top: 1px solid #d1d0d0;
+}
+
+#descricao,
+#imagem {
+  display: flex;
+  flex: 1;
+  height: inherit;
+  flex-direction: column;
+}
+
+#aeg_name,
+#imagem {
+  display: flex;
+  max-width: 649px;
+}
+
+#aeg_name {
+  padding: 10px 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+#preco {
+  /* border: solid 1px yellow; */
+  font-size: 32px;
+
+  padding: 10px 20px;
+}
+
+#preco span {
+  color: #434343;
+  font-weight: bold;
+}
+
+#imagem {
+  display: flex;
+  align-items: center;
+}
+
+#imagem img {
+  display: flex;
+  width: 485px;
+  height: auto;
+}
+
+#calibre,
+#quant {
+  /* border: red 1px solid; */
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+#calibre span,
+#quant span {
+  display: block;
+  margin-bottom: 10px;
+}
+#calibre select {
+  width: 200px;
+  padding: 3px 0px;
+  border-radius: 5px;
+}
+
+#quant input {
+  padding: 3px 3px;
+  border-radius: 5px;
+  border: 1px solid #636363;
+}
+
+#quant input:hover {
+  box-shadow: #87d1df 0 0 8px;
+}
+
+#comprar {
+  display: flex;
+  background-color: rgb(66, 163, 66);
+  width: inherit;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#comprar a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+#comprar:hover{
+    background-color: rgb(86, 180, 86);
+    
+}
