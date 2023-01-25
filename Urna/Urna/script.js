@@ -9,6 +9,8 @@ let final = document.querySelector('#fim');
 let voltar = document.querySelector('#back');
 let container = document.querySelector('container');
 
+alert("Numeros 13 ou 22 !!!");
+
 function inserir(valor) {
   if (display1.innerHTML == "") {
     num1 = valor;
@@ -36,14 +38,15 @@ function concatenarNumeros() {
   numeroCandidato = concatena1 + concatena2;
   numeroCandidato = parseInt(numeroCandidato);
 
-  mostrarDados()
+  dados = candidatos.filter(candidatoEscolhido => candidatoEscolhido.numero === numeroCandidato);
+
+  mostrarDados();
 }
 
-function mostrarDados(){
-  dados = candidatos.filter(candidatoEscolhido => candidatoEscolhido.numero === numeroCandidato);
+function mostrarDados(){ 
   nome.innerHTML = dados[0].nome;
   foto.innerHTML = dados[0].imagem;
-};
+}
 
 confirma.addEventListener('click', confirmar);
 
@@ -53,7 +56,7 @@ final.style.display = 'flex';
 final.classList.add('anima');
 container.style.display = 'none';
 }
-};
+}
 
 
 voltar.addEventListener('click', back);
