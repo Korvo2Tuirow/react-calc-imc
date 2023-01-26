@@ -183,6 +183,10 @@ button {
   height: 30px;
 }
 
+audio{
+  display: none;
+}
+
 .anima{
   animation: animacao 1.5s linear;
 }
