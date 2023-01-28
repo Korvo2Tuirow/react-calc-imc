@@ -10,8 +10,6 @@ let voltar = document.querySelector("#back");
 let container = document.querySelector("container");
 let audio = document.querySelector('audio');
 
-
-
 function inserir(valor) {
   if (display1.innerHTML == "") {
     num1 = valor;
@@ -21,7 +19,6 @@ function inserir(valor) {
     display2.innerHTML = num2;
 
     concatenarNumeros();
-    mostrarDados();
   }
 }
 clear.addEventListener("click", limpar);
@@ -39,8 +36,14 @@ function concatenarNumeros() {
   numeroCandidato = concatena1 + concatena2;
   numeroCandidato = parseInt(numeroCandidato);
   dados = candidatos.filter(
-    (candidatoEscolhido) => candidatoEscolhido.numero === numeroCandidato
+    (candidatoEscolhido) => candidatoEscolhido.numero == numeroCandidato
   );
+  if (dados == false) {
+    dados = candidatos.filter(
+      (candidatoEscolhido) => candidatoEscolhido.numero == ""
+    );
+  }
+  mostrarDados();
 }
 
 function mostrarDados() {
@@ -51,12 +54,12 @@ function mostrarDados() {
 confirma.addEventListener("click", confirmar);
 
 function confirmar() {
-  if (foto.innerHTML != "") {
-    audio.play();
+  if (foto.innerHTML != "" && dados[0].numero !=''){
     final.style.display = "flex";
     final.classList.add("anima");
+    audio.play();
     //container.style.display = "none";
-  }
+  };
 }
 
 voltar.addEventListener("click", back);
