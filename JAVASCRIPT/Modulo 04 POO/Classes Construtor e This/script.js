@@ -1,22 +1,32 @@
 class Pessoa {
     
     steps = 0;
+    _age = 0;
     
     constructor(nome, idade){
         this.nome = nome;
         this.idade = idade;
-    }
+    };
 
     takeAStep(){ //função
         this.steps++;
-    }
+    };
 
     setAge(newAge){
         if(typeof newAge == 'number'){ //exeucta a função de for number
             this.idade = newAge;} else{
             console.log("Idade não é um numero");
-        }}
-}
+        }};
+
+    get age(){
+            return this._age;
+        }
+
+
+
+
+
+};
 ////////////////////////////////////////////////////////////
 
 let id1 = new Pessoa("Robert", 38);
@@ -48,3 +58,7 @@ console.log(`Passos de ${id2.nome}: ${id2.steps}`);
 ///////////////////////////////////////////////////////////
 
 id2.setAge('abc');
+
+///////////////////////////////////////////////////////////
+
+
