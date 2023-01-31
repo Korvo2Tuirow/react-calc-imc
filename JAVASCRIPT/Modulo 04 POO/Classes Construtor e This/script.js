@@ -62,3 +62,27 @@ id2.setAge('abc');
 ///////////////////////////////////////////////////////////
 
 
+class Aluno{
+
+    _idade = 0;
+
+    constructor(_name){
+        this._nome = _name;
+    }
+
+};
+
+
+class Aluno extends Person{
+
+    constructor(_name, id){
+        super(_nome);
+        this._id = id;
+    }
+};
+
+let aluno01 = new Aluno('Bonieky', 1);
+    aluno01._idade = 20;
+
+
+console.log(`O aluno ${aluno01._nome} tem ${aluno01._idade}`);    
