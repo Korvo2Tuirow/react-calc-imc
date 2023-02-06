@@ -14,12 +14,13 @@ body {
     align-items: center;
     background-image: url("https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
     background-position: center;
+  
 }
 
 #container {
     display: flex;
     flex-direction: column;
-    max-width: 320px;
+    min-width: 320px;
     margin: auto;
     border: 1px solid #fff;
     padding: 20px;
@@ -35,8 +36,8 @@ body {
 
 h2 {
     color: #fff;
-    font-size: 30px;
-    margin-bottom: 15px;
+    font-size: 40px;
+    margin-bottom: 10px;
     font-weight: bold;
 
 }
@@ -58,17 +59,23 @@ button {
     padding: 3px;
 
 }
+#descricao{
+    text-transform: capitalize;
+    margin-bottom: 0;
+    align-self: center;
+    
+}
+#desc{
+    display: flex;
 
-p {
-    margin-bottom: 10px;
-    font-size: 20px
 }
 
-#temp {
-    font-weight: 600;
-    font-size: 25px;
+#temp, #descricao, #umidade {
+   
+    font-size: 30px
 }
 
 h2, p {
     text-shadow: 2px 2px 2px #000;
 }
+
