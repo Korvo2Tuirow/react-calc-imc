@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#container{
+  width:1000px;
+  margin:auto;
+}
+
+#tabela{
+  display: flex;
+}
+
+table{
+    border: 1px solid #000;
+    margin: 50px auto;
+    width: 1000px ;
+}
+
+th{
+  border: 1px solid #f00;
+  padding: 5px;
+  height: 25px;
+}
+td{
+  border: 1px solid #00f;
+  padding:5px;
+  height: 25px;
+}
+
+#descricao{
+  width: 400px
+}
+
+#quantidade{
+  width: 100px;
+}
+
+#valorUnitario, #valorTotal{
+  
+  width:150px
+}
+
+/*Inputs*/
+
+#inputDesc{
+  width:600px;
+  height:30px;
+  margin: 5px 0 10px 0; 
+  
+}
+
+#inputQuant{
+  width: 70px;
+  height:30px;
+  margin: 5px 0 10px 0;
+}
+
+#inputValor{
+  height:30px;
+  margin: 5px 0 10px 0;
+}
+
+button{
+  height: 30px;
+  width: 70px;
+}
