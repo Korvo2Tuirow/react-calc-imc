@@ -26,7 +26,15 @@ function click() {
     .then((dados) => {
       console.log(dados);
       console.log(dados.products[10]);
-    });
+    })
+
+    .catch(() =>{
+      console.log ("DEU ERRO")
+    })
+
+    .finally(()=>{
+      console.log("REQUISIÇÃO FINALIZADA");
+    })
 }
 
 ///////////////////////////////////////////////////////////
@@ -47,5 +55,9 @@ document.querySelector("#btn4").addEventListener("click", () => {
     let res = await fetch(url);
     let resData = await res.json();
     console.log(resData[160]);
-  })();
+  })()
+  .catch((erro)=>{
+    alert("ERRO NA REQUISIÇÃO");
+    console.log(erro);
+  })
 });
