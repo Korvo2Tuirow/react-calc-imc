@@ -39,3 +39,13 @@ document.querySelector("#btn3").addEventListener("click", () => {
       console.log(data);
     });
 });
+///////////////////////////////////////////////////
+//https://www.youtube.com/watch?v=1d5jNmKdwlY
+
+document.querySelector("#btn4").addEventListener("click", () => {
+  (async function () {
+    let res = await fetch(url);
+    let resData = await res.json();
+    console.log(resData[160]);
+  })();
+});
