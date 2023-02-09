@@ -6,16 +6,50 @@ btn.addEventListener("click", ()=>{
   alert("clicou");
 }
 );
+
+GET = PEGAR
+POST = ENVIAR
+PUT = MODIFICAR
+DELETE = DELETAR
 */
 
 btn.addEventListener("click", clickCallback);
 
-function clickCallback() {
+async function clickCallback() {
   fetch(url)
     .then((response) => response.json())
-    .then((json) => console.log(json));
+    .then((json) => console.log(json))
+    .finally(()=>{
+      console.log("REQUISIÇÃO FINALIZADA");
+    })
+    };
+
+
+    document.querySelector("#btn5").addEventListener("click", inserir);
+
+  async function inserir(){ 
+  let enviar = await fetch(url,
+    { 
+      method: 'POST',
+      headers:{
+        'Content-Type':  'application/json'
+      },
+      body:JSON.stringify({
+        title: "Titulo de teste",
+        body: "Corpo de teste",
+        userID: "KORVO TUIROW"
+      })
+    }
+  )
+
+let objPost = await enviar.json();
+
+console.log(objPost);
+  
 }
 
+
+////////////////////////////////////////////////////////////////////
 document.querySelector("#btn2").addEventListener("click", click);
 function click() {
   fetch("https://dummyjson.com/products")
@@ -32,9 +66,10 @@ function click() {
       console.log ("DEU ERRO")
     })
 
-    .finally(()=>{
+       .finally(()=>{
       console.log("REQUISIÇÃO FINALIZADA");
     })
+    
 }
 
 ///////////////////////////////////////////////////////////
@@ -45,19 +80,28 @@ document.querySelector("#btn3").addEventListener("click", () => {
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
-    });
+    })
+    .finally(()=>{
+      console.log("REQUISIÇÃO FINALIZADA");
+    })
 });
 ///////////////////////////////////////////////////
 //https://www.youtube.com/watch?v=1d5jNmKdwlY
 
-document.querySelector("#btn4").addEventListener("click", () => {
-  (async function () {
+document.querySelector("#btn4").addEventListener("click", async () => {
+
     let res = await fetch(url);
     let resData = await res.json();
     console.log(resData[160]);
-  })()
-  .catch((erro)=>{
-    alert("ERRO NA REQUISIÇÃO");
-    console.log(erro);
-  })
+ 
 });
+
+/*/////////////////////////
+          ERROS
+
+1 - Respostas de informação
+2 - Respostas de sucesso
+3 - Redirecionamento
+4 - Erros do cliente
+5 - Erros do servidsor
+/////////////////////////*/
