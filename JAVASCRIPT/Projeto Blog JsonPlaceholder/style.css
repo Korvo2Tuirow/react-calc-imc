@@ -1,0 +1,50 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+#h1Title{
+    display: flex;
+    width: 100%;
+    margin:auto;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+fieldset{
+    margin: 10px;
+}
+
+legend{
+    margin: 10px;
+    font-size: 25px;
+}
+
+input{
+    margin: 10px;
+    min-width: 400px;
+    padding: 10px;
+    font-size: 18px
+}
+
+textarea{
+    min-width: 400px;
+    margin: 10px;
+    font-size: 18px;
+}
+
+button{
+    margin: 10px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.posts{
+    margin: 10px;
+    color: #005;
+}
+
+p{
+    font-size: 20px;
+}

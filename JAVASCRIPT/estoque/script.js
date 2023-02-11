@@ -1,16 +1,13 @@
 import { Produto } from "./poo.js";
 
-let descricaoAdd;
-let quantidadeAdd;
-let valorAdd;
-let p1;
+let descricaoAdd, quantidadeAdd, valorAdd, p1;
 
 let enviar = document
   .querySelector("#enviar")
   .addEventListener("click", enviarDesc);
 
 function enviarDesc() {
-  event.preventDefault();
+  preventDefault();
   descricaoAdd = document.querySelector("#inputDesc").value;
   quantidadeAdd = document.querySelector("#inputQuant").value;
   valorAdd = document.querySelector("#inputValor").value;
