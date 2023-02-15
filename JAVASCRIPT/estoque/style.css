@@ -1,68 +1,121 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-#container{
-  width:1000px;
-  margin:auto;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-#tabela{
+body{
+  height: 100vh;
+}
+
+html{
+  background: linear-gradient(90deg, #020024 0%, rgba(9,9,121,1) 35%, #9900ff 100%);
+ }
+header{
+  max-width: 800px;
+  min-width: 400px;
+  margin: auto;
+  padding: 20px 20px 0px;
+}
+h1{
   display: flex;
+  justify-content: center;
+  background-color: #1f2c4b;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #000;
+  border: #555 1px solid;
+  padding: 20px;
+  text-align: center;
+}  
+p, h1{
+  color: #fff;
 }
 
-table{
-    border: 1px solid #000;
-    margin: 50px auto;
-    width: 1000px ;
+span{
+  color: #fff;
 }
 
-th{
-  border: 1px solid #f00;
-  padding: 5px;
-  height: 25px;
-}
-td{
-  border: 1px solid #00f;
-  padding:5px;
-  height: 25px;
+#container {
+  max-width: 800px;
+  min-width: 400px;
+  margin: auto;
+  padding: 20px;
+
 }
 
-#descricao{
-  width: 400px
+.tabela, #inputs {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin:auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #1f2c4b;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #000;
+  border: #555 1px solid;
 }
 
-#quantidade{
-  width: 100px;
+.tabela {
+  display: none;
 }
 
-#valorUnitario, #valorTotal{
-  
-  width:150px
+.table {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-/*Inputs*/
+.codigo, .descricao, .quantidade, .valorUnitario, .valorTotal {
+  display: flex;
+  border: 1px solid #555;
+  min-width: 120px;  
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-right: 5px;
 
-#inputDesc{
-  width:600px;
-  height:30px;
-  margin: 5px 0 10px 0; 
-  
 }
 
-#inputQuant{
-  width: 70px;
-  height:30px;
+.codValue, .descValue, .quantValue, .valorValue, .totalValue {
+  display: flex;
+  width: 100%;
+  padding-left: 20px;
+  height: 100%;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #555;
+
+}
+
+#inputDesc {
+  width: 100%;
+  min-height: 30px;
   margin: 5px 0 10px 0;
+  padding-left: 10px;
+  outline-color: #8c00ff;
+  
+
 }
 
-#inputValor{
-  height:30px;
+#inputValor, #inputCode, #inputQuant {
+  width: 150px;
+  height: 30px;
   margin: 5px 0 10px 0;
+  padding-left: 10px;
+  outline-color: #8c00ff;
 }
 
-button{
+
+
+
+
+button {
   height: 30px;
   width: 70px;
 }

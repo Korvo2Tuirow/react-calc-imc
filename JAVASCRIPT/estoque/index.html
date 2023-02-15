@@ -8,44 +8,66 @@
     <title>Estoque</title>
   </head>
   <body>
+    <header>
+    <h1>GESTÃO DE ESTOQUE</h1>
+  </header>
     <div id="container">
+     
+      <section id="inputs">
+        
+        <div>
+        <p>Código</p>
+        <input type="text" id="inputCode" autocomplete="off"/> <span> (Digite para buscar)</span></div>
+        <p>Descrição</p>
+        <input type="text" id="inputDesc" autocomplete="off"/>
+        <p>Quantidade</p>
+        <input type="number" id="inputQuant" />
+        <p>Valor/Unitario</p>
+        <input
+          type="number"
+          step="0.01"
+          name="quantidade"
+          min="0.01"
+          id="inputValor"
+        />
+        <div class="buttons">
+          <button id="enviar">Enviar</button>
+          <button id="buscar">Buscar</button>
+          <button id="limpar">Limpar</button>
+        </div>
+      </section>
 
-        <section id="tabela">
-                <table>
-                    <thead>
-                    <tr>
-                        <th id="codigo">Código</th>
-                        <th id="descricao">Descrição</th>
-                        <th id="quantidade">Quantidade</th>
-                        <th id="valorUnitario">Valor/Unitario</th>
-                        <th id="valorTotal">Valor Total</th>
-                    </tr>
-                </thead>
-                   <tbody>
-                    <tr>
-                        <td id="c1"></td>
-                        <td id="d1"></td>
-                        <td id="q1"></td>
-                        <td id="vu"></td>
-                        <td id="vt"></td>
-                    </tr>
-                </tbody>
-                </table>
-            </section>
-            <form>
-                <section id="inputs">
-                    <p>Descrição</p><input type="text" id="inputDesc">
-                    <p>Quantidade</p><input type="number" id="inputQuant">
-                    <p>Valor/Unitario</p><input type="number"  step="0.01" name="quantity" min="0.01" id="inputValor">
-                    </br>
-                  <button id="enviar">Enviar</button>
-                    <button id="buscar">Buscar</button>
-                </section>
-            </form>
-          </div>
+      <section class="tabela">
+        <div class="table">
+          <div class="codigo">Codigo</div>
+          <div class="codValue"></div>
+        </div>
 
+        <div class="table">
+          <div class="descricao">Descrição</div>
+          <div class="descValue"></div>
+        </div>
 
-          <script type="module" src="script.js"></script>
-          
+        <div class="table">
+          <div class="quantidade">Quantidade</div>
+          <div class="quantValue"></div>
+        </div>
+
+        <div class="table">
+          <div class="valorUnitario">Valor Unitario</div>
+          <div class="valorValue"></div>
+        </div>
+
+        <div class="table">
+          <div class="valorTotal">Valor Total</div>
+          <div class="totalValue"></div>
+        </div>
+      </section>
+      
+    </div>
+
+    <section id="estoque"></section>
+
+    <script type="module" src="script.js"></script>
   </body>
 </html>

@@ -1,22 +1,43 @@
 import { Produto } from "./poo.js";
 
-let descricaoAdd, quantidadeAdd, valorAdd, p1;
-
-let enviar = document
-  .querySelector("#enviar")
-  .addEventListener("click", enviarDesc);
+document.querySelector("#enviar").addEventListener("click", enviarDesc);
 
 function enviarDesc() {
-  preventDefault();
-  descricaoAdd = document.querySelector("#inputDesc").value;
-  quantidadeAdd = document.querySelector("#inputQuant").value;
-  valorAdd = document.querySelector("#inputValor").value;
 
-  p1 = new Produto(descricaoAdd, quantidadeAdd, valorAdd);
+    let descValue = document.querySelector("#inputDesc").value;
+    let quantValue = document.querySelector("#inputQuant").value;
+    let valorValue = document.querySelector("#inputValor").value;
 
-  let d1 = (document.querySelector("#d1").innerHTML = p1._descricao);
-  let q1 = (document.querySelector("#q1").innerHTML = p1._quantidade);
-  let vu1 = (document.querySelector("#vu").innerHTML = p1._valor);
-  let vt = (document.querySelector("#vt").innerHTML = p1._valorTotal);
-  console.log(p1);
+   if(descValue == "" || quantValue == "" || valorValue == ""){
+        alert("PREENCHA OS CAMPOS. (Código apenas para Busca)");
+    
+    }else{
+
+    console.log(descValue);
+    console.log(quantValue);
+    console.log(valorValue);
+
+    document.querySelector(".descValue").innerHTML = descValue;
+    document.querySelector(".quantValue").innerHTML = quantValue;
+    document.querySelector(".valorValue").innerHTML = `R$ ${valorValue}`;
+    document.querySelector(".totalValue").innerHTML = `R$ ${(quantValue * valorValue).toFixed(2)}`;
+
+    document.querySelector(".tabela").style.display = "flex";
+
+    let p1 = new Produto(descValue, quantValue, valorValue);
+        console.log(p1);
+        
+    };
+
+};
+
+document.querySelector("#limpar").addEventListener("click", limpar)
+
+function limpar(){
+
+    let codeValue = document.querySelector("#inputCode").value = ""; 
+    let descValue = document.querySelector("#inputDesc").value = "";
+    let quantValue = document.querySelector("#inputQuant").value = "";
+    let valorValue = document.querySelector("#inputValor").value = "";
+
 };

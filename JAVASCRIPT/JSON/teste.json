@@ -1,0 +1,393 @@
+[
+  {
+    "nome": "Robert",
+    "idade": 38,
+    "esta_trabalhando": false,
+    "hobbies": ["programar", "jogar", "dormir"],
+    "status": {
+      "profissão": "desempregado",
+      "ensino": "médio"
+    }
+  },
+
+  {
+    "nome": "Robert",
+    "idade": 38,
+    "esta_trabalhando": false,
+    "hobbies": ["programar", "jogar", "dormir"],
+    "status": {
+      "profissão": "desempregado",
+      "ensino": "médio"
+    }
+  },
+
+
+
+{
+  "data": {
+    "slotRequestId": "af9000ae-3890-442a-9fef-2d7acb511747",
+    "partnerRequestId": "ab8f5b1c-9c04-45f6-89fa-00848890f375",
+    "rollOut": 4,
+    "loadExhibition": 4,
+    "count": 16,
+    "items": [
+      {
+        "impressionLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotVisualization/https%3a%2f%2fvia.ms.tagdelivery.com%2fimpression%3fid%3d0dec2bec-8014-422b-8e82-5bd3c626af1d%26x%3dbo3-Zb6mpALgBQ_kdvyiY5CGNqXy0rM0U2dJwTEBnOD5mIHf2apjRG4mi57RbMn1lOzzWoJk1OfruHw7msPl-qiOHgNRqeXHZTCLDNgvNYD3GFYS3SjrBF32p1XX_Z1QoyxKvxm1Qos0tTR0dkQBPNV4Dh_ZrpjnunJI-Hot9ZGGNz8DG0UG9r8WpHsuSECSH-F9lQGPW7ASNVwJrlv-ilwjI9bE-5diFMx9jOb645Uh9L9cfx9tXRvDGY4QN5sx55qENQIt2wbD-Tuu9euRWsYWl7X-LPy5LbE-n5gIN1mZsyM-9Tox79L21PpdpXnMksf92hBnf8umZJKLviQLhXMOnPN-1BDD0mOiDVU-8J6Y-cLO3o7TTiseMzy13xqa5i6gpt9eqyNNehIXe2nbGVYnCJ8gEJj0vCuOkKlL33oWZ0dMO8lYJzsHHGI8qFFlYw1Z6CvU3Utqn_AqR46LyNt-78zPNanSemDynSNSW54o2EMFUUVNjBt-_0xQAsDxlaNcrY-7DYFuVRsFyySu_LMtiCHCfJ_XUYy9lIuoSCNnw1qGzsmxb-RZ1KTpk6kSMhv7URUVjZUur4oxNser7A%253D%253D/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%2255058061%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d",
+        "clickLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotClick/https%3a%2f%2fvia.ms.tagdelivery.com%2fclick%3fid%3d0dec2bec-8014-422b-8e82-5bd3c626af1d%26x%3dbo3-Zb6mpALgBQ_kdvyiY5CGNqXy0rM0U2dJwTEBnOD5mIHf2apjRG4mi57RbMn1lOzzWoJk1OfruHw7msPl-qiOHgNRqeXHZTCLDNgvNYD3GFYS3SjrBF32p1XX_Z1QoyxKvxm1Qos0tTR0dkQBPNV4Dh_ZrpjnunJI-Hot9ZGGNz8DG0UG9r8WpHsuSECSH-F9lQGPW7ASNVwJrlv-ilwjI9bE-5diFMx9jOb645Uh9L9cfx9tXRvDGY4QN5sx55qENQIt2wbD-Tuu9euRWsYWl7X-LPy5LbE-n5gIN1mZsyM-9Tox79L21PpdpXnMksf92hBnf8umZJKLviQLhXMOnPN-1BDD0mOiDVU-8J6Y-cLO3o7TTiseMzy13xqa5i6gpt9eqyNNehIXe2nbGVYnCJ8gEJj0vCuOkKlL33oWZ0dMO8lYJzsHHGI8qFFlYw1Z6CvU3Utqn_AqR46LyNt-78zPNanSemDynSNSW54o2EMFUUVNjBt-_0xQAsDxlaNcrY-7DYFuVRsFyySu_LMtiCHCfJ_XUYy9lIuoSCNnw1qGzsmxb-RZ1KTpk6kSMhv7URUVjZUur4oxNser7A%253D%253D%26redirect%3d/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%2255058061%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d/",
+        "installment": "10 x de R$ 949,90",
+        "price": {
+          "value": 9499,
+          "valueFormatted": "R$ 9.499,00",
+          "symbol": "R$"
+        },
+        "sellPrice": {
+          "value": 9499,
+          "valueFormatted": "R$ 9.499,00",
+          "symbol": "R$"
+        },
+        "imageUrlSmall": "https://imgs.extra.com.br/55058061/1g.jpg?imwidth=292",
+        "title": "Smartphone Samsung Galaxy S23 Ultra 5G Verde 512GB, Tela 6.8'', 12GB RAM, Processador Snapdragon 8 Gen 2, Câmera Quádrupla Traseira + Selfie de 12MP",
+        "alt": "COLECAO_PLA",
+        "sku": "55058061",
+        "seller": "ex",
+        "onSale": false,
+        "landingPage": "https://www.extra.com.br/Telefones-Celulares/Smartphones/Android/smartphone-samsung-galaxy-s23-ultra-5g-verde-512gb-tela-6-8-12gb-ram-processador-snapdragon-8-gen-2-camera-quadrupla-traseira-selfie-de-12mp-55058061.html?idlojista=209633"
+      },
+      {
+        "impressionLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotVisualization/https%3a%2f%2fvia.ms.tagdelivery.com%2fimpression%3fid%3d37199d61-044c-414a-b0b5-04bc18633490%26x%3dCFrztqwlT1DSS1pRBaTuaICNcjxp5Yz1sf9PeAfhsZs1uJMpN8nKNX4tfnF_EQRQDv7xRI7c0CJ6NhJ72j24OEgb8HIMVwVd2FWvQKkm4-WZ-kVnUzChS3CQE-GwaJTe4tBg0Aqla4MYPduxXrOM5UspzLiEJl9lfifjBgQ-L6pZ0wtxwSOvZrTUlc15biqo8S9QEG0QE7AKIWcDhaOOJL4gg_Ji036Kkd9W9CK0LVRoEnZ5PN19LxE2CdvlGqeuLSmF2jN2UpUohyz65R9WpC0LvxBEpyXpTBjnNE4othDLyg08xL6UFRnCk4YEWRWtbZ9p7kv-2juqLaW_rEV956JJBNTQMVmg2-lCVt9ulp9vOBS_yqYgDwQTc4IXmM2uBZ-EGJREu_--Mi2QU2PUCgINijPloGgKQBKAJ8Slj8YPyumuEuevnq43e5w1BH9uMaUmvLkus8NfZsW8Nr5x7rX-MHWUyfCnDFJneycvdENb46EPXdgCXAYEufRuoJ8uhIr1hJMivH6g7PiC7KQ4bIxKAGDQ1DgMST-ima8bKQx20TF2bWuJiAYC1Kuso8FRGtaRi3Fx3wxF9fkz3cIbjw%253D%253D/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%2255058040%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d",
+        "clickLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotClick/https%3a%2f%2fvia.ms.tagdelivery.com%2fclick%3fid%3d37199d61-044c-414a-b0b5-04bc18633490%26x%3dCFrztqwlT1DSS1pRBaTuaICNcjxp5Yz1sf9PeAfhsZs1uJMpN8nKNX4tfnF_EQRQDv7xRI7c0CJ6NhJ72j24OEgb8HIMVwVd2FWvQKkm4-WZ-kVnUzChS3CQE-GwaJTe4tBg0Aqla4MYPduxXrOM5UspzLiEJl9lfifjBgQ-L6pZ0wtxwSOvZrTUlc15biqo8S9QEG0QE7AKIWcDhaOOJL4gg_Ji036Kkd9W9CK0LVRoEnZ5PN19LxE2CdvlGqeuLSmF2jN2UpUohyz65R9WpC0LvxBEpyXpTBjnNE4othDLyg08xL6UFRnCk4YEWRWtbZ9p7kv-2juqLaW_rEV956JJBNTQMVmg2-lCVt9ulp9vOBS_yqYgDwQTc4IXmM2uBZ-EGJREu_--Mi2QU2PUCgINijPloGgKQBKAJ8Slj8YPyumuEuevnq43e5w1BH9uMaUmvLkus8NfZsW8Nr5x7rX-MHWUyfCnDFJneycvdENb46EPXdgCXAYEufRuoJ8uhIr1hJMivH6g7PiC7KQ4bIxKAGDQ1DgMST-ima8bKQx20TF2bWuJiAYC1Kuso8FRGtaRi3Fx3wxF9fkz3cIbjw%253D%253D%26redirect%3d/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%2255058040%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d/",
+        "installment": "10 x de R$ 599,90",
+        "price": {
+          "value": 5999,
+          "valueFormatted": "R$ 5.999,00",
+          "symbol": "R$"
+        },
+        "sellPrice": {
+          "value": 5999,
+          "valueFormatted": "R$ 5.999,00",
+          "symbol": "R$"
+        },
+        "imageUrlSmall": "https://imgs.extra.com.br/55058040/1g.jpg?imwidth=292",
+        "title": "Smartphone Samsung Galaxy S23 5G Creme 256GB, Tela 6.1'', 8GB RAM, IP68, Processador Snapdragon 8 Gen 2, Câmera Tripla Traseira + Selfie de 12MP",
+        "alt": "COLECAO_PLA",
+        "sku": "55058040",
+        "seller": "ex",
+        "onSale": false,
+        "landingPage": "https://www.extra.com.br/Telefones-Celulares/Smartphones/Android/smartphone-samsung-galaxy-s23-5g-creme-256gb-tela-6-1-8gb-ram-ip68-processador-snapdragon-8-gen-2-camera-tripla-traseira-selfie-de-12mp-55058040.html?idlojista=209633"
+      },
+      {
+        "impressionLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotVisualization/https%3a%2f%2fvia.ms.tagdelivery.com%2fimpression%3fid%3d677fa0bd-1e36-4fc6-b724-87427dcf7197%26x%3d2P_Y4b1qkXMNZ_5qVH4wItiWnR-6XDzygQNJJafnaVwCXAktxPs_OZg0LcrFxYe0EzSQWvt9P9RfpTjuJ7YHE_-kUBV5Z_2vsrWmRblh0yUpjeHEKUmc6BezrUykk2WOxLLU7xhh8NA_tQjU-gePS8qQY8GczITgd1xcpXrvv6L38kk1egTANXp5WOuXyZs5nsqRGUViM4aBZUG6w292UfA3tVfm_0t8B-H0vpPvJxdVgyocgQ5YMvpEi25NREF9VCxurF0XZMhJx0quNYil3eM4y96OdTHdl0UUbiYOBIo89EKcSmJ8GD6dtRWyATtwOG9MNc__wImnENAPGcBd9adLroWJ6zzZZzFmDFZg8_SZUB-D2a6Vk_5DeGiio2PrET8YP1g6uO8hLTA5TpvY3HxM19XTENfp_8jYBTJnWyeCfr8heBiv-rnMtLSAqrQ7DxutxAi5hn47XALgymuy6iQzLq5_-QN8xeoabwqwByOq1OtUgtAINriN2ah8YX45hXSoP_SKd69feHnIjH_db4D-jFDgM7D-wrSk7Kq2TVcNRKlnvjy6UW2kE06xSWqYFgW3pEpDMywxjDus1unO7g%253D%253D/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%2255051823%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d",
+        "clickLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotClick/https%3a%2f%2fvia.ms.tagdelivery.com%2fclick%3fid%3d677fa0bd-1e36-4fc6-b724-87427dcf7197%26x%3d2P_Y4b1qkXMNZ_5qVH4wItiWnR-6XDzygQNJJafnaVwCXAktxPs_OZg0LcrFxYe0EzSQWvt9P9RfpTjuJ7YHE_-kUBV5Z_2vsrWmRblh0yUpjeHEKUmc6BezrUykk2WOxLLU7xhh8NA_tQjU-gePS8qQY8GczITgd1xcpXrvv6L38kk1egTANXp5WOuXyZs5nsqRGUViM4aBZUG6w292UfA3tVfm_0t8B-H0vpPvJxdVgyocgQ5YMvpEi25NREF9VCxurF0XZMhJx0quNYil3eM4y96OdTHdl0UUbiYOBIo89EKcSmJ8GD6dtRWyATtwOG9MNc__wImnENAPGcBd9adLroWJ6zzZZzFmDFZg8_SZUB-D2a6Vk_5DeGiio2PrET8YP1g6uO8hLTA5TpvY3HxM19XTENfp_8jYBTJnWyeCfr8heBiv-rnMtLSAqrQ7DxutxAi5hn47XALgymuy6iQzLq5_-QN8xeoabwqwByOq1OtUgtAINriN2ah8YX45hXSoP_SKd69feHnIjH_db4D-jFDgM7D-wrSk7Kq2TVcNRKlnvjy6UW2kE06xSWqYFgW3pEpDMywxjDus1unO7g%253D%253D%26redirect%3d/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%2255051823%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d/",
+        "installment": "10 x de R$ 275,90",
+        "price": {
+          "value": 3299,
+          "valueFormatted": "R$ 3.299,00",
+          "symbol": "R$"
+        },
+        "sellPrice": {
+          "value": 2759,
+          "valueFormatted": "R$ 2.759,00",
+          "symbol": "R$"
+        },
+        "imageUrlSmall": "https://imgs.extra.com.br/55051823/1g.jpg?imwidth=292",
+        "title": "Smart TV 50 LG 4K NanoCell 50NANO75 HDMI 2.0, Nvidia GEFORCE NOW, ThinQ AI, Smart Magic, Google, Alexa",
+        "alt": "COLECAO_PLA",
+        "sku": "55051823",
+        "seller": "ex",
+        "onSale": false,
+        "landingPage": "https://www.extra.com.br/tv-video/televisores/TV4K/smart-tv-50-lg-4k-nanocell-50nano75-hdmi-2-0-nvidia-geforce-now-thinq-ai-smart-magic-google-alexa-55051823.html?idlojista=15"
+      },
+      {
+        "impressionLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotVisualization/https%3a%2f%2fvia.ms.tagdelivery.com%2fimpression%3fid%3dd899c0c7-698d-42f6-9def-06a7ac33babb%26x%3dK-vOdZl5TMJ8CkEOg-gmnL01BR8HS6-NANLoeQXuhfH7hVZM8MnY_biBinONUd7dwWgvQW4nQg7-7mpSakrZzGT4nh63xVcxfwcHVkOX6vn4oj8xuWzGSmGjao4jZI4qZsUvpGPwlbhyF9j0v7zS8lMDaNTxGYoM5GNCc__dhFe1luGtQGmNLxWQUl_vHj6hUjU8A9mYCPEXqBbuJC5XGY9XUHVKB00D6GM3ZViN_LfbMtr-i3GAfl04VUQsJD9amacik7qeGPUfAHVPR8RryU3q_zYo29CoibtdzdeEtyO2T81GucG2BBciziEmkZJXwNzYfeKi59ibQ8gnF56xlBledKxDdvr2FPAjKWVWvrgoa5QRgIKgNlrnjJTFDkEs9cb224XvHNsTKRjhwVPxYY6TC4EfJGAsD4q0zFz1gVSrx4DZy4XDjMKCDkWxeAmkks961_jGMcc8ARjnpOlLXwuWFhoLjZ_l8SoKE2xzzP7h0sdGw66H0EwiSF0-VWLgwLwXeXV8Ftb7pCyI4q9L4RafDFhqD7YFCp0zFYYik_XBV2tI2BN2Yd4lOWSXNh0FrU_bLMchkDs9TvblIOhDFg%253D%253D/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%2255051821%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d",
+        "clickLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotClick/https%3a%2f%2fvia.ms.tagdelivery.com%2fclick%3fid%3dd899c0c7-698d-42f6-9def-06a7ac33babb%26x%3dK-vOdZl5TMJ8CkEOg-gmnL01BR8HS6-NANLoeQXuhfH7hVZM8MnY_biBinONUd7dwWgvQW4nQg7-7mpSakrZzGT4nh63xVcxfwcHVkOX6vn4oj8xuWzGSmGjao4jZI4qZsUvpGPwlbhyF9j0v7zS8lMDaNTxGYoM5GNCc__dhFe1luGtQGmNLxWQUl_vHj6hUjU8A9mYCPEXqBbuJC5XGY9XUHVKB00D6GM3ZViN_LfbMtr-i3GAfl04VUQsJD9amacik7qeGPUfAHVPR8RryU3q_zYo29CoibtdzdeEtyO2T81GucG2BBciziEmkZJXwNzYfeKi59ibQ8gnF56xlBledKxDdvr2FPAjKWVWvrgoa5QRgIKgNlrnjJTFDkEs9cb224XvHNsTKRjhwVPxYY6TC4EfJGAsD4q0zFz1gVSrx4DZy4XDjMKCDkWxeAmkks961_jGMcc8ARjnpOlLXwuWFhoLjZ_l8SoKE2xzzP7h0sdGw66H0EwiSF0-VWLgwLwXeXV8Ftb7pCyI4q9L4RafDFhqD7YFCp0zFYYik_XBV2tI2BN2Yd4lOWSXNh0FrU_bLMchkDs9TvblIOhDFg%253D%253D%26redirect%3d/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%2255051821%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d/",
+        "installment": "10 x de R$ 264,90",
+        "price": {
+          "value": 2799,
+          "valueFormatted": "R$ 2.799,00",
+          "symbol": "R$"
+        },
+        "sellPrice": {
+          "value": 2649,
+          "valueFormatted": "R$ 2.649,00",
+          "symbol": "R$"
+        },
+        "imageUrlSmall": "https://imgs.extra.com.br/55051821/1g.jpg?imwidth=292",
+        "title": "Smart TV 50 LG 4K UHD 50UQ8050 WiFi, Bluetooth, HDR, Nvidia GEFORCE NOW, ThinQ AI, Smart Magic, Google, Alexa",
+        "alt": "COLECAO_PLA",
+        "sku": "55051821",
+        "seller": "ex",
+        "onSale": false,
+        "landingPage": "https://www.extra.com.br/tv-video/televisores/TV4K/smart-tv-50-lg-4k-uhd-50uq8050-wifi-bluetooth-hdr-nvidia-geforce-now-thinq-ai-smart-magic-google-alexa-55051821.html?idlojista=15"
+      },
+      {
+        "impressionLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotVisualization/https%3a%2f%2fvia.ms.tagdelivery.com%2fimpression%3fid%3d09578c0d-9310-42df-83c9-8a485de97fe1%26x%3dUg9ZmREDGiPb3BEjKzH39b-zlztL-Aj7wixDu93HhENRpj0dsGfnMrDMeNuqrvrHVSd4QETSSsKuNqrJYwy9KntkeZZyIcnq_S_GkTgYL4b7flfDG70x9jjB1NXHRYLEVBFomEg9lTqqVkEvj5rVnDKVK8Ctsy772WSaID8V2hUfoTQi6jh6iMcPTrjbptcMy5qJWvDdx7pSRscYclQ-2fiDwVv6E2RWBUt5-K2YwLXpQ_UWtocqfi6qX3wAPkV-2Vmie4wVQrpqGqDVMXkLgCm0JG4FUmDXn6Vt_flnjy_6LLgsh9yFbY3IF3S5lS6FqCXHY5iXRqBx_D20P9oS1BEAAc2ZEAQRP5DczlmIx4Ut1w-y3SjdG7NpPWoinZ61qaeWA9n9tur-nPNNcjyznzgDZu_ORXT4l3-swN5tqRwMZD1VeudOWWrdAWtIvUcv8-4mhIOO86vFlXOIeQYmtqOuKmkSAPML1IJN3cxvvrP8bS7Njb8ATS-4wD8SpJrKzx2lNLnUtZOHP32oyDhCwNgQ-x7I3aBxG_xZAg8O6uUUeKrkhH6vfnAjdH9w4JiKbHmYTBpYfXC0BSy3N-KLSw%253D%253D/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%2255051822%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d",
+        "clickLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotClick/https%3a%2f%2fvia.ms.tagdelivery.com%2fclick%3fid%3d09578c0d-9310-42df-83c9-8a485de97fe1%26x%3dUg9ZmREDGiPb3BEjKzH39b-zlztL-Aj7wixDu93HhENRpj0dsGfnMrDMeNuqrvrHVSd4QETSSsKuNqrJYwy9KntkeZZyIcnq_S_GkTgYL4b7flfDG70x9jjB1NXHRYLEVBFomEg9lTqqVkEvj5rVnDKVK8Ctsy772WSaID8V2hUfoTQi6jh6iMcPTrjbptcMy5qJWvDdx7pSRscYclQ-2fiDwVv6E2RWBUt5-K2YwLXpQ_UWtocqfi6qX3wAPkV-2Vmie4wVQrpqGqDVMXkLgCm0JG4FUmDXn6Vt_flnjy_6LLgsh9yFbY3IF3S5lS6FqCXHY5iXRqBx_D20P9oS1BEAAc2ZEAQRP5DczlmIx4Ut1w-y3SjdG7NpPWoinZ61qaeWA9n9tur-nPNNcjyznzgDZu_ORXT4l3-swN5tqRwMZD1VeudOWWrdAWtIvUcv8-4mhIOO86vFlXOIeQYmtqOuKmkSAPML1IJN3cxvvrP8bS7Njb8ATS-4wD8SpJrKzx2lNLnUtZOHP32oyDhCwNgQ-x7I3aBxG_xZAg8O6uUUeKrkhH6vfnAjdH9w4JiKbHmYTBpYfXC0BSy3N-KLSw%253D%253D%26redirect%3d/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%2255051822%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d/",
+        "installment": "10 x de R$ 219,90",
+        "price": {
+          "value": 2199,
+          "valueFormatted": "R$ 2.199,00",
+          "symbol": "R$"
+        },
+        "sellPrice": {
+          "value": 2199,
+          "valueFormatted": "R$ 2.199,00",
+          "symbol": "R$"
+        },
+        "imageUrlSmall": "https://imgs.extra.com.br/55051822/1g.jpg?imwidth=292",
+        "title": "Smart TV 43 LG 4K UHD 43UQ7500 WiFi, Bluetooth, HDR, ThinQ AI, Google, Alexa",
+        "alt": "COLECAO_PLA",
+        "sku": "55051822",
+        "seller": "ex",
+        "onSale": false,
+        "landingPage": "https://www.extra.com.br/tv-video/televisores/TV4K/smart-tv-43-lg-4k-uhd-43uq7500-wifi-bluetooth-hdr-thinq-ai-google-alexa-55051822.html?idlojista=15"
+      },
+      {
+        "impressionLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotVisualization/https%3a%2f%2fvia.ms.tagdelivery.com%2fimpression%3fid%3d4640ba8d-a407-435c-a4c7-851b27854d07%26x%3dxhFdJOBSPoKvBKr00sj4q2HaXPH0-z-AZWlYsd5RIjDRH-gJheanIr9H1XuErdG_eo7u7biaR6WPk2tM5m_pbw_aWrdsybeEK8OeMUVAgU5WW_TucNk-hw9T5cjSe206iSKc1ZKm9D2WZr6sv_uUBMbsQh2_BpLZUmmxuHKCHRxRlazExwEqLZFxPg8c7I8Q1hx4dQGRUIJN6l8MZZvykPeOxl20NS_JWdWMMkzujAgSICMxjRckT9ByNWByniYe4CaAm3IgjP1A2aOP0iRxAdFw81H0AwW5ltb5g5JvBD5jwett8xVU_bRIzfShOHLWeBSGJFAbRBNgOUUPR97It_r6g70TjaMTEXfEBYLkDweiEtE9yF2gggy_oJli3ZxhTq-qlZiFhgYsCePOazfGWvOt-dJneIT4Zqvk51whzPMDXTyrFVcKZupgQav7zharAxptqUJWxJpenN9nO7BodzbRLsZZBgXrELwdXr_063zXhpsgilKrJBP_pNvdsHq0D0gPMO8DXBW5oCfcbsH42w7-fww_VMcTipSfIDviL3T0QFS4zgBssCwNJ0CvIekpyF7wugLxxOFZVF744vEDSw%253D%253D/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%2255058049%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d",
+        "clickLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotClick/https%3a%2f%2fvia.ms.tagdelivery.com%2fclick%3fid%3d4640ba8d-a407-435c-a4c7-851b27854d07%26x%3dxhFdJOBSPoKvBKr00sj4q2HaXPH0-z-AZWlYsd5RIjDRH-gJheanIr9H1XuErdG_eo7u7biaR6WPk2tM5m_pbw_aWrdsybeEK8OeMUVAgU5WW_TucNk-hw9T5cjSe206iSKc1ZKm9D2WZr6sv_uUBMbsQh2_BpLZUmmxuHKCHRxRlazExwEqLZFxPg8c7I8Q1hx4dQGRUIJN6l8MZZvykPeOxl20NS_JWdWMMkzujAgSICMxjRckT9ByNWByniYe4CaAm3IgjP1A2aOP0iRxAdFw81H0AwW5ltb5g5JvBD5jwett8xVU_bRIzfShOHLWeBSGJFAbRBNgOUUPR97It_r6g70TjaMTEXfEBYLkDweiEtE9yF2gggy_oJli3ZxhTq-qlZiFhgYsCePOazfGWvOt-dJneIT4Zqvk51whzPMDXTyrFVcKZupgQav7zharAxptqUJWxJpenN9nO7BodzbRLsZZBgXrELwdXr_063zXhpsgilKrJBP_pNvdsHq0D0gPMO8DXBW5oCfcbsH42w7-fww_VMcTipSfIDviL3T0QFS4zgBssCwNJ0CvIekpyF7wugLxxOFZVF744vEDSw%253D%253D%26redirect%3d/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%2255058049%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d/",
+        "installment": "10 x de R$ 699,90",
+        "price": {
+          "value": 7999,
+          "valueFormatted": "R$ 7.999,00",
+          "symbol": "R$"
+        },
+        "sellPrice": {
+          "value": 6999,
+          "valueFormatted": "R$ 6.999,00",
+          "symbol": "R$"
+        },
+        "imageUrlSmall": "https://imgs.extra.com.br/55058049/1g.jpg?imwidth=292",
+        "title": "Smartphone Samsung Galaxy S23+ 5G Verde 512GB, Tela 6.6'', 8GB RAM, IP68, Processador Snapdragon 8 Gen 2, Câmera Tripla Traseira + Selfie de 12MP",
+        "alt": "COLECAO_PLA",
+        "sku": "55058049",
+        "seller": "ex",
+        "onSale": false,
+        "landingPage": "https://www.extra.com.br/Telefones-Celulares/Smartphones/Android/smartphone-samsung-galaxy-s23-5g-verde-512gb-tela-6-6-8gb-ram-ip68-processador-snapdragon-8-gen-2-camera-tripla-traseira-selfie-de-12mp-55058049.html?idlojista=15"
+      },
+      {
+        "impressionLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotVisualization/https%3a%2f%2fvia.ms.tagdelivery.com%2fimpression%3fid%3d5d5d190b-d778-4e32-9885-0f2707d82033%26x%3dXHCtaxp9aOaYJIcixry7O1Nonatb83ic44bRXJQTQIv4Vu2SzUVCGpclMvP4PQDlb0TKSaqanKM9srCmyioMduTlPwnIJeLdF5dyPw9j7iwYlMQcJ7HZfB897snfDBemjXnamTGYZgeGcBbXy9RvJNdEs4bNWvNGy2YzgVK6DdVoj7zVUFOgsCbZq87MkaRgUoGNoZAfKc1JGMGL4bgnqot7MXfbcEUFlMbFZjbDetY-dC_cH9H8Yf4VquYA7-3imNH3VyM4uQWGBE60_8cEJMDEfvwdDgi17tRbsNo5xAbwNnr5czDpJ4F5pV7PzTZE86xcSVTXo10GDo3utS5qWq9bUEAqD6qXdS6L25p1_csQtTrh0QKs_OgV3B27qoO575RPqKqUBcNXttZDaU4ovccRQf_dcUzJbBX1xHyZtXaLnkF53BYChgMwT0G0w2zZ8bEcO9SsEuTaJWZrK016AS598jwikIOJq7ZwkNl76mHbD0o-PipEyAshJDPmmIMr6OiziV4vn5jF1CZaAkqtXNZln57ELz3GWASBgcUguf3J5zDUBirz-tzL3oA-hpsrV6Xpd6h1MlvwuGOvops8nw%253D%253D/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%2255058039%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d",
+        "clickLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotClick/https%3a%2f%2fvia.ms.tagdelivery.com%2fclick%3fid%3d5d5d190b-d778-4e32-9885-0f2707d82033%26x%3dXHCtaxp9aOaYJIcixry7O1Nonatb83ic44bRXJQTQIv4Vu2SzUVCGpclMvP4PQDlb0TKSaqanKM9srCmyioMduTlPwnIJeLdF5dyPw9j7iwYlMQcJ7HZfB897snfDBemjXnamTGYZgeGcBbXy9RvJNdEs4bNWvNGy2YzgVK6DdVoj7zVUFOgsCbZq87MkaRgUoGNoZAfKc1JGMGL4bgnqot7MXfbcEUFlMbFZjbDetY-dC_cH9H8Yf4VquYA7-3imNH3VyM4uQWGBE60_8cEJMDEfvwdDgi17tRbsNo5xAbwNnr5czDpJ4F5pV7PzTZE86xcSVTXo10GDo3utS5qWq9bUEAqD6qXdS6L25p1_csQtTrh0QKs_OgV3B27qoO575RPqKqUBcNXttZDaU4ovccRQf_dcUzJbBX1xHyZtXaLnkF53BYChgMwT0G0w2zZ8bEcO9SsEuTaJWZrK016AS598jwikIOJq7ZwkNl76mHbD0o-PipEyAshJDPmmIMr6OiziV4vn5jF1CZaAkqtXNZln57ELz3GWASBgcUguf3J5zDUBirz-tzL3oA-hpsrV6Xpd6h1MlvwuGOvops8nw%253D%253D%26redirect%3d/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%2255058039%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d/",
+        "installment": "10 x de R$ 599,90",
+        "price": {
+          "value": 6499,
+          "valueFormatted": "R$ 6.499,00",
+          "symbol": "R$"
+        },
+        "sellPrice": {
+          "value": 5999,
+          "valueFormatted": "R$ 5.999,00",
+          "symbol": "R$"
+        },
+        "imageUrlSmall": "https://imgs.extra.com.br/55058039/1g.jpg?imwidth=292",
+        "title": "Smartphone Samsung Galaxy S23 5G Preto 256GB, Tela 6.1'', 8GB RAM, IP68, Processador Snapdragon 8 Gen 2, Câmera Tripla Traseira + Selfie de 12MP",
+        "alt": "COLECAO_PLA",
+        "sku": "55058039",
+        "seller": "ex",
+        "onSale": false,
+        "landingPage": "https://www.extra.com.br/Telefones-Celulares/Smartphones/Android/smartphone-samsung-galaxy-s23-5g-preto-256gb-tela-6-1-8gb-ram-ip68-processador-snapdragon-8-gen-2-camera-tripla-traseira-selfie-de-12mp-55058039.html?idlojista=15"
+      },
+      {
+        "impressionLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotVisualization/https%3a%2f%2fvia.ms.tagdelivery.com%2fimpression%3fid%3dc61ea29b-205c-49bc-a04e-3ce79a96b95c%26x%3ddTgGMuqKbVVS8Ccomb7aDKNnafkZl93jRg-LAdSZTzk3Gr5k4XgNfRd1szxUWMhzmg7xMxyYzUF0gv1toZPBWZGVyH-PoqTO6M_TcNKApYRQ0yI-WaSa9AxNg5Kz8aR_DiVG7pK3GXu8v-MIa5FRPxqjCd2asiar9gG8P_xEEA3iyE6r_tPpoxrytWH_CWsa4h5kv5BCs0CtSq1iep6GusfbvXYqwiF2eJaQow81BLiRvZK9qLTSLYBZ7QU3CBE9dRFjVVUcHGiyOyHxraNN2zrOeF9MeSVVIX0gwUO4xj8KchDAlPj0hVU9mEp2UGFjTteHt90luwmqxLRrz__Y9KSp3p0gYsntveA1OJ7gZJS1mQvOKY6-wvopAE6ewTiEb9eH-8hBZSdLz5t-FSaXwjN_-UgzUYLmMbFPz7kz-tjuXTvdJAiY6ITzWkPfvisdTHEGF226gkxHNv3aYqUnQ6so4LmZoPiUM7lxmaBxwE43XNnGt4zFQ4h9VVUbADyu3dQCDbGa6ypNAQzRrFzMGnQ70Kx77BJFLRfS8lJVPcHpYiQ9y-SF9nCy8U5Ceciziajz7rNv6aKy43xh6CXzpxkAXGSIacq53Lyk9Wc6_1kOD2WOjstUNfYWxBKK0B8T/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%221508555686%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d",
+        "clickLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotClick/https%3a%2f%2fvia.ms.tagdelivery.com%2fclick%3fid%3dc61ea29b-205c-49bc-a04e-3ce79a96b95c%26x%3ddTgGMuqKbVVS8Ccomb7aDKNnafkZl93jRg-LAdSZTzk3Gr5k4XgNfRd1szxUWMhzmg7xMxyYzUF0gv1toZPBWZGVyH-PoqTO6M_TcNKApYRQ0yI-WaSa9AxNg5Kz8aR_DiVG7pK3GXu8v-MIa5FRPxqjCd2asiar9gG8P_xEEA3iyE6r_tPpoxrytWH_CWsa4h5kv5BCs0CtSq1iep6GusfbvXYqwiF2eJaQow81BLiRvZK9qLTSLYBZ7QU3CBE9dRFjVVUcHGiyOyHxraNN2zrOeF9MeSVVIX0gwUO4xj8KchDAlPj0hVU9mEp2UGFjTteHt90luwmqxLRrz__Y9KSp3p0gYsntveA1OJ7gZJS1mQvOKY6-wvopAE6ewTiEb9eH-8hBZSdLz5t-FSaXwjN_-UgzUYLmMbFPz7kz-tjuXTvdJAiY6ITzWkPfvisdTHEGF226gkxHNv3aYqUnQ6so4LmZoPiUM7lxmaBxwE43XNnGt4zFQ4h9VVUbADyu3dQCDbGa6ypNAQzRrFzMGnQ70Kx77BJFLRfS8lJVPcHpYiQ9y-SF9nCy8U5Ceciziajz7rNv6aKy43xh6CXzpxkAXGSIacq53Lyk9Wc6_1kOD2WOjstUNfYWxBKK0B8T%26redirect%3d/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%221508555686%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d/",
+        "installment": "4 x de R$ 147,25",
+        "price": {
+          "value": 605.1,
+          "valueFormatted": "R$ 605,10",
+          "symbol": "R$"
+        },
+        "sellPrice": {
+          "value": 589,
+          "valueFormatted": "R$ 589,00",
+          "symbol": "R$"
+        },
+        "imageUrlSmall": "https://imgs.extra.com.br/1508555686/1xg.jpg?imwidth=292",
+        "title": "Micro-ondas Panasonic ST27L 21L Antiaderente Espelhado",
+        "alt": "COLECAO_PLA",
+        "sku": "1508555686",
+        "seller": "ex",
+        "onSale": false,
+        "landingPage": "https://www.extra.com.br/Eletrodomesticos/Micro-ondas/micro-ondas-panasonic-st27l-21l-antiaderente-espelhado-1508592838.html?idlojista=34791"
+      },
+      {
+        "impressionLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotVisualization/https%3a%2f%2fvia.ms.tagdelivery.com%2fimpression%3fid%3d24ea737b-89b9-4619-a122-534250b9740d%26x%3dx1W8OyUSgV4LqD5zlsPzW1IMApRuzEMC7ibxyVcd9MR94Oo19OkW36thyS4qXU4Spivz1GGIp6w9pSArNZnAC67Y60Y5yBkaSWum7zg25872Pw3qHN8L9Xl_flxJEQVjWLNUWbxim07NuTmXqrbvPiOH_quwrMm4itMkAbLqpggFJTLe-2OZfOMAeGoBmiiY9MMJNxW2muPpqUz90N_Dz_dh9akGeeY94Fz9K-LjK7ybFFUeu2DcRTOvV0c1IHUIcAZp238ArySuB9HpIF9e6qcpHiqpzFkramr_fcs6tTLzKYR21gfGqh-B5dWMBoAn377MkE2tk-LWduqnfOOLWgOATm5RpgRHqPTtiX5hmOoXQryFUNGEUBG1VwWXcPZ3ajNUzpQKaqs8dNd9aNrnOtAWIEAJYhpIeO6zj145nwTdRFvoiphCvwDOMK0Du5tpSMVCfsONVJdsEw-kYW11r-HHFm2P8wITst-rT86bsqRy__OZCbC5QZm73CSF1NAG3UC1hpAusWFYLewAGDUWIzXIN6AMcbtHNVe68GLtEPhMg5tw8l0CEDnzISATx11ZB_TCZG-f8qrIHMYkXZ2J6w%253D%253D/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%2255058055%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d",
+        "clickLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotClick/https%3a%2f%2fvia.ms.tagdelivery.com%2fclick%3fid%3d24ea737b-89b9-4619-a122-534250b9740d%26x%3dx1W8OyUSgV4LqD5zlsPzW1IMApRuzEMC7ibxyVcd9MR94Oo19OkW36thyS4qXU4Spivz1GGIp6w9pSArNZnAC67Y60Y5yBkaSWum7zg25872Pw3qHN8L9Xl_flxJEQVjWLNUWbxim07NuTmXqrbvPiOH_quwrMm4itMkAbLqpggFJTLe-2OZfOMAeGoBmiiY9MMJNxW2muPpqUz90N_Dz_dh9akGeeY94Fz9K-LjK7ybFFUeu2DcRTOvV0c1IHUIcAZp238ArySuB9HpIF9e6qcpHiqpzFkramr_fcs6tTLzKYR21gfGqh-B5dWMBoAn377MkE2tk-LWduqnfOOLWgOATm5RpgRHqPTtiX5hmOoXQryFUNGEUBG1VwWXcPZ3ajNUzpQKaqs8dNd9aNrnOtAWIEAJYhpIeO6zj145nwTdRFvoiphCvwDOMK0Du5tpSMVCfsONVJdsEw-kYW11r-HHFm2P8wITst-rT86bsqRy__OZCbC5QZm73CSF1NAG3UC1hpAusWFYLewAGDUWIzXIN6AMcbtHNVe68GLtEPhMg5tw8l0CEDnzISATx11ZB_TCZG-f8qrIHMYkXZ2J6w%253D%253D%26redirect%3d/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%2255058055%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d/",
+        "installment": "10 x de R$ 949,90",
+        "price": {
+          "value": 9499,
+          "valueFormatted": "R$ 9.499,00",
+          "symbol": "R$"
+        },
+        "sellPrice": {
+          "value": 9499,
+          "valueFormatted": "R$ 9.499,00",
+          "symbol": "R$"
+        },
+        "imageUrlSmall": "https://imgs.extra.com.br/55058055/1g.jpg?imwidth=292",
+        "title": "Smartphone Samsung Galaxy S23 Ultra 5G Preto 256GB, Tela 6.8'', 12GB RAM, Processador Snapdragon 8 Gen 2, Câmera Quádrupla Traseira + Selfie de 12MP",
+        "alt": "COLECAO_PLA",
+        "sku": "55058055",
+        "seller": "ex",
+        "onSale": false,
+        "landingPage": "https://www.extra.com.br/Telefones-Celulares/Smartphones/Android/smartphone-samsung-galaxy-s23-ultra-5g-preto-256gb-tela-6-8-12gb-ram-processador-snapdragon-8-gen-2-camera-quadrupla-traseira-selfie-de-12mp-55058055.html?idlojista=15"
+      },
+      {
+        "impressionLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotVisualization/https%3a%2f%2fvia.ms.tagdelivery.com%2fimpression%3fid%3d606640bf-7273-416f-b0ef-d6b1cb2f3193%26x%3dfW2te-Ihikshm5pbtHQnFbR4yYXLGHG0niyuINGRgkZqb32zcN4O-pltMMQ0WyIXaK2ifydAnF27lBgXOMoCTIDRkqTeyVW_Qi966Igp8moIIVfmcERNe6JKq_my5zOm14aGMcU_T01Ot2ryCdsNDnevz_NioguTUFx4FuCFW8Jh1uTdca_3HRPsMvvQsntJFcU9b8X-_8IGdE5sl_Ah0qXp5TtN-AHRn8UH605KhHEGrNDkZLMm-VnfK9beVFEKukRILbtvo-5u-TWsu4jjNPigSXwkYXBDCT-TPXG0bqFZ8DFlAYmyeQZy-LWAxeZlIRgxB7BJjUX82gl9Lm5S2gbTl4fKN488ei68stIofq2K3OP_D81PSmfax1zbut2EyK29GObjlPc5AW1WLeYZ2Gy9P6o6iN_K5UZcz4IQxS2I6-6JQvItpemaiU13hsI3wameEBK0D5Mra65aMz-eMgAwwHE6-FMw37rtifXKShQ7pWHz19Gq95KHYA25R77lEyWaPWfbeJb5gfAQ_htxCrflPxhe9Un4ZH_M6v4cJF7qp3XnkgIVJzRNrcy765O4LZjbhv3jn3JIRCUafWe2PnsBF2DbISkBU2hbHC-N6ZTz9elK8tLdnD-H6iNhPvsB/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%221524874929%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d",
+        "clickLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotClick/https%3a%2f%2fvia.ms.tagdelivery.com%2fclick%3fid%3d606640bf-7273-416f-b0ef-d6b1cb2f3193%26x%3dfW2te-Ihikshm5pbtHQnFbR4yYXLGHG0niyuINGRgkZqb32zcN4O-pltMMQ0WyIXaK2ifydAnF27lBgXOMoCTIDRkqTeyVW_Qi966Igp8moIIVfmcERNe6JKq_my5zOm14aGMcU_T01Ot2ryCdsNDnevz_NioguTUFx4FuCFW8Jh1uTdca_3HRPsMvvQsntJFcU9b8X-_8IGdE5sl_Ah0qXp5TtN-AHRn8UH605KhHEGrNDkZLMm-VnfK9beVFEKukRILbtvo-5u-TWsu4jjNPigSXwkYXBDCT-TPXG0bqFZ8DFlAYmyeQZy-LWAxeZlIRgxB7BJjUX82gl9Lm5S2gbTl4fKN488ei68stIofq2K3OP_D81PSmfax1zbut2EyK29GObjlPc5AW1WLeYZ2Gy9P6o6iN_K5UZcz4IQxS2I6-6JQvItpemaiU13hsI3wameEBK0D5Mra65aMz-eMgAwwHE6-FMw37rtifXKShQ7pWHz19Gq95KHYA25R77lEyWaPWfbeJb5gfAQ_htxCrflPxhe9Un4ZH_M6v4cJF7qp3XnkgIVJzRNrcy765O4LZjbhv3jn3JIRCUafWe2PnsBF2DbISkBU2hbHC-N6ZTz9elK8tLdnD-H6iNhPvsB%26redirect%3d/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%221524874929%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d/",
+        "installment": "10 x de R$ 499,90",
+        "price": {
+          "value": 4999,
+          "valueFormatted": "R$ 4.999,00",
+          "symbol": "R$"
+        },
+        "sellPrice": {
+          "value": 4999,
+          "valueFormatted": "R$ 4.999,00",
+          "symbol": "R$"
+        },
+        "imageUrlSmall": "https://imgs.extra.com.br/1524874929/1xg.jpg?imwidth=292",
+        "title": "Lava-Louças Preto Panasonic - NP-6M1MBKBRP",
+        "alt": "COLECAO_PLA",
+        "sku": "1524874929",
+        "seller": "ex",
+        "onSale": false,
+        "landingPage": "https://www.extra.com.br/Eletrodomesticos/Lava-Louças/lava-loucas-preto-panasonic-np-6m1mbkbrp-1524874929.html?idlojista=152822"
+      },
+      {
+        "impressionLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotVisualization/https%3a%2f%2fvia.ms.tagdelivery.com%2fimpression%3fid%3d1d399678-67e0-4aee-8de2-0f6a9b807cbb%26x%3d8ZrBqVUcoYI8xrWwtG9GWifEcwNq_864wiN1Pqz9SQIRHet9ZA1jTVlemEJ9En8H0PMFDakghhWD2CObt85f66WW9JjLWD68eWAv5MbdSRnkkXOV1noiYV6TksbTxnBGss3HgJjqWp_8wt1FVmQJzdG6MkUdhwOXUj9ExzxIwS6MUGlK8S54tonuji4128ph-gQkC5-yUgbO--ewmeMaEy6AQWmvjZTcXkKg7fBDmFG7naoHaXSt1fznYZCrC0ubQmAE8c07axyLJUbqqCtxWga8CcLdqpgV89TVRsbIfKu_3e2mJhUqdJJ13Axb_Vv-ag0F3WJ1-wmWimEfd30x6p1lCyRuasuBr2SeVUX69FFZS1SbSG1t0v9_bmC5Sv5eFWR-Uqh0p0I2e7Ib-cV95HZnVIaNH2olnJ8lrWMA_aUiNLh_5fR_J3CL1VZi0XDlOI75b_J_DSDie85vEH5Dybds30rHY5xUk4mIXauckdctgIOf_anewqzusDG817ae7eQBPC4o2VyoIzcCsnNyImplxAZ_WOhIniBhFzCXvQnI5gR0Y0aQ83J4QavdG_CSvpi-gsCGFcDn4sT7B4go-A%253D%253D/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%2255052514%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d",
+        "clickLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotClick/https%3a%2f%2fvia.ms.tagdelivery.com%2fclick%3fid%3d1d399678-67e0-4aee-8de2-0f6a9b807cbb%26x%3d8ZrBqVUcoYI8xrWwtG9GWifEcwNq_864wiN1Pqz9SQIRHet9ZA1jTVlemEJ9En8H0PMFDakghhWD2CObt85f66WW9JjLWD68eWAv5MbdSRnkkXOV1noiYV6TksbTxnBGss3HgJjqWp_8wt1FVmQJzdG6MkUdhwOXUj9ExzxIwS6MUGlK8S54tonuji4128ph-gQkC5-yUgbO--ewmeMaEy6AQWmvjZTcXkKg7fBDmFG7naoHaXSt1fznYZCrC0ubQmAE8c07axyLJUbqqCtxWga8CcLdqpgV89TVRsbIfKu_3e2mJhUqdJJ13Axb_Vv-ag0F3WJ1-wmWimEfd30x6p1lCyRuasuBr2SeVUX69FFZS1SbSG1t0v9_bmC5Sv5eFWR-Uqh0p0I2e7Ib-cV95HZnVIaNH2olnJ8lrWMA_aUiNLh_5fR_J3CL1VZi0XDlOI75b_J_DSDie85vEH5Dybds30rHY5xUk4mIXauckdctgIOf_anewqzusDG817ae7eQBPC4o2VyoIzcCsnNyImplxAZ_WOhIniBhFzCXvQnI5gR0Y0aQ83J4QavdG_CSvpi-gsCGFcDn4sT7B4go-A%253D%253D%26redirect%3d/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%2255052514%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d/",
+        "installment": "10 x de R$ 449,90",
+        "price": {
+          "value": 4499,
+          "valueFormatted": "R$ 4.499,00",
+          "symbol": "R$"
+        },
+        "sellPrice": {
+          "value": 4499,
+          "valueFormatted": "R$ 4.499,00",
+          "symbol": "R$"
+        },
+        "imageUrlSmall": "https://imgs.extra.com.br/55052514/1g.jpg?imwidth=292",
+        "title": "Smart TV 65 LG 4K NanoCell 65NANO75 HDMI 2.0, Nvidia GEFORCE NOW, ThinQAI, Smart Magic, Google, Alexa",
+        "alt": "COLECAO_PLA",
+        "sku": "55052514",
+        "seller": "ex",
+        "onSale": false,
+        "landingPage": "https://www.extra.com.br/tv-video/televisores/TV4K/smart-tv-65-lg-4k-nanocell-65nano75-hdmi-2-0-nvidia-geforce-now-thinqai-smart-magic-google-alexa-55052514.html?idlojista=15"
+      },
+      {
+        "impressionLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotVisualization/https%3a%2f%2fvia.ms.tagdelivery.com%2fimpression%3fid%3d2e53db1a-c243-4345-be1a-0aa50a501c46%26x%3dUGVXtBEtUZmnepMXbhb8VcIkKr9lJsoO31gIy-uiu6BYHK4E22ei3QJ5BqQeCPRz8yJz-T2kHlWc754PkHQhxrEwRjWDg-KFhZU9GWt77zaZI2bQ3WtCoc2Gc0t0vZCOgH55fHxuCAeeQgyYU1VnBOoQBTq035b294ZeJaUO3d4baDBWqsDb0reoUL5yX8JWf016E_l2lAEG089HOD8gTrfQBcRou7gBPQPMagKrT4Mywspyh4OfAN-_TpqG4k322sQHrifiTyM9IAwuVNQ-o1AyCz4r3Z4dIqJiLrb9kJgUh3uCy71ruH-E9cDfhRwtNXgCftG7ZFL3LJMipUlX1Nd8_yWbrnzr8nrHNhnNoPGNuO283fWTd9j18bjC1-wyR_3PThSUIaWuihAVhKm_Mn1iE2mRK6tvB8AsPUXPXLEtP5kbSqhB7RnlanqPQSAPi4E3H_q9caTeQdLRVsBlbqxWOCxfJyqci4FZ6PLHy_tET0Ch9fqA52F6RAQmTvhwDzXAai3XbIjWWREpEqHyZpfDbbEXHj_ftvHaqzQSsJEv0LHGNfhzFzJlCvVAPiUl85CkFlsjL6z1kmuR07KA0zykulMC0mpwGzqpEnvaH7hNIuTSWt7OZ3-10TIxjXRK/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%221535735181%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d",
+        "clickLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotClick/https%3a%2f%2fvia.ms.tagdelivery.com%2fclick%3fid%3d2e53db1a-c243-4345-be1a-0aa50a501c46%26x%3dUGVXtBEtUZmnepMXbhb8VcIkKr9lJsoO31gIy-uiu6BYHK4E22ei3QJ5BqQeCPRz8yJz-T2kHlWc754PkHQhxrEwRjWDg-KFhZU9GWt77zaZI2bQ3WtCoc2Gc0t0vZCOgH55fHxuCAeeQgyYU1VnBOoQBTq035b294ZeJaUO3d4baDBWqsDb0reoUL5yX8JWf016E_l2lAEG089HOD8gTrfQBcRou7gBPQPMagKrT4Mywspyh4OfAN-_TpqG4k322sQHrifiTyM9IAwuVNQ-o1AyCz4r3Z4dIqJiLrb9kJgUh3uCy71ruH-E9cDfhRwtNXgCftG7ZFL3LJMipUlX1Nd8_yWbrnzr8nrHNhnNoPGNuO283fWTd9j18bjC1-wyR_3PThSUIaWuihAVhKm_Mn1iE2mRK6tvB8AsPUXPXLEtP5kbSqhB7RnlanqPQSAPi4E3H_q9caTeQdLRVsBlbqxWOCxfJyqci4FZ6PLHy_tET0Ch9fqA52F6RAQmTvhwDzXAai3XbIjWWREpEqHyZpfDbbEXHj_ftvHaqzQSsJEv0LHGNfhzFzJlCvVAPiUl85CkFlsjL6z1kmuR07KA0zykulMC0mpwGzqpEnvaH7hNIuTSWt7OZ3-10TIxjXRK%26redirect%3d/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%221535735181%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d/",
+        "installment": "9 x de R$ 244,33",
+        "price": {
+          "value": 2199,
+          "valueFormatted": "R$ 2.199,00",
+          "symbol": "R$"
+        },
+        "sellPrice": {
+          "value": 2199,
+          "valueFormatted": "R$ 2.199,00",
+          "symbol": "R$"
+        },
+        "imageUrlSmall": "https://imgs.extra.com.br/1535735181/1xg.jpg?imwidth=292",
+        "title": "Máquina de Lavar 13kg Panasonic - NA-F130B1W",
+        "alt": "COLECAO_PLA",
+        "sku": "1535735181",
+        "seller": "ex",
+        "onSale": false,
+        "landingPage": "https://www.extra.com.br/Eletrodomesticos/maquina-lavar/Acimade10kg/maquina-de-lavar-13kg-panasonic-na-f130b1w-1535735194.html?idlojista=152822"
+      },
+      {
+        "impressionLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotVisualization/https%3a%2f%2fvia.ms.tagdelivery.com%2fimpression%3fid%3dee78904d-dd64-40c0-8fc8-88c7c93596db%26x%3d6w_oIZZpORTNRsBGUyc3BD75sAaM7VVQwHEkGrulDywnK0DQBXAcD1FnIv4yeP7B1zXPKl_g_uIteiNZIA-t8bXPOl38aO-zxhlgmEpS-PUK78LYf7i2XL28rhOuE1ppghvLCkfCiSizWMu9Pa_-ygBqFgzpL1ylJZDT3tbUhNjz5BEfHBSLwyq3aunQWz6A1sdmitcGjNjNy2yxSzDPrgC5JAymiks25Yt2YE0ggPmzkJ7yYRB5gQj8qemHew2PNvkUmu_levN7ResxPb2L8HeCOJvZtBEmYtfTX7IIb9YdO1DMzszMNCaT2pdZvHBsUSoBKMf5K-QBv9zEJmm4wAfT9-GC1xl1sQp9ee0EJuzuWlacAssD3_5FPUd8bp73Waz6-XEipn6DP8jn_aHO9wvoYT6Pr1hQfbUOmVplQnj7rhGzIsA11eQLTmuHIo-6swGMScE3HlChxk9et-O4jxJwNK84dP3fNxjila3vTDMuf1wVnXIrS0xlpQVMwWjfb0-7Y2Ymlu5NIAvlcOEGuHrDOIPNomlDSur3-hTH443H1zyXiLHsYAHNOOcWHRMpHMg5f7scjT5u3pw3IN88UA%253D%253D/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%2255051827%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d",
+        "clickLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotClick/https%3a%2f%2fvia.ms.tagdelivery.com%2fclick%3fid%3dee78904d-dd64-40c0-8fc8-88c7c93596db%26x%3d6w_oIZZpORTNRsBGUyc3BD75sAaM7VVQwHEkGrulDywnK0DQBXAcD1FnIv4yeP7B1zXPKl_g_uIteiNZIA-t8bXPOl38aO-zxhlgmEpS-PUK78LYf7i2XL28rhOuE1ppghvLCkfCiSizWMu9Pa_-ygBqFgzpL1ylJZDT3tbUhNjz5BEfHBSLwyq3aunQWz6A1sdmitcGjNjNy2yxSzDPrgC5JAymiks25Yt2YE0ggPmzkJ7yYRB5gQj8qemHew2PNvkUmu_levN7ResxPb2L8HeCOJvZtBEmYtfTX7IIb9YdO1DMzszMNCaT2pdZvHBsUSoBKMf5K-QBv9zEJmm4wAfT9-GC1xl1sQp9ee0EJuzuWlacAssD3_5FPUd8bp73Waz6-XEipn6DP8jn_aHO9wvoYT6Pr1hQfbUOmVplQnj7rhGzIsA11eQLTmuHIo-6swGMScE3HlChxk9et-O4jxJwNK84dP3fNxjila3vTDMuf1wVnXIrS0xlpQVMwWjfb0-7Y2Ymlu5NIAvlcOEGuHrDOIPNomlDSur3-hTH443H1zyXiLHsYAHNOOcWHRMpHMg5f7scjT5u3pw3IN88UA%253D%253D%26redirect%3d/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%2255051827%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d/",
+        "installment": "10 x de R$ 349,90",
+        "price": {
+          "value": 4699,
+          "valueFormatted": "R$ 4.699,00",
+          "symbol": "R$"
+        },
+        "sellPrice": {
+          "value": 3499,
+          "valueFormatted": "R$ 3.499,00",
+          "symbol": "R$"
+        },
+        "imageUrlSmall": "https://imgs.extra.com.br/55051827/1g.jpg?imwidth=292",
+        "title": "Smart TV 55 LG 4K NanoCell 55NANO80 HDMI 2.0, Nvidia GEFORCE NOW, ThinQ AI, Smart Magic, Google, Alexa",
+        "alt": "COLECAO_PLA",
+        "sku": "55051827",
+        "seller": "ex",
+        "onSale": false,
+        "landingPage": "https://www.extra.com.br/tv-video/televisores/TV4K/smart-tv-55-lg-4k-nanocell-55nano80-hdmi-2-0-nvidia-geforce-now-thinq-ai-smart-magic-google-alexa-55051827.html?idlojista=15"
+      },
+      {
+        "impressionLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotVisualization/https%3a%2f%2fvia.ms.tagdelivery.com%2fimpression%3fid%3dd423853a-46de-434c-9efc-17dd996bfca2%26x%3dk-xiC2jSJxIia6AzJIDoYeMA2JbiflNYjBBPtLAtoSqY54i-M6I2WeBJzbKE9C2swoWTHkhYORvizPY85j1MvYwDBnLw6IgrG1mUtW-v7emL0f_ny-P9i-GSjphWEmWRojyQ2O4e64iNBXaMXF0afikI7tT0JCoVHb4pwMW9akocDB4avxtgIkp15w0Ut00kOd4fYdXJ58peLJCqfdeuLWbS-A8bnky3e-MyIBVYQt49tCLmZejdnQugxi880tEVJHHe4uHPyvATm16gANIc8QDtcFpk4O5hdwjGOE8u4UJ275wE13u34VTTEbb7xkNB35SvG1alk212wj4vWeOG9E5bBAxj5lbjawqFeo1V9JkDO_Gfe5FJ7DuWZZvSo5BQRqap8vTQsKLIsyIan7wTSDP-N17VyhW6hBq7V9qqY4aiwPG-FT1ApMI5WDUFTKkbn9sCF8kAuWiyuuB48U4HXeft57gBJ2P8rWsERCBYURudw2k_6L1tNwggIE2xjEetM-r0p-057ojomqQnf3EFkytukyhIgly7nVAsH5eujnO628GY-XmhXwpTEnezTgsCq942FYbYRwbolMbNFtsYhdS3qnHhM2rWSxAj22MNYzBrWiCxUl3oaA0HI2B-d7C0/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%221513141421%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d",
+        "clickLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotClick/https%3a%2f%2fvia.ms.tagdelivery.com%2fclick%3fid%3dd423853a-46de-434c-9efc-17dd996bfca2%26x%3dk-xiC2jSJxIia6AzJIDoYeMA2JbiflNYjBBPtLAtoSqY54i-M6I2WeBJzbKE9C2swoWTHkhYORvizPY85j1MvYwDBnLw6IgrG1mUtW-v7emL0f_ny-P9i-GSjphWEmWRojyQ2O4e64iNBXaMXF0afikI7tT0JCoVHb4pwMW9akocDB4avxtgIkp15w0Ut00kOd4fYdXJ58peLJCqfdeuLWbS-A8bnky3e-MyIBVYQt49tCLmZejdnQugxi880tEVJHHe4uHPyvATm16gANIc8QDtcFpk4O5hdwjGOE8u4UJ275wE13u34VTTEbb7xkNB35SvG1alk212wj4vWeOG9E5bBAxj5lbjawqFeo1V9JkDO_Gfe5FJ7DuWZZvSo5BQRqap8vTQsKLIsyIan7wTSDP-N17VyhW6hBq7V9qqY4aiwPG-FT1ApMI5WDUFTKkbn9sCF8kAuWiyuuB48U4HXeft57gBJ2P8rWsERCBYURudw2k_6L1tNwggIE2xjEetM-r0p-057ojomqQnf3EFkytukyhIgly7nVAsH5eujnO628GY-XmhXwpTEnezTgsCq942FYbYRwbolMbNFtsYhdS3qnHhM2rWSxAj22MNYzBrWiCxUl3oaA0HI2B-d7C0%26redirect%3d/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%221513141421%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d/",
+        "installment": "3 x de R$ 233,00",
+        "price": {
+          "value": 699,
+          "valueFormatted": "R$ 699,00",
+          "symbol": "R$"
+        },
+        "sellPrice": {
+          "value": 699,
+          "valueFormatted": "R$ 699,00",
+          "symbol": "R$"
+        },
+        "imageUrlSmall": "https://imgs.extra.com.br/1513141421/1xg.jpg?imwidth=292",
+        "title": "Microondas Panasonic ST65L 34L",
+        "alt": "COLECAO_PLA",
+        "sku": "1513141421",
+        "seller": "ex",
+        "onSale": false,
+        "landingPage": "https://www.extra.com.br/Eletrodomesticos/Micro-ondas/microondas-panasonic-st65l-34l-1513141421.html?idlojista=152822"
+      },
+      {
+        "impressionLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotVisualization/https%3a%2f%2fvia.ms.tagdelivery.com%2fimpression%3fid%3da9ade618-2720-45e7-b95e-fa897fcbcd89%26x%3duJgNSxJMjHdnJFloytV5G5T1zpTHPSHgJbfHOlnsJNeM3nNPu4kILuFCQDwtTWRbDw5-ImZmXJDCI5XDaxqPQTxbPpoBs-VZT3PyfnB7xWqpIj_w80KyFKr5lSVviLYEYZ-UVj75JT3Sh2FfCxeA0kJs1dHdsGUwEoKLPfcEj9EjpxQ-dLKzNQlpbsgfXXKpvhcd-XOfP33YBFMwPtqZEd6Jsmp6s_cl8mJgvxr0x_fDhB9kMUnaKo7IdyER5X88PGv96NJv-KZu03TtFcSwxp08DBhTKpIiBSj4l5hxtSTiCK4BXbFGUKDYT_HT56ys52Jq-ktsPpfDTibxf0W5lcWTr5v2kQx0SnrT9e9svBWT4_E1e9voQ7GDXYpWhZWSAgwCUBGcQ0_IN3xPtjiBjRIaHVCLSwZsAqmv-SLkf8KDLkmth1-w3y_zlleEb6hEZEbnmM1R3dOZxrqnFRkP0iCZDGUFg_zWAaez7DuMqh9ra4WiQkxtnlenbUZWdkfzx6FbmotKGWIic7TEpZe28Ur8GW8Nx239c7D_LZiopuCGRj3UlSZ5Pzmfjt7U-O8pCSrkorXP0rWsESa5WkWtvBQFqEsnbApRdJgtl4gQidgPHKj6LB16_pLKZ_lbiQDq/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%221505491748%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d",
+        "clickLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotClick/https%3a%2f%2fvia.ms.tagdelivery.com%2fclick%3fid%3da9ade618-2720-45e7-b95e-fa897fcbcd89%26x%3duJgNSxJMjHdnJFloytV5G5T1zpTHPSHgJbfHOlnsJNeM3nNPu4kILuFCQDwtTWRbDw5-ImZmXJDCI5XDaxqPQTxbPpoBs-VZT3PyfnB7xWqpIj_w80KyFKr5lSVviLYEYZ-UVj75JT3Sh2FfCxeA0kJs1dHdsGUwEoKLPfcEj9EjpxQ-dLKzNQlpbsgfXXKpvhcd-XOfP33YBFMwPtqZEd6Jsmp6s_cl8mJgvxr0x_fDhB9kMUnaKo7IdyER5X88PGv96NJv-KZu03TtFcSwxp08DBhTKpIiBSj4l5hxtSTiCK4BXbFGUKDYT_HT56ys52Jq-ktsPpfDTibxf0W5lcWTr5v2kQx0SnrT9e9svBWT4_E1e9voQ7GDXYpWhZWSAgwCUBGcQ0_IN3xPtjiBjRIaHVCLSwZsAqmv-SLkf8KDLkmth1-w3y_zlleEb6hEZEbnmM1R3dOZxrqnFRkP0iCZDGUFg_zWAaez7DuMqh9ra4WiQkxtnlenbUZWdkfzx6FbmotKGWIic7TEpZe28Ur8GW8Nx239c7D_LZiopuCGRj3UlSZ5Pzmfjt7U-O8pCSrkorXP0rWsESa5WkWtvBQFqEsnbApRdJgtl4gQidgPHKj6LB16_pLKZ_lbiQDq%26redirect%3d/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%221505491748%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d/",
+        "installment": "8 x de R$ 249,88",
+        "price": {
+          "value": 1999,
+          "valueFormatted": "R$ 1.999,00",
+          "symbol": "R$"
+        },
+        "sellPrice": {
+          "value": 1999,
+          "valueFormatted": "R$ 1.999,00",
+          "symbol": "R$"
+        },
+        "imageUrlSmall": "https://imgs.extra.com.br/1505491748/1xg.jpg?imwidth=292",
+        "title": "Lavadora de Roupas Panasonic 12Kg Lavagem Ciclone NA-F120B1 Branca 110V",
+        "alt": "COLECAO_PLA",
+        "sku": "1505491748",
+        "seller": "ex",
+        "onSale": false,
+        "landingPage": "https://www.extra.com.br/Eletrodomesticos/maquina-lavar/Acimade10kg/lavadora-de-roupas-panasonic-12kg-lavagem-ciclone-na-f120b1-branca-110v-1505491748.html?idlojista=152822"
+      },
+      {
+        "impressionLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotVisualization/https%3a%2f%2fvia.ms.tagdelivery.com%2fimpression%3fid%3d64392a0d-49f3-4e55-a4d5-c2519050ebbd%26x%3dAlGMk6giTqX4Vv7r1gvGbPF9JMoWVYOsW-TU83lDoCw4DMQwibr579hNft5gBRvWGP1orA9_qO6YT_8tA7NjgNEvWo1-RVFK42UET3P8aRoQErh3Cd9SStkImKWHNspOci5Tc9DjbZctMBzutCAqZBFv3qf9crb2QDZO35Pv3WMeHdvM_-2cr_YkWqDq-ufRDL4uKAR4fLc4D4n1xYLZDZiDPyABuOJpj9w6UCSva3vMDHtCSQ3Ars9Q6JSpgPQ76fWOEMve77HOEQ9d5jJw8lkFMm7X7W12U7MpI6u51izBXS6DzYJS1YvILbo5MTOHgS68vyHivQqdi4ALgBdPeip-4NXaoWB5875WLDn9GKwB4Q01zg47OlQl00u3wbgBI_C2ziktIXaSgvswJVKz-AnrvXYHHcUuYWvye67C8NsEtqptiiJmgSzWY3Ldv2rVoMZoDKvkQZc9-HjZSC5YqlEJC5XzLqP3UiqHXvlSdRB_Al7bav-7bzPIeurEcbUkESFfaaCXJucew5JkmuiK4uxcZDwhfCVO7iRp6Tu1p-iwzSey-rTgwgRyph5Zk572js6onIZa5MXzl3UqafdLQw%253D%253D/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%2255054800%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d",
+        "clickLink": "https://via-ads-api.viavarejo.com.br/api/slots/saveSlotClick/https%3a%2f%2fvia.ms.tagdelivery.com%2fclick%3fid%3d64392a0d-49f3-4e55-a4d5-c2519050ebbd%26x%3dAlGMk6giTqX4Vv7r1gvGbPF9JMoWVYOsW-TU83lDoCw4DMQwibr579hNft5gBRvWGP1orA9_qO6YT_8tA7NjgNEvWo1-RVFK42UET3P8aRoQErh3Cd9SStkImKWHNspOci5Tc9DjbZctMBzutCAqZBFv3qf9crb2QDZO35Pv3WMeHdvM_-2cr_YkWqDq-ufRDL4uKAR4fLc4D4n1xYLZDZiDPyABuOJpj9w6UCSva3vMDHtCSQ3Ars9Q6JSpgPQ76fWOEMve77HOEQ9d5jJw8lkFMm7X7W12U7MpI6u51izBXS6DzYJS1YvILbo5MTOHgS68vyHivQqdi4ALgBdPeip-4NXaoWB5875WLDn9GKwB4Q01zg47OlQl00u3wbgBI_C2ziktIXaSgvswJVKz-AnrvXYHHcUuYWvye67C8NsEtqptiiJmgSzWY3Ldv2rVoMZoDKvkQZc9-HjZSC5YqlEJC5XzLqP3UiqHXvlSdRB_Al7bav-7bzPIeurEcbUkESFfaaCXJucew5JkmuiK4uxcZDwhfCVO7iRp6Tu1p-iwzSey-rTgwgRyph5Zk572js6onIZa5MXzl3UqafdLQw%253D%253D%26redirect%3d/PromoteIq/%7b%22CampainId%22%3anull%2c%22Sku%22%3a%2255054800%22%2c%22DeviceType%22%3a1%2c%22Brand%22%3a%22ex%22%2c%22SessionId%22%3a%22b8761bce-f681-4ae0-8bdf-3102cbc1b867%22%2c%22UserId%22%3a%22%22%2c%22ConfigurationName%22%3a%22COLECAO_PLA%22%2c%22SlotIdVia%22%3a%2217A%22%2c%22SlotIdParner%22%3a%22161006101%22%2c%22SlotRequestId%22%3a%22af9000ae-3890-442a-9fef-2d7acb511747%22%2c%22PartnerRequestId%22%3a%22ab8f5b1c-9c04-45f6-89fa-00848890f375%22%2c%22TriggerTime%22%3a%220001-01-01T00%3a00%3a00%22%7d/",
+        "installment": "4 x de R$ 55,00",
+        "price": {
+          "value": 219.99,
+          "valueFormatted": "R$ 219,99",
+          "symbol": "R$"
+        },
+        "sellPrice": {
+          "value": 219.99,
+          "valueFormatted": "R$ 219,99",
+          "symbol": "R$"
+        },
+        "imageUrlSmall": "https://imgs.extra.com.br/55054800/1g.jpg?imwidth=292",
+        "title": "Secador de Cabelos Mondial by Juliette SCP-Ju-02 Motor AC, com Titânio, Tourmaline e Nano Silver 2000W - Verde Oliva",
+        "alt": "COLECAO_PLA",
+        "sku": "55054800",
+        "seller": "ex",
+        "onSale": false,
+        "landingPage": "https://www.extra.com.br/beleza-saude/Secadores-Modeladores-Eletricos/secadoresdecabelo/secador-de-cabelos-mondial-by-juliette-scp-ju-02-motor-ac-com-titanio-tourmaline-e-nano-silver-2000w-verde-oliva-55054800.html?idlojista=15"
+      }
+    ],
+    "adType": 31
+  },
+  "status": 200,
+  "messages": []
+}
+
+]
