@@ -17,13 +17,13 @@ let stop = document.querySelector('#stop').addEventListener('click', parar);
 
 function começar(){
 
-    timer = setInterval(showTime, 1);
+    timer = setInterval(showTime, 100);
 
 };
 
 function parar(){
     clearInterval(timer);
-}
+};
 
 ////////////////////////////////////////////////////////
 
