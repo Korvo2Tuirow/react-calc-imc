@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;}
+
+
+.screen{
+    display: flex;
+    height: 100vh;
+}
+
+.leftSide{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftSide img{
+    max-width: 900px;
+    height: auto;
+}
+
+.rightSide{
+    width: 500px;
+    background-color: #ddd;
+    padding: 50px;
+}
+
+label{
+    display: block;
+    margin-bottom: 20px;
+
+}
+
+.rightSide input{
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 8px;
+    font-size: 14px;
+    width: 100%;
+    outline: 0;
+}
+.login{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.enviar{
+    cursor: pointer;
+}
+
+.error{
+    font-size: 11px;
+    background-color: #f00;
+    color: #fff;
+    padding: 4px;
+    border-radius: 5px;
+
+}
