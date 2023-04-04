@@ -50,11 +50,11 @@ const createBigMonster = () =>{
     }
 }
 
-let stage = {
+const stage = {
     fighter1: null,
     fighter2: null,
     fighter1El: null,
-    figther2El: null,
+    fighter2El: null,
 
     start(fighter1, fighter2, fighter1El, fighter2El){
         this.fighter1 =fighter1;
@@ -63,6 +63,7 @@ let stage = {
         this.fighter2 = fighter2El;
 
         this.fighter1El.querySelector('.attackButton').addEventListener('click', ()=> this.doAttack(this.fighter1, this.fighter2));
+        
         this.fighter2El.querySelector('.attackButton').addEventListener('click', ()=> this.doAttack(this.fighter2, this.fighter1));
 
         this.update();
