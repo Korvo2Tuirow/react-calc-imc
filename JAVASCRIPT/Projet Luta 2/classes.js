@@ -60,13 +60,13 @@ const stage = {
         this.fighter1 =fighter1;
         this.fighter2 =fighter2;
         this.fighter1El = fighter1El;
-        this.fighter2 = fighter2El;
+        this.fighter2El = fighter2El;
 
         this.fighter1El.querySelector('.attackButton').addEventListener('click', ()=> this.doAttack(this.fighter1, this.fighter2));
         
         this.fighter2El.querySelector('.attackButton').addEventListener('click', ()=> this.doAttack(this.fighter2, this.fighter1));
 
-        this.update();
+       
     },
 
 
@@ -84,7 +84,50 @@ const stage = {
 
     doAttack(attacking, attacked){
 
+        if(attacking.life <= 0 || attacked.life <= 0){
+            alert("FIM DE JOGO !!!");
+            return;
+        }
+
+        let attackFactor = (Math.random() * 2).toFixed(2);
+        let defenseFactor = (Math.random() * 2).toFixed(2);
+
+        let actualAttack = attacking.attack * attackFactor;
+        let actualDefense = attacked.defense * defenseFactor;
+
+        if(actualAttack > actualDefense){
+            attacked.life -= actualAttack;
+            attacked.life = attacked.life < 0 ? 0 : attacked.life;
+            log.addMessage(`${attacking.name} causou ${actualAttack.toFixed(2)} de dano.`)
+        }else{
+            log.addMessage(`${attacked.name} conseguiu defender.`)
+        }
+
+        
+        this.update();
     }
 
+
+}
+
+let log ={
+
+    list: [],     
+
+    addMessage(msg){
+        this.list.push(msg);
+        this.render();
+    },
+
+    render(){
+
+        let logEl = document.querySelector('.log');
+        logEl.innerHTML = '';
+        
+        for(let i in this.list){
+        logEl.innerHTML += `<li>${this.list[i]}</li>`
+        }  
+    
+    }
 
 }

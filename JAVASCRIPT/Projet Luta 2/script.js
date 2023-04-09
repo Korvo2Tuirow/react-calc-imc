@@ -7,3 +7,5 @@ const monster = createLittleMonster();
     document.querySelector('#char'),
     document.querySelector('#monster')
 );
+
+stage.update();
