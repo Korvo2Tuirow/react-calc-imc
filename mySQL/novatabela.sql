@@ -1,0 +1,16 @@
+CREATE TABLE IF NOT EXISTS cursos (
+nome VARCHAR(30) NOT NULL UNIQUE,
+descricao TEXT,
+carga INT UNSIGNED,
+totaulas INT UNSIGNED,
+ano YEAR DEFAULT '2016'
+) DEFAULT CHARSET=UTF8;
+
+ALTER TABLE cursos
+ADD idcurso INT FIRST;
+
+ALTER TABLE cursos
+ADD PRIMARY KEY (idcurso);
+
+
+DESC cursos;
