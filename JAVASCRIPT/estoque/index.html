@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    
     <title>Estoque</title>
   </head>
   <body>
@@ -31,7 +32,7 @@
           id="inputValor"
         />
         <div class="buttons">
-          <button id="enviar">Enviar</button>
+          <button id="enviar" onclick="produto.enviarDesc()">Enviar</button>
           <button id="buscar">Buscar</button>
           <button id="limpar">Limpar</button>
         </div>
@@ -69,5 +70,7 @@
     <section id="estoque"></section>
 
     <script type="module" src="script.js"></script>
+
+    <script src="script2.js" defer></script>
   </body>
 </html>

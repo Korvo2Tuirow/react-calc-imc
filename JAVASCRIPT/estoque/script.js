@@ -1,6 +1,7 @@
-import { Produto } from "./poo.js";
 
 document.querySelector("#enviar").addEventListener("click", enviarDesc);
+
+
 
 function enviarDesc() {
 
@@ -24,9 +25,7 @@ function enviarDesc() {
 
     document.querySelector(".tabela").style.display = "flex";
 
-    let p1 = new Produto(descValue, quantValue, valorValue);
-        console.log(p1);
-        
+   
     };
 
 };
@@ -39,5 +38,6 @@ function limpar(){
     let descValue = document.querySelector("#inputDesc").value = "";
     let quantValue = document.querySelector("#inputQuant").value = "";
     let valorValue = document.querySelector("#inputValor").value = "";
+    document.querySelector(".tabela").style.display = "none";
 
 };
