@@ -32,3 +32,5 @@ function configurar (propiedade:{ width: number, height: number} | 'auto'){
 configurar({width:100 , height: 200});
 configurar('auto');
 // X configurar ('automatic')
+
+
