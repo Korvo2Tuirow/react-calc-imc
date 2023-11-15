@@ -1,5 +1,8 @@
 import {GeoForm} from '@/components/Geo';
-import {Person} from '@/components/Person' 
+import {Person} from '@/components/Person'; 
+import {Card} from '@/components/Card';
+import {Circle} from '@/components/Circle';
+import {Cond} from '@/components/Cond';
 
 
 const Page = () =>{
@@ -7,19 +10,51 @@ return(
   <>
     
     
-    <Person
-      name="JEff Bezos"
-      url = "https://www.infomoney.com.br/wp-content/uploads/2019/06/jeff-bezos-1.jpg?fit=900%2C600&quality=50&strip=all"
-      roles = {["CEO AMAZON", "CEO Blue Origin"]}    
-    />
+      <Person
+        name="JEff Bezos"
+        url = "https://www.infomoney.com.br/wp-content/uploads/2019/06/jeff-bezos-1.jpg?fit=900%2C600&quality=50&strip=all"
+        roles = {["CEO AMAZON", "CEO Blue Origin"]}    
+      />
 
-    <Person
-      name="Fulano"
+      <Person
+        name="  "
       
-      roles = {["CEO Krill", "CEO Jam"]}    
-    />
+        roles = {["CEO Krill", "CEO Jam"]}    
+      />
 
-    </>
+      <Card>
+        <>
+          <h1 className="text-3xl font-bold italic text-center">Outro TESTE qualquer</h1>
+          <p className='text-right text-sm'>Testando children ReactNode</p>
+          <Circle/>
+        </>
+              
+      </Card>
+
+      
+        <Cond frase="TEXTO do AUTOR"
+              //autor='Korvo'
+        
+        />
+      
+      
+      
+      
+        
+    
+      
+
+
+      
+      
+      
+      
+      
+
+
+
+  </>
+
 )
 };
 
