@@ -3,10 +3,14 @@ import {Person} from '@/components/Person';
 import {Card} from '@/components/Card';
 import {Circle} from '@/components/Circle';
 import {Cond} from '@/components/Cond';
+import { peopleList } from '@/data/peopleList';
 
 
 const Page = () =>{
-return(
+
+  
+
+  return(
   <>
     
     
@@ -30,26 +34,17 @@ return(
         </>
               
       </Card>
-
-      
+     
         <Cond frase="TEXTO do AUTOR"
-              //autor='Korvo'
-        
-        />
-      
-      
-      
-      
-        
+            //autor='Korvo'
     
-      
-
-
-      
-      
-      
-      
-      
+        />    
+        
+       
+      <ul>
+      {peopleList.map(person =>
+        <li key={person.id}>{person.nome} - {person.profissao}</li>)}
+      </ul>
 
 
 
