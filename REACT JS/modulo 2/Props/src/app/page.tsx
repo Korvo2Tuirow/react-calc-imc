@@ -8,7 +8,9 @@ import { peopleList } from '@/data/peopleList';
 
 const Page = () =>{
 
-  
+  //filtrar a lista
+  const motoca = peopleList.filter(person => person.profissao == "Motoboy");
+
 
   return(
   <>
@@ -45,6 +47,18 @@ const Page = () =>{
       {peopleList.map(person =>
         <li key={person.id}>{person.nome} - {person.profissao}</li>)}
       </ul>
+
+        <hr className='mb-5' />
+
+        {motoca.length > 0 &&
+          <>
+           <ul>
+            {motoca.map(person => 
+              <li className='pb-5' key = {person.id}>{person.nome} - {person.profissao}</li>)}
+           </ul>
+          </>
+        
+        }
 
 
 
