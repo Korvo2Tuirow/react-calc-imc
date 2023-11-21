@@ -4,6 +4,7 @@ import {Card} from '@/components/Card';
 import {Circle} from '@/components/Circle';
 import {Cond} from '@/components/Cond';
 import { peopleList } from '@/data/peopleList';
+import {Horas} from '@/components/Horas';
 
 
 const Page = () =>{
@@ -56,11 +57,13 @@ const Page = () =>{
             {motoca.map(person => 
               <li className='pb-5' key = {person.id}>{person.nome} - {person.profissao}</li>)}
            </ul>
-          </>
-        
+          </>        
         }
-
-
+        
+          
+          <Horas/>
+          
+    
 
   </>
 
