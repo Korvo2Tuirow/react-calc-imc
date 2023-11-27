@@ -5,13 +5,18 @@ import {Circle} from '@/components/Circle';
 import {Cond} from '@/components/Cond';
 import { peopleList } from '@/data/peopleList';
 import {Horas} from '@/components/Horas';
+import {Estrelas} from '@/components/Estrelas';
+import {Notas} from '@/components/Notas';
+import { studentsData } from '@/data/students';
+import { Click } from '@/components/Click';
+
 
 
 const Page = () =>{
 
   //filtrar a lista
   const motoca = peopleList.filter(person => person.profissao == "Motoboy");
-
+  
 
   return(
   <>
@@ -63,7 +68,21 @@ const Page = () =>{
           
           <Horas/>
           
-    
+     
+        <div className='mb-20'>
+          <Estrelas nota = {3}/>  
+        </div>   
+        
+        
+        <div className='container mx-auto'>
+        <Notas students = {studentsData}
+          
+        />
+        </div>
+
+      
+      <Click/>
+
 
   </>
 

@@ -1,8 +1,10 @@
 export const Horas = () => {
-    const hours = new Intl.DateTimeFormat('pt-BR', {
+   
+     const hours = new Intl.DateTimeFormat('pt-BR', {
         timeStyle: 'short',
         hour12: false
     }).format();
+
 
 
 const h = new Date().getHours();
