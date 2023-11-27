@@ -1,3 +1,5 @@
+"use client"
+
 import {GeoForm} from '@/components/Geo';
 import {Person} from '@/components/Person'; 
 import {Card} from '@/components/Card';
@@ -9,6 +11,8 @@ import {Estrelas} from '@/components/Estrelas';
 import {Notas} from '@/components/Notas';
 import { studentsData } from '@/data/students';
 import { Click } from '@/components/Click';
+import { ButtonCustomizado } from '@/components/ButtonCustomizado';
+
 
 
 
@@ -16,10 +20,15 @@ const Page = () =>{
 
   //filtrar a lista
   const motoca = peopleList.filter(person => person.profissao == "Motoboy");
+
+  
+const clicar1 = () => alert("Clicou 1");
+const clicar2 = () => alert("Clicou 2");
+const clicar3 = () => alert("Clicou 3");
   
 
   return(
-  <>
+  <div>
     
     
       <Person
@@ -83,8 +92,19 @@ const Page = () =>{
       
       <Click/>
 
+      
+      <div className='flex mx-auto justify-center items-center h-48'>
+        
+        <ButtonCustomizado label='Clique 1' onClick={clicar1}/>
+        <ButtonCustomizado label='Clique 2' onClick={clicar2}/>
+        <ButtonCustomizado label='Clique 3' onClick={clicar3}/>        
+        
+      </div>
 
-  </>
+      
+
+
+  </div>
 
 )
 };

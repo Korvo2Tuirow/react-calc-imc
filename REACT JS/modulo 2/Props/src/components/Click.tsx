@@ -1,5 +1,7 @@
 "use client"
 
+
+
 export const Click = () =>{
     
     const click = () => {
