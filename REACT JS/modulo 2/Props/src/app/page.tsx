@@ -13,7 +13,8 @@ import { studentsData } from '@/data/students';
 import { Click } from '@/components/Click';
 import { ButtonCustomizado } from '@/components/ButtonCustomizado';
 import { Contador } from '@/components/State';
-
+import { Input } from '@/components/Input';
+import { StateUpdate } from '@/components/StateUpdater';
 
 
 
@@ -103,6 +104,10 @@ const clicar3 = () => alert("Clicou 3");
       </div>
 
       <Contador/>
+
+      <Input/>
+
+      <StateUpdate/>
 
 
   </div>

@@ -15,9 +15,9 @@ import { useState } from "react";
         }
 
        
-        const [showSecret, setHidden] = useState<boolean>(false);
+        const [show, setShow] = useState<boolean>(false);
         const mostrar =()=>{
-            setHidden(!showSecret)
+            setShow(!show)
         }
 
         return(
@@ -30,10 +30,10 @@ import { useState } from "react";
         </div>
 
         <div className="flex bg-green-600 justify-center items-center flex-col p-40">
-            {showSecret &&
+            {show &&
 
-        <div className=" rotate-in-center w-40 h-40 bg-cyan-400 text-black  ">Area Secreta</div>}
-            <button onClick={mostrar}>{showSecret ? "Ocultar" : "Mostrar"}</button>
+        <div className=" rotate-in-center w-40 h-40 bg-cyan-400 text-black flex justify-center items-center m-10 ">Area Secreta</div>}
+            <button onClick={mostrar} className="p-3 rounded-lg bg-sky-800 text-white">{show ? "Ocultar" : "Mostrar"}</button>
 
 
 
