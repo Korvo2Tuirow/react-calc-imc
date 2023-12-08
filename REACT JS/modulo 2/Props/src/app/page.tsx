@@ -15,6 +15,8 @@ import { ButtonCustomizado } from '@/components/ButtonCustomizado';
 import { Contador } from '@/components/State';
 import { Input } from '@/components/Input';
 import { StateUpdate } from '@/components/StateUpdater';
+import { Objetos } from '@/components/Objetos';
+import { Arrays } from '@/components/Arrays';
 
 
 
@@ -108,6 +110,10 @@ const clicar3 = () => alert("Clicou 3");
       <Input/>
 
       <StateUpdate/>
+
+      <Objetos/>
+
+      <Arrays/>
 
 
   </div>

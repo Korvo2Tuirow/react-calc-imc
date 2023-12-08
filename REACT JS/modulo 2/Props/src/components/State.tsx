@@ -23,6 +23,7 @@ import { useState } from "react";
         return(
         <>
         <div className="flex bg-blue-800 justify-center items-center flex-col p-40 mb-10">
+        <h1 className="text-3xl mb-10">useState</h1>
             <p className="text-5xl" >{count}</p>
             <button onClick={contar} className="p-3 border-green-400 border-2 bg-green-900  mt-5 rounded-lg">Somar + 1</button>
             <button onClick={zerar} className="p-3 border-red-600 border-2 bg-red-900  mt-5 rounded-lg">Zerar</button>
