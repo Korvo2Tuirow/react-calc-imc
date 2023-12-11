@@ -23,7 +23,7 @@ export const Arrays = () => {
         
     }
     const del = (index:number) =>{
-     const newList = setList(list.filter((item, key)=>key !== index));
+        setList(list.filter((item, key)=>key !== index));
     }
 
     
