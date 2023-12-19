@@ -11,7 +11,7 @@ export const Arrays = () => {
     const [list, setList] = useState<TodoItem[]>([
 
         { label: "Fazer Algo", checked: false },
-        { label: "Dormir", checked: false }
+        { label: "Dormir", checked: true }
 
     ])
 
@@ -24,6 +24,16 @@ export const Arrays = () => {
     }
     const del = (index:number) =>{
         setList(list.filter((item, key)=>key !== index));
+    }
+
+    const toggleItem = (index:number)=>{
+        let newList = [...list];
+        for (let i in newList){
+            if(index === parseInt(i)){
+                newList[i].checked= !newList[i].checked;
+            }
+        }
+        setList(newList);
     }
 
     
@@ -46,7 +56,11 @@ export const Arrays = () => {
                 <p className="mb-4">{list.length} Itens na lista</p>
                 <ul className="list-disc">
                     {list.map((item, index) =>
-                        <li key={index} className="p-3"> {item.label} - <button onClick={() => del(index)}>[deletar]</button><hr /></li>
+                        <li key={index} className="p-3">
+                             <input type="checkbox" checked={item.checked} className="w-6 h-6 mr-3" onClick={()=>{toggleItem(index)}}/>{item.label} - 
+                             <button onClick={() => del(index)}>[deletar]</button>
+                             <hr />
+                        </li>
                               
                     )}
                     
@@ -56,3 +70,4 @@ export const Arrays = () => {
         </div>
     );
 }
+

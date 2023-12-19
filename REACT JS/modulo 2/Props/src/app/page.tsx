@@ -17,6 +17,8 @@ import { Input } from '@/components/Input';
 import { StateUpdate } from '@/components/StateUpdater';
 import { Objetos } from '@/components/Objetos';
 import { Arrays } from '@/components/Arrays';
+import { TodoList } from '@/components/TodoList';
+import { Desafio01 } from '@/components/Desafio01';
 
 
 
@@ -114,6 +116,10 @@ const clicar3 = () => alert("Clicou 3");
       <Objetos/>
 
       <Arrays/>
+      
+      <TodoList/>
+
+      <Desafio01/>
 
 
   </div>
