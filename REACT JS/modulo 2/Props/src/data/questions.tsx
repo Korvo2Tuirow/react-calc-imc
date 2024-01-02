@@ -13,13 +13,13 @@ export const questions: Question[] = [
 },
 
 {
-    question: 'Qual ingrediente não pode faltar?',
+    question: 'Qual melhor método de cozinhar?',
     options:[
-        'Farinha',
-        'Corante',
-        'Leite Condensado',
-        'Água'
+        'Microondas',
+        'Fogueira',
+        'Fogão',
+        'Lança-chamas'
     ],
-    resposta: 0
+    resposta: 3
 }
 ];

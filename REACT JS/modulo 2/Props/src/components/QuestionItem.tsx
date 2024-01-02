@@ -13,7 +13,12 @@ export const QuestionItem = ({ question, aoResponder, count }: Props) => {
         const checkQuestion = (key: number) => {
             if (selectResposta === null) {
                 setSelectResposta(key);
+                
+                setTimeout(()=>{
                 aoResponder(key);
+                setSelectResposta(null)
+                },1500)
+                
             }
         }
 
