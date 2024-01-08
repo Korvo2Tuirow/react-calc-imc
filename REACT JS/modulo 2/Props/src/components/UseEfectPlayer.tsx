@@ -7,7 +7,7 @@ export const UseEfectPlayer = () => {
 
 
     return (
-        <div className="flex flex-col justify-center items-center bg-gradient-to-r to-orange-500 from-green-500 pt-20">
+        <div className="flex flex-col justify-center items-center bg-gradient-to-b to-violet-700 from-teal-400 pt-20">
             <h1 className="text-4xl font-bold shadow-2xl shadow-slate-950 p-5 rounded-2xl">Player com UseEfect</h1>
             <VideoPlayer
                 src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
