@@ -32,7 +32,7 @@ export const ListReducer = (list: ItemReducer[], action: ListAction) => {
             return [...list,{
                 id : list.length,
                 text: action.payload.text,
-                done: true
+                done: false
             }];
 
         case 'editText':

@@ -15,19 +15,41 @@ export const Reducer = () =>{
             type: 'add',
             payload: {
                 text: addField.trim(),
-                                
+            
             }
         })
         setAddField('')
     }
 
     const handleDoneCheckBox = (id:number) =>{
+       
         dispatch({
             type:'toggleDone',
             payload: {id}
         });
         
     }
+    const edit=(id: number)=>{
+
+        const item = list.find(it => it.id === id)
+        if(!item)return false;
+
+        const newText = window.prompt('Editar Tarefa', item.text);
+        if(!newText || newText.trim() === '')return false;
+
+        dispatch({
+            type :'editText',
+            payload: {id, newText}
+        })
+        }
+
+        const deleteItem = (id: number) =>{
+            if(!window.confirm("Tem certeza  que deseja excluir?")) return false;
+            dispatch({
+                type :'remove',
+                payload: {id}
+            })
+        }
 
   
 
@@ -61,9 +83,13 @@ export const Reducer = () =>{
 
                             <p className="flex flex-1 items-center">{item.text}</p>
 
-                            <button  className="p-4 hover:bg-blue-900 text-center ml-5 bg-blue-950 rounded-md  text-white">Editar</button>
+                            <button 
+                                    onClick={()=>edit(item.id)} 
+                                    className="p-4 hover:bg-blue-900 text-center ml-5 bg-blue-950 rounded-md  text-white">Editar</button>
 
-                            <button  className="p-4 hover:bg-red-950 text-center ml-5 bg-red-900 rounded-md text-white">Excluir</button>
+                            <button 
+                                    onClick={()=>deleteItem(item.id)} 
+                                    className="p-4 hover:bg-red-950 text-center ml-5 bg-red-900 rounded-md text-white">Excluir</button>
                            
                             </li>
                            
