@@ -2,25 +2,25 @@ import { ItemReducer } from "@/types/itemReducer";
 
 type AddAction = {
     type: 'add';
-    payload: {text:string}
+    payload: {text:string;}
 }
 
 type EditNewAction = {
-    type: "editText",
+    type: "editText";
     payload: {
-        id:number,
-        newText: string
+        id:number;
+        newText: string;
     }
 }
 
 type ToggleDoneAction = {
     type: 'toggleDone';
-    payload: {id:number}
+    payload: {id: number;}
 }
 
 type DeleteAction = {
     type: 'remove';
-    payload : {id:number}
+    payload : {id:number;}
 }
 
 type  ListAction = AddAction | EditNewAction | DeleteAction | ToggleDoneAction; 
@@ -32,7 +32,7 @@ export const ListReducer = (list: ItemReducer[], action: ListAction) => {
             return [...list,{
                 id : list.length,
                 text: action.payload.text,
-                done: false
+                done: true
             }];
 
         case 'editText':
@@ -40,15 +40,14 @@ export const ListReducer = (list: ItemReducer[], action: ListAction) => {
                 if(t.id === action.payload.id) {
                     t.text = action.payload.newText;
             }
-            return t
+            return t;
         });
 
         case 'toggleDone':
             return list.map(t => {
-                if(t.id === action.payload.id) {
-                   t.done =  !t.done;
-            }
-            return t
+                if(t.id == action.payload.id)t.done = !t.done;    
+                
+                return t;
         });
 
         case 'remove':
