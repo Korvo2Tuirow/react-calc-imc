@@ -24,6 +24,10 @@ import { UseEfectPlayer } from '@/components/UseEfectPlayer';
 import { useState } from 'react';
 import { Quadrado } from '@/components/Quadrado';
 import { Reducer } from '@/components/Reducer';
+import { Header } from '@/components/Context/Header';
+import { CountContext, CountInitialData } from '@/components/Context/constexts/CountContext';
+import { OnlineUsers } from '@/components/Context/OnlineUsers';
+
 
 
 
@@ -55,8 +59,9 @@ const Page = () => {
     )
   }
 ////////////////////////////////////////////////////////////////////////////////////////
-
-
+// useCntext
+const [onlineCount, setOnlineCount] = useState(30);
+///////////////////////////////////////////////////////////////////////////////////////
   return (
     <div>
 
@@ -153,7 +158,10 @@ const Page = () => {
       <ClearUp />
 
       <Reducer/>
-
+  
+  <CountContext.Provider value={{onlineCount, setOnlineCount}}>
+             <Header/>
+  </CountContext.Provider>
 
 
 
