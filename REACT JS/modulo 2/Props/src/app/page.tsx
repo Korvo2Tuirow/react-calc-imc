@@ -25,8 +25,9 @@ import { useState } from 'react';
 import { Quadrado } from '@/components/Quadrado';
 import { Reducer } from '@/components/Reducer';
 import { Header } from '@/components/Context/Header';
-import { CountContext, CountInitialData } from '@/components/Context/constexts/CountContext';
+import { CountContext, CountInitialData, CountProvider } from '@/components/Context/constexts/CountContext';
 import { OnlineUsers } from '@/components/Context/OnlineUsers';
+import { Context2 } from '@/components/Context2/Context2';
 
 
 
@@ -59,8 +60,7 @@ const Page = () => {
     )
   }
 ////////////////////////////////////////////////////////////////////////////////////////
-// useCntext
-const [onlineCount, setOnlineCount] = useState(30);
+
 ///////////////////////////////////////////////////////////////////////////////////////
   return (
     <div>
@@ -159,10 +159,12 @@ const [onlineCount, setOnlineCount] = useState(30);
 
       <Reducer/>
   
-  <CountContext.Provider value={{onlineCount, setOnlineCount}}>
+  <CountProvider>
              <Header/>
-  </CountContext.Provider>
+  </CountProvider>
 
+
+  <Context2/>
 
 
 
