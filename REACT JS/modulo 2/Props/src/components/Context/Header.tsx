@@ -9,7 +9,7 @@ export const Header = () =>{
     return(
         <header className="h-screen mx-auto justify-center items-center flex flex-col bg-gradient-to-r to-blue-900 from-purple-800 ">
             
-            <h1 className="text-3xl s">Título da Página</h1>
+            <h1 className="text-3xl s">useContext</h1>
             
             <OnlineUsers />
 
