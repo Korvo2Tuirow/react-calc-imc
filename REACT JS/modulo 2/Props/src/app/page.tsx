@@ -28,6 +28,8 @@ import { Header } from '@/components/Context/Header';
 import { CountContext, CountInitialData, CountProvider } from '@/components/Context/constexts/CountContext';
 import { OnlineUsers } from '@/components/Context/OnlineUsers';
 import { Context2 } from '@/components/Context2/Context2';
+import { Logon } from '@/components/exercicioContext/Logon';
+import { LoggedUserProvider } from '@/components/exercicioContext/LoggedUser';
 
 
 
@@ -81,8 +83,8 @@ const Page = () => {
 
       <Card>
         <>
-          <h1 className="text-3xl font-bold italic text-center">Outro TESTE qualquer</h1>
-          <p className='text-right text-sm'>Testando children ReactNode</p>
+          <h1 className="text-3xl font-bold italic text-center ">Outro TESTE qualquer</h1>
+          <p className='text-right text-sm '>Testando children ReactNode</p>
           <Circle />
         </>
 
@@ -165,7 +167,10 @@ const Page = () => {
 
 
   <Context2/>
-
+  
+  <LoggedUserProvider>
+    <Logon/>
+ </LoggedUserProvider>
 
 
 

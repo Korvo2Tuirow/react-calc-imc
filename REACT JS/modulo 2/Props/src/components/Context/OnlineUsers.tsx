@@ -8,7 +8,7 @@ export const OnlineUsers = () =>{
    
     
     const handleBanAll = () =>{
-        countCtx?.setOnlineCount(1010)
+        countCtx?.setOnlineCount(0)
     }
 
     return(
