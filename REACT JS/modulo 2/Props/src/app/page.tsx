@@ -30,6 +30,8 @@ import { OnlineUsers } from '@/components/Context/OnlineUsers';
 import { Context2 } from '@/components/Context2/Context2';
 import { Logon } from '@/components/exercicioContext/Logon';
 import { LoggedUserProvider } from '@/components/exercicioContext/LoggedUser';
+import { PostContext } from '@/components/exercicioContext2/PostPage';
+import { PostProvider } from '@/components/exercicioContext2/ContextsPosts';
 
 
 
@@ -43,7 +45,7 @@ const Page = () => {
   const clicar1 = () => alert("Clicou 1");
   const clicar2 = () => alert("Clicou 2");
   const clicar3 = () => alert("Clicou 3");
-  
+
 
   ////////CLEARUP//////////////////////////////////////////////////////////////////////
   const ClearUp = () => {
@@ -61,9 +63,9 @@ const Page = () => {
       </div>
     )
   }
-////////////////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////////////
 
-///////////////////////////////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////////////////////////////
   return (
     <div>
 
@@ -159,19 +161,22 @@ const Page = () => {
 
       <ClearUp />
 
-      <Reducer/>
-  
-  <CountProvider>
-             <Header/>
-  </CountProvider>
+      <Reducer />
+
+      <CountProvider>
+        <Header />
+      </CountProvider>
 
 
-  <Context2/>
-  
-  <LoggedUserProvider>
-    <Logon/>
- </LoggedUserProvider>
+      <Context2 />
 
+      <LoggedUserProvider>
+        <Logon />
+      </LoggedUserProvider>
+
+      <PostProvider>
+        <PostContext />
+      </PostProvider>
 
 
 
