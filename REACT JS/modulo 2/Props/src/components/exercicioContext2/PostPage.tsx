@@ -19,13 +19,13 @@ export const PostContext = () =>{
 
 
     return(
-        <div className="flex flex-col h-full items-center max-w-screen bg-blue-500">
+        <div className="flex flex-col h-full items-center max-w-screen bg-blue-500 p-3">
             
             <header className="p-5 mt-20  border border-zinc-500 rounded-md flex justify-center items-center mb-10 bg-transparent bg-blue-900">
                 <h1 className="font-extrabold text-3xl">Post Context</h1>
             </header>
 
-            <div className="flex flex-col gap-10 min-w-[600px] border border-teal-900 p-10 text-black bg-sky-700">
+            <div className="flex flex-col gap-10 rounded-md border border-teal-900 p-10 text-black bg-sky-700 w-1/2 min-w-[600px]">
 
                 <input type="text" id="titulo" placeholder="Digite o título" className="p-2"
                        value={tituloInput}
@@ -35,7 +35,7 @@ export const PostContext = () =>{
                           value={textoInput}
                           onChange={e=>setTextoInput(e.target.value)}/>
 
-                <button onClick={adicionar} className="p-5 text-white border border-stone-400 bg-green-700">Adicionar</button>
+                <button onClick={adicionar} className="p-5 text-white border border-stone-400 bg-green-700 rounded-md hover:bg-green-600">Adicionar</button>
 
                   
                           
