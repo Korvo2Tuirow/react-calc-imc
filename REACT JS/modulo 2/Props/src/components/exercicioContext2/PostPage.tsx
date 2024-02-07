@@ -37,6 +37,8 @@ export const PostContext = () =>{
 
                 <button onClick={adicionar} className="p-5 text-white border border-stone-400 bg-green-700">Adicionar</button>
 
+                  
+                          
             </div>
 
             <div>
