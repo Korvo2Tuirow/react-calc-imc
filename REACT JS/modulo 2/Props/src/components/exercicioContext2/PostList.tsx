@@ -5,7 +5,9 @@ export const PostList = () => {
     const postCtx = useContext(ContextPost)
 
     const remove=(id:number)=>{
-        postCtx?.removePost(id)
+        postCtx?.dispatch({
+            type: 'remove', payload:{id}
+        })
     }
 
     return (

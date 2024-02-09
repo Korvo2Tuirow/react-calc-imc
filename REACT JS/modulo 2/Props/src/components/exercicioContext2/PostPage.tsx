@@ -11,7 +11,13 @@ export const PostContext = () =>{
 
     const adicionar=()=>{
         if(tituloInput && textoInput){
-            postCtx?.addPost(tituloInput, textoInput);
+            postCtx?.dispatch({
+                type: "add",
+                payload:{
+                    titulo: tituloInput,
+                    texto: textoInput
+                }
+            });
             SetTituloInput("");
             setTextoInput("");
         }
@@ -21,11 +27,11 @@ export const PostContext = () =>{
     return(
         <div className="flex flex-col h-full items-center max-w-screen bg-blue-500 p-3">
             
-            <header className="p-5 mt-20  border border-zinc-500 rounded-md flex justify-center items-center mb-10 bg-transparent bg-blue-900">
-                <h1 className="font-extrabold text-3xl">Post Context</h1>
+            <header className="p-5 mt-20  border border-zinc-500 rounded-md flex justify-center items-center mb-10 bg-cyan-900 shadow-2xl shadow-black">
+                <h1 className="font-extrabold text-3xl">Post Context com Reducer</h1>
             </header>
 
-            <div className="flex flex-col gap-10 rounded-md border border-teal-900 p-10 text-black bg-sky-700 w-1/2 min-w-[600px]">
+            <div className="flex flex-col gap-10 rounded-md border border-teal-900 p-10 text-black bg-sky-700 w-1/2 ">
 
                 <input type="text" id="titulo" placeholder="Digite o título" className="p-2"
                        value={tituloInput}
