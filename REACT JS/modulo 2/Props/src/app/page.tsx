@@ -32,8 +32,11 @@ import { Logon } from '@/components/exercicioContext/Logon';
 import { LoggedUserProvider } from '@/components/exercicioContext/LoggedUser';
 import { PostContext } from '@/components/exercicioContext2/PostPage';
 import { PostProvider } from '@/components/exercicioContext2/ContextsPosts';
-import {Dark} from '@/components/DarkTheme/Dark';
-import {ThemeProvider} from '@/components/DarkTheme/DarkContext';
+import { Dark } from '@/components/DarkTheme/Dark';
+import { ThemeProvider } from '@/components/DarkTheme/DarkContext';
+import { Chat } from '@/components/Chat/Chat';
+import { UserProvider } from '@/components/Chat/UserContext';
+import { ChatProvider } from '@/components/Chat/ChatContext';
 
 
 
@@ -110,10 +113,10 @@ const Page = () => {
       {motoca.length > 0 &&
         <>
           <div>
-          <ul>
-            {motoca.map(person =>
-              <li className='pb-5' key={person.id}>{person.nome} - {person.profissao}</li>)}
-          </ul>
+            <ul>
+              {motoca.map(person =>
+                <li className='pb-5' key={person.id}>{person.nome} - {person.profissao}</li>)}
+            </ul>
           </div>
         </>
       }
@@ -183,13 +186,18 @@ const Page = () => {
       </PostProvider>
 
       <ThemeProvider>
-      <Dark/>
+        <Dark children={undefined} />
       </ThemeProvider>
 
+      <UserProvider>
+        <ChatProvider>
+          <Chat />
+        </ChatProvider >
+       </UserProvider>
 
-    </div>
+        </div>
 
-  )
+        )
 };
 
-export default Page;
+        export default Page;

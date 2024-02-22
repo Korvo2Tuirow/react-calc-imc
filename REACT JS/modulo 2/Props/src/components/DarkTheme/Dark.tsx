@@ -2,7 +2,7 @@ import { useTheme } from "./DarkContext";
 import { ReactNode } from 'react';
 import { ThemeProvider } from '@/components/DarkTheme/DarkContext';
 
-type Props = {
+export type Props = {
     children: ReactNode;
 }
 
@@ -31,7 +31,7 @@ export const Dark = ({ children }: Props) => {
                         'bg-white text-black border border-black'}`}
                     onClick={changeTheme}>
                     Mudar para
-                    {(themeCtx?.theme === 'dark' ? "Light" : "Dark")}
+                    {(themeCtx?.theme === 'dark' ? " Light" : " Dark")}
                 </button>
             </div>
         </ThemeProvider>
