@@ -1,3 +1,4 @@
+import { ChatInput } from "./ChatInput";
 import { NameInput } from "./NameInput";
 import { userUser } from "./UserContext"
 
@@ -15,6 +16,13 @@ export const Chat = () => {
             <div className="container border border-black min-h-[500px] max-w-[600px] rounded-md backdrop-blur-sm bg-white/10 p-5 overflow-x-auto">
 
            
+            </div>
+            <div className="container max-w-[600px] rounded-md mt-3">
+                <ChatInput name={UserCtx.user}/>
+            </div>
+
+            <div className="container max-w-[600px] rounded-md mt-3">
+                <ChatInput name={'Bot'}/>
             </div>
 
         </div>
