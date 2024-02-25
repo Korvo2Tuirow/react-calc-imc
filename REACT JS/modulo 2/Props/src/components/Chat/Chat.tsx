@@ -1,4 +1,5 @@
 
+import { useChat } from "./ChatContext";
 import { ChatInput } from "./ChatInput";
 import { ChatMessenges } from "./ChatMessenges";
 import { NameInput } from "./NameInput";
@@ -14,6 +15,8 @@ export const Chat = () => {
 
     const resetChat = () => {
         UserCtx.setUser('');
+        if (UserCtx) return null;
+        
    
     }
 

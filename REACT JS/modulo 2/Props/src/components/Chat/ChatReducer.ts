@@ -1,12 +1,14 @@
 import { Message } from "./Message";
 
-type ChatActions={
+type addAction={
     type:'add';
     payload:{
         user:string;
         text:string;
     }
 }
+
+type ChatActions = addAction;
 
 export const chatReducer =(state:Message[], action: ChatActions)=>{
 
