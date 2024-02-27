@@ -1,44 +1,80 @@
 
-import { useState } from "react"
+
+import { useEffect, useState } from "react"
 import { UserType } from "./types/types";
 
 
-export const Requisicao = () =>{
-    
+export const Requisicao = () => {
+
     const [users, setUsers] = useState<UserType[]>([]);
     const [style, setStyle] = useState('');
+    const [loading, setLoading] = useState(true);    
+    
 
-    const carregar =(()=>{
+    
+        
+        const getUsers = async () =>{
+            
+            setLoading(true);
+
+            try{
+                  
+            const res = await fetch('http://jsonplaceholder.typicode.com/users'); 
+            const json = await res.json();
+            setUsers(json);
+            setLoading(false);
+            setStyle("border border-black p-3 rounded-md flex flex-col gap-3");
+
+            }catch(error){
+                setLoading(false)
+                
+                console.log("ERRO NA REQUISIÇÃO!")
+            }
+        
+            setLoading(false)
+        
+        };
+        
+        useEffect(()=>{
+            getUsers();
+        },[]);
+        
+        /*
         fetch('http://jsonplaceholder.typicode.com/users')
-        .then(res=> res.json())
-        .then(json =>{
+            .then(res => res.json())
+            .then(json => {
+                setLoading(true);
+                console.log(json);
+                setUsers(json);
+                setStyle("border border-black p-3 rounded-md flex flex-col gap-3");
 
-            console.log(json);
-            setUsers(json)
-            setStyle("border border-black p-3 rounded-md flex flex-col gap-3")
-            
-        }).catch(()=>{
-           console.log( "ERRO AO CARREGAR DADOS");
-        }).finally(()=>{
-            console.log("Termino da função")
-        });       
-            
-        });
-   
-   
-    return(
-        <div className="flex flex-col justify-center items-center h-screen gap-7"> 
-            <h1 className="text-2xl">Requisição de API via Fetch</h1>         
-           
+            }).catch(() => {
+                console.log("ERRO AO CARREGAR DADOS");
+         
+            }).finally(() => {
+                setLoading(false);
+                console.log("Termino da função")
+            });
+            */
+    //});
 
-            <ul className={style}>
-                {users.map(item=>(
-                    <li key={item.id}>Nome: { item.name} - {item.email}</li> 
-                ) )}
-            </ul>
-           
-            <button onClick={carregar} className=" border border-black bg-green-300 p-3 rounded-md ">Carregar mais usuários</button>
-            
+
+    return (
+        <div className="flex flex-col justify-center items-center h-screen gap-7">
+            <h1 className="text-2xl">Requisição de API via Fetch</h1>
+
+            {loading && "Carregando..."}
+            {!loading && users.length > 0 &&
+                <ul className={style}>
+                    {users.map(item => (
+                        <li key={item.id}>Nome: {item.name} - {item.email}</li>
+                    ))}
+                </ul>
+            }
+
+            {!loading && users.length < 0 && "Não há usuarios para exibir"}
+        
+
         </div>
     )
 }
