@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { UserType } from "./types/types";
+import { json } from "stream/consumers";
 
 
 export const Requisicao = () => {
@@ -29,6 +30,7 @@ export const Requisicao = () => {
                 setLoading(false)
                 
                 console.log("ERRO NA REQUISIÇÃO!")
+                console.log(users)
             }
         
             setLoading(false)
@@ -72,7 +74,8 @@ export const Requisicao = () => {
                 </ul>
             }
 
-            {!loading && users.length < 0 && "Não há usuarios para exibir"}
+            {!loading && users.length <= 0  && 
+                <p> "Não há usuarios para exibir"</p>}
         
 
         </div>
