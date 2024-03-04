@@ -2,14 +2,35 @@
 
 import { useEffect, useState } from "react"
 import { UserType } from "./types/types";
-import { json } from "stream/consumers";
+
 
 
 export const Requisicao = () => {
 
     const [users, setUsers] = useState<UserType[]>([]);
     const [style, setStyle] = useState('');
-    const [loading, setLoading] = useState(true);    
+    const [loading, setLoading] = useState(true);   
+    
+    
+        const addNewPost = async ()=>{
+            const res = await fetch('https://jsonplaceholder.typicode.com/posts',
+            {
+                method: 'POST', 
+                headers:{
+                    'Content-type':'application/json; charset=UTF-8'
+                },
+                body: JSON.stringify({
+                    title:'ReactJs',
+                    body:"Essa é uma publicação feita através do ReactJS",
+                    userId:1
+                })
+            }
+            )
+            
+            const json = await res.json();
+            console.log(json);
+
+        }
     
 
     
@@ -24,7 +45,7 @@ export const Requisicao = () => {
             const json = await res.json();
             setUsers(json);
             setLoading(false);
-            setStyle("border border-black p-3 rounded-md flex flex-col gap-3");
+            setStyle("border border-black p-3 rounded-md flex flex-col gap-3 shadow-md shadow-slate-400");
 
             }catch(error){
                 setLoading(false)
@@ -76,6 +97,9 @@ export const Requisicao = () => {
 
             {!loading && users.length <= 0  && 
                 <p> "Não há usuarios para exibir"</p>}
+
+            <button className="border border-black bg-green-200 p-3 rounded-md shadow-md shadow-slate-700"
+            onClick={addNewPost}>ADD</button>
         
 
         </div>
