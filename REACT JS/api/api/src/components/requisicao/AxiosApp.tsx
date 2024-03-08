@@ -1,6 +1,7 @@
 
 import axios from 'axios';
 import { useState } from 'react';
+import { api } from './types/api';
 
 type Props = {
     id: number,
@@ -34,8 +35,9 @@ export const AxiosApp = () => {
 
     const handlePostAxios = async () => {
         // POST - Adicionar um novo registro no servidor
+        // instancia do api/axios
 
-        const addAxios = await axios.post('https://jsonplaceholder.typicode.com/posts', {
+        const addAxios = await api.post('/posts', {
             title: "Novo Album",
             userId: 10
         });
