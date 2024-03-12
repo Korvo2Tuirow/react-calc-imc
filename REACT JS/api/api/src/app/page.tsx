@@ -1,6 +1,7 @@
 "use client"
 import { AxiosApp } from '@/components/requisicao/AxiosApp';
 import {Requisicao} from '@/components/requisicao/Requisicao';
+import { UploadAxios } from '@/components/upload/UploadAxios';
 import { Upload } from '@/components/upload/upload';
 import React from 'react';
 
@@ -11,6 +12,7 @@ const Page = ()=>{
         <a className='p-2 bg-green-300 rounded-md hover:scale-110' href="#req">FETCH</a>
         <a className='p-2 bg-green-300 rounded-md hover:scale-110' href="#upload">UPLOAD</a>
         <a className='p-2 bg-green-300 rounded-md hover:scale-110' href="#axios">AXIOS</a>
+        <a className='p-2 bg-green-300 rounded-md hover:scale-110' href="#uploadAxios">UPLOAD AXIOS</a>
       </div>
 
       <div id='req'><Requisicao/></div>
@@ -18,6 +20,8 @@ const Page = ()=>{
       <div id='upload'><Upload/></div>
 
       <div id='axios'><AxiosApp/></div>
+
+      <div id='uploadAxios'><UploadAxios/></div>
     </>  
       )
 }
