@@ -2,6 +2,7 @@
 import axios from 'axios';
 import { useState } from 'react';
 import { api } from './types/api';
+import { stringify } from 'querystring';
 
 type Props = {
     id: number,
@@ -47,7 +48,7 @@ export const AxiosApp = () => {
             title: "Novo Album",
             userId: 10
         });
-        alert(addAxios.data);
+        alert(stringify(addAxios.data));
         console.log(addAxios.data);
     }
 
