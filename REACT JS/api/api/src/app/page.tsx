@@ -1,4 +1,5 @@
 "use client"
+
 import { AxiosApp } from '@/components/requisicao/AxiosApp';
 import {Requisicao} from '@/components/requisicao/Requisicao';
 import { UploadAxios } from '@/components/upload/UploadAxios';
@@ -22,6 +23,8 @@ const Page = ()=>{
       <div id='axios'><AxiosApp/></div>
 
       <div id='uploadAxios'><UploadAxios/></div>
+
+      
     </>  
       )
 }
