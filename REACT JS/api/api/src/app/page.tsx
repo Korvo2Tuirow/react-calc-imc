@@ -9,7 +9,7 @@ import React from 'react';
 const Page = ()=>{
   return(
     <>
-      <div  className="bg-gray-600 w-screen flex justify-center items-center p-4 fixed  gap-10">
+      <div  className="bg-gray-600 w-screen flex justify-center items-center p-4 fixed z-10 gap-10">
         <a className='text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2' href="#req">FETCH</a>
         <a className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2" href="#upload">UPLOAD</a>
         <a className="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2" href="#axios">AXIOS</a>
