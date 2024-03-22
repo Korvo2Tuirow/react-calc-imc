@@ -1,21 +1,17 @@
 "use client"
-import { NumContext } from "@/components/ContextNumRandom";
+import { NumRandomProvider } from "@/components/ContextNumRandom";
 import { Button } from "@/components/button";
 import { Container } from "@/components/container";
-import { useState } from "react";
 
-
-const Page = () => {
-
-  const [numRandom, setNumRandom] = useState([0]);
+const Page = () => { 
 
   return (
     <div className="flex flex-col pb-10 justify-center items-center h-screen w-full bg-blue-100/80">
 
-    <NumContext.Provider value={{numRandom, setNumRandom}}>
+    <NumRandomProvider>
         <Container />
         <Button />
-    </NumContext.Provider>
+    </NumRandomProvider>
      
     </div>
 
