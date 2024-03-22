@@ -1,36 +1,37 @@
-import { randomInt } from "crypto";
-import { useState } from "react";
+import { useState } from 'react';
+import { useContext } from "react"
+import { NumContext } from "./ContextNumRandom"
+export const Button = () => {
+    let style = "m-10 border border-black p-3 rounded-md font-bold text-white bg-green-600 cursor-pointer";
 
-export const Button = ()=>{
 
-    let style="m-10 border border-black p-3 rounded-md font-bold text-white bg-green-600 cursor-pointer";
-
-     
-
-    const [numRandom, setNumRandom] = useState([0]);
-
-          
+    const NumCtx = useContext(NumContext);
     
 
+   
+    const initialNumRandom = Array.from({ length: 9 }, () => Math.floor(Math.random() * 10 + 1));
 
-    const teste=()=>{
-       //alert('test');
+    const [numRandom, setNumRandom] = useState(initialNumRandom);
 
-       const num = Math.floor(Math.random() * 10+1);
-       console.log(num);
-
-       setNumRandom([ ...numRandom, num ]);
-       console.log(numRandom);
-      
-       }
-
+    const teste = () => {
        
-        
-    
+        setNumRandom([])
+        setNumRandom(prevNumRandom => [
+            ...prevNumRandom,
+            ...Array.from({ length: 9 }, () => Math.floor(Math.random() * 10 + 1))
+        ]);
+     
+        NumCtx?.setNumRandom(numRandom);
+        console.log(numRandom);
+    };  
 
-    return(
+
+    return (
         <>
-        <button className={style} onClick={teste}>Click me</button>
+        <button className={style} onClick={teste}>
+            Click me
+        </button>    
+        
         </>
-    )
-    }
+    );
+};
