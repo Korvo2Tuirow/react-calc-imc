@@ -6,7 +6,7 @@ import { Container } from "@/components/container";
 const Page = () => { 
 
   return (
-    <div className="flex flex-col pb-10 justify-center items-center h-screen w-full bg-blue-100/80">
+    <div className="flex flex-col pb-10 justify-center items-center h-screen w-full bg-gradient-to-r from-sky-600 to-emerald-400">
 
     <NumRandomProvider>
         <Container />

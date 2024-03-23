@@ -2,3 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg1{
+    background-color: aqua;
+}
+
+.bg2{
+     background-color: burlywood;
+}
+
+.bg3{
+    background-color: chartreuse;
+}
+
+.bg4{
+    background-color: coral;
+}
+
+.bg5{
+    background-color: #9100e6;
+}
+
+.bg6{
+    background-color: fuchsia;
+}
+
+.bg7{
+    background-color: #fd0404;
+}
+
+.bg8{
+    background-color: gold;
+}
+
+.bg9{
+    background-color: #ffffff;
+}
+
+.bg10{    
+    background-color: #001aff;
+}
+
+.cssDefault{
+    width: 100%;
+    height: 100%; 
+    border: 1px solid #0000002d;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.bgBtn{
+    background: linear-gradient(90deg, rgba(5,255,126,1) 0%, rgba(253,8,255,1) 49%, rgba(0,255,248,1) 100%)
+}
