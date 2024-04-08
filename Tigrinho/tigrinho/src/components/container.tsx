@@ -1,29 +1,26 @@
 
-
-import { useContext } from "react"
-import { NumContext } from "./ContextNumRandom"
+import React, { useContext, useEffect } from "react";
+import { NumContext } from "./ContextNumRandom";
 
 export const Container = () => {
-   
-    const NumCtx = useContext(NumContext);
-    const c1 = NumCtx?.numRandomProv.slice(0,3);
-    const c2 = NumCtx?.numRandomProv.slice(3,6);
-    const c3 = NumCtx?.numRandomProv.slice(6,9);  
-            
+
+    const Ctx = useContext(NumContext);   
+
+
+    
+    useEffect(()=>{
+     Ctx?.setAnima("anima")  
+     console.log(Ctx?.fezTrio); 
+       
+    },Ctx?.numRandomProv)
+
     return (
-        <div className="border bg-white shadow-lg shadow-black p-4 flex mt-10 border-black max-w-[500px] w-[90%] h-[500px] max-h-[90%] ">
-            <div className="w-[33.3%] flex flex-col">
-               {c1?.map(e=>(<div className={`bg${e.toString()} cssDefault`} >{e}</div>))} 
-            </div>
+        <div className={`border bg-black/30 justify-center items-center shadow-lg shadow-[#207] p-4 flex m-10 border-gray-500  w-[100%] max-w-[493px] h-auto max-h-[493px]`}>
+            <div className="w-[100%] grid grid-rows-3  mx-auto grid-cols-3 p-3">
+                {Ctx?.numRandomProv.map((e, index) => (<div key={index} id={`id${index}`} className={`bg${e.toString()} cssDefault ${Ctx.anima}`} ></div>))}
+            </div>         
 
-            <div className="w-[33.3%] flex flex-col">        
-                {c2?.map(e=>(<div className={`bg${e.toString()} cssDefault`}>{e}</div>))} 
-            </div>
-
-            <div className="w-[33.3%] flex flex-col">
-                {c3?.map(e=>(<div className={`bg${e.toString()} cssDefault`}>{e}</div>))} 
-            </div>
-        
         </div>
     )
-    }
+
+}
