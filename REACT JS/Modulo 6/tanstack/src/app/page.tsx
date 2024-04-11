@@ -1,38 +1,39 @@
 "use client"
+import { usePost, usePosts } from "@/utils/queries";
 
-import { useQuery } from "@tanstack/react-query";
-import axios from "axios";
-
-export type Post = {
-  id: number;
-  userId: number;
-  title: string;
-  body: string;
-}
 
 const Page = () => {
 
-  const query = useQuery({
-    queryKey: ['posts'],
-    queryFn: async (): Promise<Post[]> => {
-      const result = await axios.get('https://jsonplaceholder.typicode.com/posts');
-      return result.data;
-    }
-  });
+  const posts = usePosts();
+  const post = usePost(10);
 
   return (
     <div>
-      <h1 className="text-3xl text-white">Teste de TanStack</h1>
+      <h1 className="text-3xl flex justify-center p-3 text-white">Teste de TanStack</h1>
 
-      {query.isLoading && "CARREGANDO"}
+      {posts.isLoading && "CARREGANDO"}
 
-      {query.data &&
+      
+      
+      {posts.data &&
         <ul>
-          {query.data.map(item => (
-            <li key={item.id}>{item.title}</li>
+          {posts.data.map(item => (
+            <li key={item.id} className="m-5 p-2 border border-white rounded-md bg-white/20">{item.title.toUpperCase()}<hr/>
+            <p>{item.body}</p>
+            </li>
           ))}
         </ul>
       }
+        <hr/>
+
+        <ul>
+          {post.data &&
+            <li className="m-5 p-2 border border-white rounded-md bg-[#f5f2]">{post.data.title.toUpperCase()}<hr/>
+            <p>{post.data.body}</p>
+            </li>
+          }
+        </ul>
+      
     </div>
   )
 }
