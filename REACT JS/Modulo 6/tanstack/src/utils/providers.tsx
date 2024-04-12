@@ -12,7 +12,13 @@ type Props={
 //instalação de uma ferramenta/biblioteca  = npm i @tanstack/react-query-devtools
 
 export const Providers = ({children}:Props)=>{
-    const queryClient = new QueryClient();
+    const queryClient = new QueryClient({
+        defaultOptions:{
+            queries:{
+                staleTime:Infinity //tempo
+            }
+        }
+    });
     
     return(
 
