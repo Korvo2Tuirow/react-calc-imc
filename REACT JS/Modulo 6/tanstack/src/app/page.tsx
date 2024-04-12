@@ -206,8 +206,6 @@ const Page = () => {
 
       }
 
-
-
       {posts.data &&
         <ul>
           {posts.data.map(item => (
@@ -217,6 +215,7 @@ const Page = () => {
           ))}
         </ul>
       }
+      
       <hr />
 
       <ul>

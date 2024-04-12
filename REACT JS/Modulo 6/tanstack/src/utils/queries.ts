@@ -5,7 +5,8 @@ export const usePosts =()=>{
 
     const query = useQuery({
         queryKey: ['posts'],
-        queryFn: getPosts
+        queryFn: getPosts,
+        staleTime: Infinity // ou em milisegundos
       });
       return query;
 }
@@ -13,7 +14,8 @@ export const usePosts =()=>{
 export const usePost = (id:number) =>{
    return useQuery({
         queryKey:['post', id],
-        queryFn: () => getPost(id)
+        queryFn: () => getPost(id),
+        staleTime: Infinity // ou em milisegundos
     })
 
 }
