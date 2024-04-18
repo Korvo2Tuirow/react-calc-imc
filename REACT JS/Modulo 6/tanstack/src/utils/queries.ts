@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { getPost, getPosts } from "./api";
+import { dataPosts } from "@/data/dataposts";
 
 export const usePosts =(enabled: boolean, limit:number, start:number)=>{
 
@@ -7,7 +8,9 @@ export const usePosts =(enabled: boolean, limit:number, start:number)=>{
         queryKey: ['posts',{limit, start}],
         queryFn: ()=>getPosts(limit, start),
        // staleTime: Infinity  ou em milisegundos
-       enabled,       
+       enabled,
+       //initialData: dataPosts ou
+       //placeholderData: dataPosts        
        
       });
       return query;
