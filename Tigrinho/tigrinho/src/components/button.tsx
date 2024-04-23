@@ -27,6 +27,8 @@ export const Button = () => {
             Ctx?.setValor(Ctx?.valor -1);
         }
 
+        
+
         setNumRandom([])
         setNumRandom(prevNumRandom => [
             ...prevNumRandom,

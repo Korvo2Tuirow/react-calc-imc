@@ -1,5 +1,8 @@
 "use client"
-import { usePost, usePosts } from "@/utils/queries";
+import { addPost } from "@/utils/api";
+import { invalidatePosts, usePost, usePosts, useUsersPrefetch } from "@/utils/queries";
+import { useMutation } from "@tanstack/react-query";
+import axios from "axios";
 import { useState } from "react";
 
 
@@ -13,6 +16,8 @@ const Page = () => {
 
   const posts = usePosts(canLoadPosts, limit, page * limit);
   const post = usePost(10, canLoadPost);
+
+  useUsersPrefetch();
 
 
   const postsLoad = () => {
@@ -30,6 +35,24 @@ const Page = () => {
     setPage(page===0? 0 : page-1);
   }
 
+  const addMutation = useMutation({
+    mutationFn: addPost
+  })
+
+  const inserir = ()=>{
+    
+    invalidatePosts();
+
+    addMutation.mutate({
+      title:"Titulo",
+      body: "corpo de teste",
+      userId: 7
+    });
+
+    
+
+
+  }  
 
 
     return (
@@ -39,6 +62,11 @@ const Page = () => {
         <div className="flex justify-center gap-10 p-3 bg-white/10">
           <button onClick={postsLoad} className="border border-gray-500 p-3 rounded-md bg-black">Request All</button>
           <button onClick={postLoad} className="border border-gray-500 p-3 rounded-md bg-black">Request one post</button>
+
+        </div>
+
+        <div className=" bg-green-950 my-5 p-3">         
+          <button onClick={inserir} className="p-2 border rounded-md bg-green-700">Inserir novo post</button>
         </div>
 
         {posts?.isLoading  &&

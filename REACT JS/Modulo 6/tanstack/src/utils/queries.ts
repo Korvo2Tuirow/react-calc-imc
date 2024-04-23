@@ -1,6 +1,8 @@
-import { useQuery } from "@tanstack/react-query";
-import { getPost, getPosts } from "./api";
+import { QueryClient, QueryClientProvider, useQuery, useQueryClient } from "@tanstack/react-query";
+import { getPost, getPosts, getUsers } from "./api";
 import { dataPosts } from "@/data/dataposts";
+import { Providers } from "./providers";
+import { queryClient } from "./queryClient";
 
 export const usePosts =(enabled: boolean, limit:number, start:number)=>{
 
@@ -26,3 +28,31 @@ export const usePost = (id:number, enabled:boolean) =>{
 
 }
 
+export const useUsers =()=>{
+
+    const query = useQuery({
+        queryKey: ['users'],
+        queryFn: getUsers     
+       
+      });
+      return query;
+}
+
+export const useUsersPrefetch =()=>{
+   const queryClient = useQueryClient();
+   
+    return queryClient.prefetchQuery({
+        queryKey: ['users'],
+        queryFn: getUsers     
+       
+
+    });
+}
+
+
+export const invalidatePosts=()=>{
+    queryClient.invalidateQueries({
+        queryKey:['posts'],
+        //exact: true
+    });
+}
