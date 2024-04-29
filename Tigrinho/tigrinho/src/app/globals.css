@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .bgBody{
-    background: linear-gradient(90deg, #1808ff 0%, #0e0f4b 52%);
+    background: linear-gradient(90deg, #24136e 0%, #280e4b 52%);
     background-repeat: no-repeat;
     background-size: cover;
     position: fixed;

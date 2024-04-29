@@ -45,7 +45,7 @@ export const Button = () => {
 
     return (
         <>
-            <button className="m-10 border-4 border-[#1808ff] p-3 rounded-md font-bold  bg-gradient-to-r  from-[#1b1179]  to-[#1808ff]  text-white cursor-pointer shadow-md shadow-[#207] hover:scale-125" onClick={teste}>
+            <button className=" border-4 border-[#1808ff] p-3 rounded-md font-bold  bg-gradient-to-r  from-[#1b1179]  to-[#1808ff]  text-white cursor-pointer shadow-md shadow-[#207] hover:scale-125" onClick={teste}>
                 CLIQUE AQUI
             </button>
 
