@@ -15,7 +15,7 @@ export const Button = () => {
     const[playing, setPlaying] = useState(false);
 
     const teste = () => {
-
+        if(Ctx?.valor >= 0) {
         const audioPlay = () => {
             const audio = new Audio();
             audio.play();        
@@ -40,6 +40,7 @@ export const Button = () => {
         setPlaying(true)  
        
        
+    }
         
     }
 
