@@ -1,5 +1,5 @@
 
-
+// npm i react-hook-form para instalação
 
 const Page = () =>{
 
@@ -8,7 +8,7 @@ const Page = () =>{
   return(
     <>
 
-    
+
     </>
   )
 };
