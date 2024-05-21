@@ -10,8 +10,8 @@ const Page = () => {
   const {
     control,
     handleSubmit,
-    register,
-    formState: { errors }
+    //register,
+    //formState: { errors }
   } = useForm<SignUpsForm>();
 
   const handleSubmitForm: SubmitHandler<SignUpsForm> = (data) => {
