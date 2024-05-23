@@ -4,6 +4,7 @@ import { SignUpsForm } from "@/types/SignUpForm";
 
 import { SubmitHandler, useForm } from "react-hook-form";
 import { Input } from "./components/Input";
+import { FormGetAPI } from "./components/FormGetAPI";
 
 const Page = () => {
 
@@ -21,11 +22,11 @@ const Page = () => {
 
   return (
 
-    <div className="bg-cyan-950 h-screen w-screen">
+    <div className="bg-cyan-950 h-full w-full">
 
-      <div className="flex flex-col gap-5 justify-center items-center border border-white text-white p-5 bg-slate-800">
+      <div className="flex flex-col gap-5 justify-center items-center border border-white container mx-auto bg-[#1a214b] h-[500px]">
 
-        <h1 className="text-2xl">HOOK FORM</h1>
+        <h1 className="text-2xl text-white">HOOK FORM</h1>
 
         <form onSubmit={handleSubmit(handleSubmitForm)}
           className="flex flex-col gap-3 border p-5 rounded-md bg-white/10 ">
@@ -83,6 +84,8 @@ const Page = () => {
 
         </form>
       </div>
+
+      <FormGetAPI/>
     </div>
 
 
