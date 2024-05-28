@@ -4,7 +4,8 @@ import { SignUpsForm } from "@/types/SignUpForm";
 
 import { SubmitHandler, useForm } from "react-hook-form";
 import { Input } from "./components/Input";
-import { FormGetAPI } from "./components/FormGetAPI";
+import { FormPostAPI } from "./components/FormPostAPI";
+import { ZodHookForm } from "./components/ZodHookForm";
 
 const Page = () => {
 
@@ -85,7 +86,9 @@ const Page = () => {
         </form>
       </div>
 
-      <FormGetAPI/>
+      <FormPostAPI/>
+      <ZodHookForm/>
+  
     </div>
 
 
