@@ -59,7 +59,7 @@ export const ZodHookForm = () => {
                         {...register('NomeZod')}
                         placeholder="Nome"
                         className="border border-blue-950 p-3 text-black w-[500px] rounded-md" />
-                        {errors.NomeZod && <p>{errors.NomeZod.message as string}</p>}
+                        {errors.NomeZod && <p className="text-red-500">{errors.NomeZod.message as string}</p>}
                     
                 </div>    
 
@@ -68,7 +68,7 @@ export const ZodHookForm = () => {
                         {...register('SobrenomeZod')}
                         placeholder="Sobrenome"
                         className="border border-blue-950 p-3 text-black w-[500px] rounded-md" />
-                        {errors.SobrenomeZod && <p>{errors.SobrenomeZod.message as string}</p>}
+                        {errors.SobrenomeZod && <p className="text-red-500">{errors.SobrenomeZod.message as string}</p>}
                 </div>
 
                 <div>
@@ -76,7 +76,7 @@ export const ZodHookForm = () => {
                         {...register('IdadeZod', {valueAsNumber: true})}
                         placeholder="Idade"
                         className="border border-blue-950 p-3 text-black w-[500px] rounded-md" />
-                        {errors.IdadeZod && <p>{errors.IdadeZod.message as string}</p>}
+                        {errors.IdadeZod && <p className="text-red-500">{errors.IdadeZod.message as string}</p>}
                 </div>
 
                 <input type="submit" value="Enviar"
