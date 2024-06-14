@@ -31,13 +31,13 @@ export const ZodHookForm = () => {
        
     });
     */
-    const SignUpsFormZod = z.object({
-        NomeZod: z.string().min(2).max(30),
-        SobrenomeZod: z.string().min(2).optional(),
-        IdadeZod: z.number().min(18)
-    });
+    const SignUpsFormZod = z.object({ //pode colocar em arquivo separado
+        NomeZod: z.string().min(2, {message: "Precisa no mínimo duas letras"}).max(30),
+        SobrenomeZod: z.string().min(2, {message: "Precisa no mínimo duas letras"}).optional(),
+        IdadeZod: z.number({invalid_type_error: "Idade precisa ser com números"}).min(18,{message: "Idade minima de 18 anos"})
+    });//
 
-    const { register, handleSubmit } = useForm({
+    const { register, handleSubmit, formState:{errors} } = useForm({
         resolver: zodResolver(SignUpsFormZod)
     });
    
@@ -54,20 +54,30 @@ export const ZodHookForm = () => {
             <form onSubmit={handleSubmit(handleSubmitForm)}
                 className="flex flex-col justify-center items-center gap-4 border border-black mx-auto p-5 rounded-md mt-10 bg-white/50">
 
-                <input
-                    {...register('NomeZod')}
-                    placeholder="Nome"
-                    className="border border-blue-950 p-3 text-black w-[500px] rounded-md" />
+                <div>
+                    <input
+                        {...register('NomeZod')}
+                        placeholder="Nome"
+                        className="border border-blue-950 p-3 text-black w-[500px] rounded-md" />
+                        {errors.NomeZod && <p>{errors.NomeZod.message as string}</p>}
+                    
+                </div>    
 
-                <input
-                    {...register('SobrenomeZod')}
-                    placeholder="Sobrenome"
-                    className="border border-blue-950 p-3 text-black w-[500px] rounded-md" />
+                <div>
+                    <input
+                        {...register('SobrenomeZod')}
+                        placeholder="Sobrenome"
+                        className="border border-blue-950 p-3 text-black w-[500px] rounded-md" />
+                        {errors.SobrenomeZod && <p>{errors.SobrenomeZod.message as string}</p>}
+                </div>
 
-                <input
-                    {...register('IdadeZod', {valueAsNumber: true})}
-                    placeholder="Idade"
-                    className="border border-blue-950 p-3 text-black w-[500px] rounded-md" />
+                <div>
+                    <input
+                        {...register('IdadeZod', {valueAsNumber: true})}
+                        placeholder="Idade"
+                        className="border border-blue-950 p-3 text-black w-[500px] rounded-md" />
+                        {errors.IdadeZod && <p>{errors.IdadeZod.message as string}</p>}
+                </div>
 
                 <input type="submit" value="Enviar"
                     className="p-3 bg-green-500 font-bold rounded-md border border-black cursor-pointer" />
