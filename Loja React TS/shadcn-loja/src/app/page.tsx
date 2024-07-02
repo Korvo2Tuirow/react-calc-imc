@@ -1,5 +1,7 @@
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
+import { TabsSkeleton } from "@/components/products/skeleton";
+import { ProductsTab } from "@/components/products/tab";
 import { Suspense } from "react";
 
 
@@ -11,8 +13,9 @@ export const Page = () => {
       <Header />
 
       <div className="mx-3">
-        <Suspense fallback={}>
-
+  
+        <Suspense fallback={<TabsSkeleton/>}>
+          <ProductsTab/>
         </Suspense>
       </div>
 
