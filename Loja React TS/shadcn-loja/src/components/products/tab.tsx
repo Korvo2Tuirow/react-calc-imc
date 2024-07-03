@@ -1,14 +1,16 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { getAllProducts } from "@/services/product"
 import { Product } from "@/types/product";
-import { Item } from "@radix-ui/react-dropdown-menu";
+import { ProductEmpty } from "./empty";
+import { ProductItem } from "./item";
+
 
 type Tab = {
-    
-        title: string;
-        value: string;
-        products: Product[];
-    
+
+    title: string;
+    value: string;
+    products: Product[];
+
 }
 
 
@@ -20,25 +22,25 @@ export const ProductsTab = async () => {
         {
             title: "Sushi",
             value: "sushi",
-            products: products.filter(item=> item.category === "sushi")
+            products: products.filter(item => item.category === "sushi")
         },
 
         {
             title: "Temaki",
             value: "temaki",
-            products: products.filter(item=> item.category === "temaki")
+            products: products.filter(item => item.category === "temaki")
         },
 
         {
             title: "Combos",
             value: "pack",
-            products: products.filter(item=> item.category === "pack")
+            products: products.filter(item => item.category === "pack")
         },
 
         {
             title: "Bebidas",
             value: "beverage",
-            products: products.filter(item=> item.category === "beverage")
+            products: products.filter(item => item.category === "beverage")
         },
     ];
 
@@ -47,23 +49,37 @@ export const ProductsTab = async () => {
         <Tabs defaultValue="sushi">
             <TabsList className="flex">
 
-                {tabs.map(item =>(
+                {tabs.map(item => (
                     <TabsTrigger
-                    key={item.value}
-                    value={item.value}
-                    className="flex-1"
-                    >{item.title}</TabsTrigger> 
-                ))}        
-          
+                        key={item.value}
+                        value={item.value}
+                        className="flex-1"
+                    >{item.title}</TabsTrigger>
+                ))}
+
             </TabsList>
 
-            {tabs.map(item=>(
-                 <TabsContent            
-                 value={item.value} className="mt-6">
-                 </TabsContent>
+            {tabs.map(item => (
+                <TabsContent
+                   key={item.value} value={item.value} className="mt-6">
+                    {item.products.length > 0 &&
+                        <div className="grid gap-5 grip-cols-2 sm:grid-cols-3 md:grid-cols-4">
+                            {item.products.map(product=>(
+                                <ProductItem key={product.id} item={product}/>
+                            ))}
+                        </div>
+                    }
+
+                    {item.products.length === 0 &&
+                        <ProductEmpty/>
+                    }
+
+
+
+                </TabsContent>
             ))}
-            
-           
+
+
 
         </Tabs>
     )
