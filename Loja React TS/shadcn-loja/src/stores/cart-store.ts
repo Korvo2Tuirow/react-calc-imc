@@ -4,7 +4,6 @@ import { create } from "zustand";
 
 type States={
     cart: Cart[];
-
 }
 
 type Actions = {
@@ -14,7 +13,6 @@ type Actions = {
 const initialState:States = {
     cart: []
 }
-
 
 export const useCartStore = create<States & Actions>()(set=>({
     ...initialState,

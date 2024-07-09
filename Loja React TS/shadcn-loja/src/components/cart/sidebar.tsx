@@ -6,10 +6,14 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "../u
 import { Separator } from "@/components/ui/separator"
 import { useCartStore } from "@/stores/cart-store"
 import { CartItem } from "./cart-item"
+import { useState } from "react"
+import { CheckoutDialog } from "../checkout/dialog"
 
 export const CartSidebar = () => {
 
     const {cart} = useCartStore(state => state);
+
+    const [checkoutOpen, setCheckoutOpen] = useState(false)
 
     let subtotal = 0;
     for(let item of cart){
@@ -48,9 +52,17 @@ export const CartSidebar = () => {
                 <Separator className="my-4"/>
 
                 <div className="text-center">
-                    <Button className="w-full" disabled={cart.length === 0}>Finalizar Compra</Button>
+                    <Button 
+                    onClick={()=>setCheckoutOpen(true)}
+                    className="w-full" 
+                    disabled={cart.length === 0}>Finalizar Compra
+                    </Button>
                 </div>
 
+                   <CheckoutDialog
+                    open={checkoutOpen}
+                    onOpenChange={setCheckoutOpen}
+                   />
                 
 
             </SheetContent>
