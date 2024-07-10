@@ -30,17 +30,17 @@ export const CartItemQuantity = ({cartItem}:Props) =>{
             onClick={handlePlusButton}
             variant="outline"
             size="icon"
-            className="size-6">
+            className="size-6 bg-green-500">
                 <PlusIcon/> 
             </Button>
             
-            <div className="text-xs">{cartItem.quantity}</div>
+            <div className="text-lg mx-2">{cartItem.quantity}</div>
             
             <Button 
             onClick={handleMinusButton}
             variant="outline"
             size="icon"
-            className="size-6">
+            className="size-6 bg-red-500">
                 <MinusIcon/>
             </Button>
         </div>

@@ -44,9 +44,9 @@ export const CartSidebar = () => {
                 </div>
                 <Separator className="my-4"/>
 
-                <div className=" flex justify-between items-center text-xs">
+                <div className=" flex justify-between items-center text-lg">
                     <div>Subtotal:</div>
-                    <div>R$ {subtotal.toFixed(2)}</div>
+                    <div >R$ {subtotal.toFixed(2)}</div>
                 </div>
 
                 <Separator className="my-4"/>
