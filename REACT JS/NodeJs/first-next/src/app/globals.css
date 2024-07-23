@@ -25,7 +25,13 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
-
+header{
+  background-color: rgb(35, 18, 83);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
