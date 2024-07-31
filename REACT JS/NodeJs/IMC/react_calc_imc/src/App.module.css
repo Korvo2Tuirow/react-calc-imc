@@ -44,8 +44,11 @@ body{
   padding: 10px 2px;
   margin-bottom: 20px;
   font-size: 14px;
-  outline: 0;
+  outline: 0;  
+}
 
+.container .leftSide input:disabled{
+  opacity: 0.5;
 }
 
 .container .leftSide button{
@@ -62,7 +65,12 @@ body{
 }
 
 .container .leftSide button:hover{
-  opacity: 0.8;
+  opacity: 0.8;  
+}
+
+.container .leftSide button:disabled{
+  opacity: 0.5;
+ 
   
 }
 
