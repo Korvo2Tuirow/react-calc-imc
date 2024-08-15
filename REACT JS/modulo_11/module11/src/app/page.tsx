@@ -49,7 +49,8 @@ export const App = () => {
 
       {loading && <Spinners />}
 
-      {!loading &&
+      {!loading &&       
+
         <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 
           {persons.map((item) => (
@@ -69,9 +70,10 @@ export const App = () => {
             </div>
           ))}
         </div>
+      
       }
     </div>
-
+   
 
   );
 }
