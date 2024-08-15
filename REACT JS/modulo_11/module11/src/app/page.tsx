@@ -34,7 +34,6 @@ export const App = () => {
     if(persons.length > 0 ){
       setPersons([])
     }
-
   }
 
   return (
@@ -45,6 +44,7 @@ export const App = () => {
       >
         APERTE AQUI
       </button>
+
       <JsonPlaceholder/>
 
       {loading && <Spinners />}
@@ -69,11 +69,9 @@ export const App = () => {
               {item.type && <p className="text-gray-700">Type: {item.type}</p>}
             </div>
           ))}
-        </div>
-      
+        </div>              
       }
-    </div>
-   
+    </div> 
 
   );
 }
