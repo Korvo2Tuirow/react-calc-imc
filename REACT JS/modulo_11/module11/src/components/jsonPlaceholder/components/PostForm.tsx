@@ -1,4 +1,5 @@
 import { useState, ChangeEvent } from "react";
+import { api } from "../api/api"
 
 
 export const PostForm = ()=>{
@@ -16,36 +17,11 @@ export const PostForm = ()=>{
 
     const handleAddPost = async () => {
         if (addBodyText && addTitle) {
-            let response = await fetch("https://jsonplaceholder.typicode.com/posts",
-                {
-                    method: "POST",
-                    body: JSON.stringify({
-                        title: addTitle,
-                        body: addBodyText,
-                        userId: 1
-                    }),
-                    headers: {
-                        'Content-Type': 'application/json'
-                    }
-
-                }
-            )
-            let json = await response.json();
-            console.log(json);
-
-            if(json.id){
-                alert("Post added successfully");
-                setAddTitles('');
-                setAddBodyText('');
-            }else{
-                alert("Error")
-            }
-
+            const req = api.addNewPost(addTitle, addBodyText, 1)                  
         }else{
             alert("Preencha os dados");
-        }
+        }        
     }
-
 
     return(
         <>

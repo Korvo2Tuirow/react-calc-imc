@@ -3,14 +3,14 @@
 import { useState } from "react";
 import { Posts } from "./type"
 import { PostForm } from "./components/PostForm";
+import { api } from "./api/api";
 
 export const JsonPlaceholder = () => {
-    const [posts, setPosts] = useState<Posts[]>([]);
-   
+    const [posts, setPosts] = useState<Posts[]>([]);   
 
-    const handlePosts = async () => {
-        const req = await fetch("https://jsonplaceholder.typicode.com/posts");
-        const resp = await req.json();
+    const handlePosts = async () => {   
+
+        const resp = await api.getAllPosts();        
         setPosts(resp);
 
         if (posts.length > 0) {
@@ -40,12 +40,6 @@ export const JsonPlaceholder = () => {
                         <p>{item.body}</p>
                     </div>
                 ))}
-
-
-
-
-
-
             </div>
         </div>
     )
