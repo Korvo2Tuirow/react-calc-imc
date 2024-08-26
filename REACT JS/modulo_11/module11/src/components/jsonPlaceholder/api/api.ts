@@ -18,10 +18,7 @@ export const api = {
             response.status == 201 ? alert("Post successfully added") : alert("Post error");
 
         return response.data;
-       
-      
-
-
+        
         /*    let response = await fetch("https://jsonplaceholder.typicode.com/posts",
                 {
                     method: "POST",
