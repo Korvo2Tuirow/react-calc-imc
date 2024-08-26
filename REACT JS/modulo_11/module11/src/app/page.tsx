@@ -37,7 +37,7 @@ export const App = () => {
     }
   }
 
-  return (<>
+  return (
     <div className="flex flex-col max-w-full mx-auto p-4 bg-gray-700 rounded-lg shadow-md">
       <button
         onClick={handleButton}
@@ -74,12 +74,12 @@ export const App = () => {
       }
 
     
-     
+<ReducerApp/>
     
     </div> 
 
-    <ReducerApp/>
-    </>
+    
+
     
 
   );
