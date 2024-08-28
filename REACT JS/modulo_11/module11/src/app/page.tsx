@@ -4,6 +4,7 @@ import { JsonPlaceholder } from "@/components/jsonPlaceholder/JsonPlaceholder";
 import { Spinners } from "@/components/spinner/spinner";
 import { ReducerApp } from "@/aulaReducer/reducerapp";
 import { useState } from "react";
+import { PeopleListReducer } from "@/aulaReducer/exemploReal/PeopleListReducer";
 
 export type PersonType = {
   id: number;
@@ -75,6 +76,8 @@ export const App = () => {
 
     
 <ReducerApp/>
+
+<PeopleListReducer/>
     
     </div> 
 
