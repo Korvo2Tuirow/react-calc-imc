@@ -1,5 +1,11 @@
+import { Link } from "react-router-dom"
+
 export const Home = ()=>{
     return(
-        <div>ROTA HOME</div>
+        <div>ROTA HOME
+            <hr />
+            <button className="p-2 bg-red-600 text-white my-3 rounded-md"><Link to="/sobre">SOBRE</Link></button>
+            <hr />
+        </div>
     )
 }

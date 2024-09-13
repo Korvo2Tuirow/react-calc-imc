@@ -1,17 +1,19 @@
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 
-export const AboutKorvo = () => {
+export const NotFound = () => {
+
     const navigate = useNavigate();
     const handleBack = () =>{
-        navigate(-1);
+        navigate('/');
     };
-
+    
     return (
-        <div>ROTA ABOUT KORVO
-            <hr />
+        <div>
+            <h1>PÁGINA NÃO ENCONTRADA</h1>
             <button
                 onClick={handleBack}
                 className="p-2 bg-green-600 text-white mt-3 rounded-md">Voltar</button>
+            
         </div>
     )
 }
