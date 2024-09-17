@@ -6,6 +6,8 @@
 //import { NotFound } from './pages/NotFound';
 //import { AboutItem } from './pages/AboutItem';
 //import { RequireAuth } from './RequireAuth';
+
+import { Album } from './album/album';
 import { RouteList } from './routes/RouteList';
 
 const App = () => {
@@ -14,7 +16,7 @@ const App = () => {
 
     <div className="p-4">
       <header>
-        <h1 className="text-blue-950">OLA</h1>
+        <h1 className="text-blue-950">ROUTERS</h1>
       </header>
       <hr />
       <div className="py-4">
@@ -28,8 +30,14 @@ const App = () => {
         </Routes>*/}
 
         <RouteList/>
+        
 
       </div>
+
+      <div>
+        <Album/>
+      </div>
+     
       <footer>
         <p>Todos os direitos reservados</p>
       </footer>
