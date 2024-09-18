@@ -1,59 +1,45 @@
-import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom"
+import { Back } from "./back";
 import { api } from "./api";
+import { useCallback, useEffect, useState } from "react";
+import { Albums, Props } from "./types";
 
-type Album = {
-  userId: number;
-  id: number;
-  title: string;
-}
 
 export const Album = () => {
+    const { id } = useParams();
+    const [data, setData] = useState<Props[]>([])
+    const [title, setTitle] = useState<Albums>()
 
-  const itemPerPage = 10;
-  const [data, setData] = useState<Album[]>([])
-  const [currentPage, setCurrentPage] = useState(0);
-  const pages = Math.ceil(data.length / itemPerPage);
-  const startIndex = currentPage * itemPerPage;
-  const endIndex = startIndex + itemPerPage;
-  const currentItem = data.slice(startIndex, endIndex);
+    const getPhotos = useCallback(async () => {
+        if (id) {
+            const res = await api.getPhotos(`albums/${id}/photos`);
+            setData(res);            
+        }
+    }, [id]) 
+    
+    const getAbuns = useCallback(async () => {
+        if (id) {
+            const res = await api.getAlbums(`albums/${id}`);
+            setTitle(res);            
+        }
+    }, [id])  
 
-  const getAlbuns = async () => {
-    const res = await api.getAlbum("albums");
-    setData(res);
-  }
+    useEffect(() => {  
+        getAbuns();     
+        getPhotos();
+    }, [getPhotos, getAbuns]);
 
-  useEffect(() => {
-    getAlbuns();
-  }, []);
-
-
-  const handleClickPage = (e: React.MouseEvent<HTMLButtonElement>, setCurrentPage: (page: number) => void) => {
-    const page = Number(e.currentTarget.value);
-    setCurrentPage(page);
-
-  }
-
-  return (
-    <div>
-      <h1>ROUTES ALBUM AXIOS</h1>
-
-      {currentItem.map((item) => (
-        <div
-          className="bg-slate-200 my-2 p-2"
-          key={item.id}>{item.title}
+    return (
+        <div>
+            <p className="font-bold text-2xl flex justify-center">{title?.title.toLocaleUpperCase()}</p>
+            <Back />
+            <div className="flex justify-center ">
+                <div className="flex flex-1 flex-wrap gap-2 p-3 max-w-screen-lg justify-center">
+                    {data.map((photo) => (
+                        <img key={photo.id} src={photo.thumbnailUrl} alt={photo.title} />
+                    ))}
+                </div>
+            </div>
         </div>
-      ))}
-
-      <div className="flex justify-center">
-        {Array.from(Array(pages), (_, index) => {
-          return <button key={index}
-            className={`p-2 border ${currentPage === index ? 'border-blue-500' : 'border-slate-300'} bg-slate-300 ml-2 rounded-md border-2`}
-            value={index}
-            onClick={(e) => handleClickPage(e, setCurrentPage)}>{index + 1}</button>
-        })}
-      </div>
-
-    </div>
-
-  )
+    )
 }

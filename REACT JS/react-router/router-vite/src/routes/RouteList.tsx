@@ -7,6 +7,8 @@ import { Home } from '../pages/Home';
 import { NotFound } from '../pages/NotFound';
 import { AboutItem } from '../pages/AboutItem';
 import { RequireAuth } from '../RequireAuth';
+import { Request } from "../album/request";
+import { Album } from "../album/album";
 
 export const RouteList = () => {
     return useRoutes([
@@ -15,7 +17,9 @@ export const RouteList = () => {
         {path:'sobre/korvo', element: <AboutKorvo/>},
         {path:'sobre/bonieky', element: <AboutBonieky/>},
         {path:"*", element: <NotFound/>},
-        {path:"sobre/:slug", element: <AboutItem/>}
+        {path:"/:slug", element: <AboutItem/>},
+        {path:"album/:id", element: <Album/>},
+        {path:'album', element: <Request/>},
     ]);
     
     

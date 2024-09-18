@@ -7,13 +7,13 @@ const request = axios.create({
 
 export const api ={
     
-    getAlbum: async (complemento:string) => {
+    getAlbums: async (complemento:string) => {
         const req = await request(complemento);
         return req.data;
     },
 
-    getPhotos: async () => {
-        const req = await request("photos");
-        return req.data;
+    getPhotos: async (complemento:string) => {
+        const req = await request(complemento);
+        return (req.data);
     }
 }

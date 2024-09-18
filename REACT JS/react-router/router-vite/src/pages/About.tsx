@@ -1,11 +1,9 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { Back } from "../album/back";
 
 export const About = () => {
 
-    const navigate = useNavigate();
-    const handleBack = () =>{
-        navigate(-1);
-    };
+   
 
     return (
         <div>
@@ -17,9 +15,7 @@ export const About = () => {
             </ul> 
             <hr />
             <hr />
-            <button 
-              onClick={handleBack}
-            className="p-2 bg-green-600 text-white mt-3 rounded-md">Voltar</button>          
+            <Back/>       
         </div>
     )
 }

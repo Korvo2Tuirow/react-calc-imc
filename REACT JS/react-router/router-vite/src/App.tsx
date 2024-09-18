@@ -7,7 +7,7 @@
 //import { AboutItem } from './pages/AboutItem';
 //import { RequireAuth } from './RequireAuth';
 
-import { Album } from './album/album';
+
 import { RouteList } from './routes/RouteList';
 
 const App = () => {
@@ -35,7 +35,7 @@ const App = () => {
       </div>
 
       <div>
-        <Album/>
+        
       </div>
      
       <footer>
