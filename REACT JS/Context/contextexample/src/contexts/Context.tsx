@@ -1,24 +1,43 @@
-import React, {  createContext } from "react"
+import React, { createContext, useReducer } from 'react';
+import { userType, userInitialState, userReducer } from '../reducers/useReducer';
+import { reducerActionType } from '../types/reducerActionType';
+import { themeType, themeInitialState, themeReducer} from "../reducers/themeReducer"
 
-type ContextType = {
-    name: string,
-    age:number
+type initialStateType = {
+    user: userType,
+    theme: themeType
+}
+
+type contextType = {
+    state: initialStateType;
+    dispatch: React.Dispatch<any>;
 }
 
 const initialState = {
-    name: "Korvo",
-    age: 39
+    user: userInitialState,
+    theme: themeInitialState
 }
+
+export const Context = createContext<contextType>({
+    state: initialState,
+    dispatch: () => null
+});
+
+const mainReducer = (state: initialStateType, action: reducerActionType) => ({
+    user: userReducer(state.user, action),
+    theme: themeReducer(state.theme, action)
+});
 
 type Props = {
     children: React.ReactNode
 }
 
-export const Context = createContext<ContextType>(initialState);
+export const ContextProvider = ({ children }: Props) => {
+    const [state, dispatch] = useReducer(mainReducer, initialState);
 
- export const ContextProvider = ({children}:Props)=>{
-     return (
-     <Context.Provider value={initialState}>{children}</Context.Provider>
- )
- }
-
+    return (
+        <Context.Provider value={{ state, dispatch }}>
+            {children}
+        </Context.Provider>
+    );
+}
