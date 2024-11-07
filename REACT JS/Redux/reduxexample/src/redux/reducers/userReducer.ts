@@ -4,7 +4,7 @@ export const slice = createSlice({
     name:'user',
     initialState:{
         name: 'Korvo',
-        age: 36 
+        age: 38 
     },
     reducers:{
         setName: (state, action)=>{

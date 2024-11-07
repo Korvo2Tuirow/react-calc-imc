@@ -12,35 +12,41 @@ import { RootState } from './redux/store';   <<<<<substituido pelo hook TypeUseS
 import { useAppSelector } from './redux/hooks/userAppSelector';
 import { useDispatch } from 'react-redux';
 import { setName, setAge } from './redux/reducers/userReducer';
+import { setThemeStatus } from './redux/reducers/themeReducer';
 
 
 function App() {
 
   const dispatch = useDispatch();
 
- // const user = useSelector((state: RootState) => state.user)
- const user = useAppSelector(state => state.user)
+  // const user = useSelector((state: RootState) => state.user)
+  const user = useAppSelector(state => state.user);
+  const theme = useAppSelector(state => state.theme);
 
- const changeName = (newName : String) =>  dispatch(setName(newName));
- 
- const handleNameInput = (e: React.ChangeEvent<HTMLInputElement>)=>{
-  changeName(e.target.value)
- }
+  const changeName = (newName: String) => dispatch(setName(newName));
 
- const handleAgeInput = (e: React.ChangeEvent<HTMLInputElement>)=>{ 
+  const handleNameInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+    changeName(e.target.value)
+  }
 
-  dispatch(setAge(parseInt(e.target.value))) 
- }
+  const handleAgeInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+
+    dispatch(setAge(parseInt(e.target.value)))
+  }
+  
+  const handleSwitchTheme = () => {
+    dispatch(setThemeStatus( theme.status ==='Light' ? 'Dark' : 'Light'))
+  }
 
   return (
     <div className='App'>
       <div className='container'>
         <p>Meu nome é : {user.name} e tenho {user.age} anos. </p>
-        <p>Tema: ...    </p>
-        
-        <input type="text" value={user.name} onChange={handleNameInput}/> 
-        <input type="number" value={user.age} onChange={handleAgeInput}/>         
-        <button>Theme</button>
+        <p>Tema: {theme.status}    </p>
+
+        <input type="text" value={user.name} onChange={handleNameInput} />
+        <input type="number" value={user.age} onChange={handleAgeInput} />
+        <button onClick={handleSwitchTheme}>Theme</button>
       </div>
 
     </div>
