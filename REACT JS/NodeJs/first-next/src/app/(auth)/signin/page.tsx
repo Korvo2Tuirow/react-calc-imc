@@ -1,3 +1,11 @@
+
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "SignIn",
+  
+}
+
 const SignIn = ()=> {
     return (
      <div className="p-5">

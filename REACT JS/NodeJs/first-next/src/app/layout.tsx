@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 import './globals.css';
 import { Metadata } from 'next';
+import Link from 'next/link';
 
 export const metadata: Metadata={
   title: {
@@ -17,7 +18,10 @@ const layout =({children}:Props)=>{
   return(
     <html>
       <body>
-        <h1 className=' bg-emerald-900 p-10 flex justify-center m-5'>LAYOUT</h1>
+        <div className=' bg-emerald-900 p-10 flex justify-center m-5'>
+          
+          <Link href={'./'} replace>Home</Link>
+        </div>
         <div>
           {children}
         </div>
