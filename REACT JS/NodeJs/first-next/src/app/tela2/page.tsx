@@ -8,13 +8,13 @@ const Page = ()=>{
     return(
         <div>
             <p>Tela 2</p>
-            <div>
+            <div className="flex justify-center">
                <Image
                 src={'/assets/image2.jpg'}
                 width={1080}
                 height={720}
                 alt="praia"
-                quality={100}
+                quality={50}
                />
             </div>
         </div>
