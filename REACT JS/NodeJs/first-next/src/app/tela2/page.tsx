@@ -1,13 +1,22 @@
 import { redirect } from "next/navigation";
-
+import Image from "next/image";
 
 const Page = ()=>{
 
-    redirect('/');
+    //redirect('/');
 
     return(
         <div>
-            Tela 2
+            <p>Tela 2</p>
+            <div>
+               <Image
+                src={'/assets/image2.jpg'}
+                width={1080}
+                height={720}
+                alt="praia"
+                quality={100}
+               />
+            </div>
         </div>
     )
 }

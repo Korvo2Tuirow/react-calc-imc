@@ -1,6 +1,9 @@
 import { Tela2Button } from "@/components/tela2-button";
 
 const Page = ()=>{
+
+   // errointencional();
+
     return(
         <div>
             <h1>Tela 1</h1>
