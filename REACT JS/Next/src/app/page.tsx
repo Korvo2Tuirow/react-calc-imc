@@ -1,8 +1,14 @@
+import { createClient } from '@/utils/supabase/server';
+import { profile } from 'console';
 
-const Page = () =>{
+const Page = async () =>{
+
+  const supabase = await createClient();
+  const { data: profiles } = await supabase.from("profiles").select();
+  console.log(profiles);
   return(
     <div>
-      ola mundo
+      <pre>{JSON.stringify(profiles, null, 2)}</pre>
     </div>
   )
 }
