@@ -1,5 +1,5 @@
 import { createClient } from '@/utils/supabase/server';
-import { profile } from 'console';
+
 
 const Page = async () =>{
 
