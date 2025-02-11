@@ -23,6 +23,7 @@ export default function Home() {
         <a href="./signin" className="border p-3 bg-blue-900 max-w-fit rounded-md shadow-black shadow-md hover:scale-105">SignIn</a>
         <a href="./signup" className="border p-3 bg-blue-900 max-w-fit rounded-md shadow-black shadow-md hover:scale-105">SignUp</a>
         <a href="./blog" className="border p-3 bg-blue-900 max-w-fit rounded-md shadow-black shadow-md hover:scale-105">Blog</a>
+        <a href="./video" className="border p-3 bg-blue-900 max-w-fit rounded-md shadow-black shadow-md hover:scale-105">Video</a>
       </div>
 
       <div className=" flex flex-col gap-3 shadow-custom bg-slate-700 border  shadow-black p-5">
