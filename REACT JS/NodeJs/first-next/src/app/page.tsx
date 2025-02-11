@@ -4,6 +4,7 @@ import { Metadata } from "next"
 import Link from "next/link"
 import { receberDados } from "./actions/receber-dados"
 import { Form } from "@/components/form"
+import { Upload } from "./upload/page"
 
 export const metadata: Metadata = {
   title: "Home",
@@ -30,6 +31,7 @@ export default function Home() {
 
      
          <Form/>
+         <Upload/>
      
 
     
