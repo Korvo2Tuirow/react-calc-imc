@@ -43,6 +43,7 @@ export const Upload = () => {
                     }
                 }
             })
+            progressViewTime();
 
             console.log(req.data)
 
@@ -59,9 +60,20 @@ export const Upload = () => {
 
     };
 
+    const progressViewTime = () => {
+
+        setTimeout(() => {
+            setViewProgress(false);
+            setLegendField('');
+            setSelectedFile(undefined);
+               
+        }, 2000)
+
+    }
+
     return (
         <div className=" flex flex-col gap-3 shadow-custom bg-slate-700 border  shadow-black p-5">
-            <h1 className="flex text-2xl  justify-center mb-5">Processo de Upload</h1>
+            <h1 className="flex text-2xl  justify-center mb-3">Processo de Upload</h1>
 
             {viewProgress &&
                 <div className="flex flex-col justify-center items-center">
