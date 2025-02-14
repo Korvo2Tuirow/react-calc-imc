@@ -9,6 +9,10 @@ export const Upload = () => {
     const [selectedFile, setSelectedFile] = useState<File>();
     const [legendField, setLegendField] = useState("");
     const [progressUpload, setProgressUpload] = useState<number>(0);
+    const [viewProgress, setViewProgress] = useState(false)
+
+
+
 
     const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
         // console.log(e.target.files);
@@ -31,17 +35,16 @@ export const Upload = () => {
 
             const url = "https://b7web.com.br/uploadtest/"
             const req = await axios.post(url, formData, {
-                onUploadProgress: (progressEvent) =>{
-                    if(progressEvent.total){
+                onUploadProgress: (progressEvent) => {
+                    if (progressEvent.total) {
                         const pct = (progressEvent.loaded / progressEvent.total) * 100;
                         setProgressUpload(pct);
+                        setViewProgress(true)
                     }
                 }
             })
 
             console.log(req.data)
-
-
 
             /*
             const req = await fetch('https://b7web.com.br/uploadtest/', {
@@ -56,17 +59,19 @@ export const Upload = () => {
 
     };
 
-
-
     return (
         <div className=" flex flex-col gap-3 shadow-custom bg-slate-700 border  shadow-black p-5">
-            <h1 className="text-2xl flex justify-center mb-1">Processo de Upload</h1>
-            <div className="flex flex-col justify-center items-center">
-                {(progressUpload).toFixed(0)}%
-                <div className="w-full bg-slate-700 h-2">
-                    <div className=" bg-green-500 h-2" style={{width: progressUpload+"%"}}></div>
+            <h1 className="flex text-2xl  justify-center mb-5">Processo de Upload</h1>
+
+            {viewProgress &&
+                <div className="flex flex-col justify-center items-center">
+                    {(progressUpload).toFixed(0)}%
+                    <div className="w-full bg-slate-700 h-2">
+                        <div className=" bg-green-500 h-2" style={{ width: progressUpload + "%" }}></div>
+                    </div>
                 </div>
-            </div>
+            }
+
             <hr />
             <div className="flex flex-col p-5 items-center gap-5">
                 <input type="file"
@@ -83,9 +88,6 @@ export const Upload = () => {
                     onClick={handleSubmit}
                 >Enviar</button>
             </div>
-
-          
-
 
         </div>
     )
