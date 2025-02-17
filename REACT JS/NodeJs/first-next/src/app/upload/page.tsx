@@ -1,17 +1,23 @@
 "use client"
-
+// npm  i react-dropzone --legacy-peer-deps
 import axios from "axios";
-import { ChangeEvent, useState } from "react"
+import { ChangeEvent, useEffect, useState } from "react"
+import { useDropzone } from "react-dropzone";
 
 
 export const Upload = () => {
 
+    const { acceptedFiles, getRootProps, getInputProps } = useDropzone({
+        maxFiles:1,
+        accept:{
+            'image/jpeg': ['.jpg']
+        }
+    });//DROPZONE
+
     const [selectedFile, setSelectedFile] = useState<File>();
     const [legendField, setLegendField] = useState("");
     const [progressUpload, setProgressUpload] = useState<number>(0);
-    const [viewProgress, setViewProgress] = useState(false)
-
-
+    const [viewProgress, setViewProgress] = useState(false);
 
 
     const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -66,16 +72,45 @@ export const Upload = () => {
             setViewProgress(false);
             setLegendField('');
             setSelectedFile(undefined);
-               
         }, 2000)
-
     }
+
+
+    //DROPZONE
+
+    const handleDropzoneSubmit = async () => {
+
+        const formData = new FormData();
+
+        formData.append('file', acceptedFiles[0]);       
+
+        const url = "https://b7web.com.br/uploadtest/"
+        const req = await axios.post(url, formData, {
+            onUploadProgress: (progressEvent) => {
+                if (progressEvent.total) {
+                    const pct = (progressEvent.loaded / progressEvent.total) * 100;
+                    setProgressUpload(pct);
+                    setViewProgress(true)
+                }
+            }
+        })
+        progressViewTime();
+    }
+
+
+    useEffect(() => {
+        console.log(acceptedFiles)
+        if (acceptedFiles.length > 0) {
+            handleDropzoneSubmit();
+        }
+    }, [acceptedFiles])
+
 
     return (
         <div className=" flex flex-col gap-3 shadow-custom bg-slate-700 border  shadow-black p-5">
             <h1 className="flex text-2xl  justify-center mb-3">Processo de Upload</h1>
 
-            {viewProgress &&
+            {viewProgress || acceptedFiles &&
                 <div className="flex flex-col justify-center items-center">
                     {(progressUpload).toFixed(0)}%
                     <div className="w-full bg-slate-700 h-2">
@@ -85,6 +120,14 @@ export const Upload = () => {
             }
 
             <hr />
+
+            <div className="bg-gray-400 p-5 h-80 flex justify-center items-center " {...getRootProps()}>
+                <input {...getInputProps()} />
+                <p>Arraste o arquivo aqui para fazer o upload</p>
+            </div>
+
+            <div>ARQUIVOS: {acceptedFiles.length}</div>
+
             <div className="flex flex-col p-5 items-center gap-5">
                 <input type="file"
                     onChange={handleFileChange}
@@ -104,3 +147,4 @@ export const Upload = () => {
         </div>
     )
 }
+
