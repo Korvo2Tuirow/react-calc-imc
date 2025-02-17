@@ -1,5 +1,5 @@
 "use client"
-// npm  i react-dropzone --legacy-peer-deps
+
 import axios from "axios";
 import { ChangeEvent, useEffect, useState } from "react"
 import { useDropzone } from "react-dropzone";
@@ -12,7 +12,7 @@ export const Upload = () => {
         accept:{
             'image/jpeg': ['.jpg']
         }
-    });//DROPZONE
+    });//DROPZONE // npm  i react-dropzone --legacy-peer-deps
 
     const [selectedFile, setSelectedFile] = useState<File>();
     const [legendField, setLegendField] = useState("");
