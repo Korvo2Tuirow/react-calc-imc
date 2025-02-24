@@ -8,9 +8,9 @@ import { useDropzone } from "react-dropzone";
 export const Upload = () => {
 
     const { acceptedFiles, getRootProps, getInputProps } = useDropzone({
-        maxFiles:1,
-        accept:{
-            'image/jpeg': ['.jpg']
+        maxFiles: 1,
+        accept: {
+            'image/jpeg': ['.jpg']//mime type
         }
     });//DROPZONE // npm  i react-dropzone --legacy-peer-deps
 
@@ -19,9 +19,13 @@ export const Upload = () => {
     const [progressUpload, setProgressUpload] = useState<number>(0);
     const [viewProgress, setViewProgress] = useState(false);
 
+    const [photoString, setPhotoString] = useState('');
+
 
     const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
         // console.log(e.target.files);
+
+       
 
         if (e.target.files && e.target.files.length > 0) {
             const file = e.target.files[0];
@@ -50,6 +54,7 @@ export const Upload = () => {
                 }
             })
             progressViewTime();
+            setPhotoString(URL.createObjectURL(selectedFile))
 
             console.log(req.data)
 
@@ -72,7 +77,7 @@ export const Upload = () => {
             setViewProgress(false);
             setLegendField('');
             setSelectedFile(undefined);
-        }, 2000)
+        }, 5000)
     }
 
 
@@ -82,7 +87,7 @@ export const Upload = () => {
 
         const formData = new FormData();
 
-        formData.append('file', acceptedFiles[0]);       
+        formData.append('file', acceptedFiles[0]);
 
         const url = "https://b7web.com.br/uploadtest/"
         const req = await axios.post(url, formData, {
@@ -95,6 +100,7 @@ export const Upload = () => {
             }
         })
         progressViewTime();
+        setPhotoString(URL.createObjectURL(acceptedFiles[0]))
     }
 
 
@@ -105,6 +111,7 @@ export const Upload = () => {
         }
     }, [acceptedFiles])
 
+    
 
     return (
         <div className=" flex flex-col gap-3 shadow-custom bg-slate-700 border  shadow-black p-5">
@@ -142,6 +149,9 @@ export const Upload = () => {
                 <button className="border p-3 bg-green-700 max-w-fit rounded-md shadow-black shadow-md hover:scale-105"
                     onClick={handleSubmit}
                 >Enviar</button>
+                {photoString &&
+                    <img src={photoString} alt="imagem do upload" className="max-w-80 " />
+                }
             </div>
 
         </div>

@@ -74,8 +74,10 @@ export default function HLSPlayer() {
                 hls.destroy(); // Remove o player da memória ao desmontar o componente
             }
         };
+
     }, []);
 
+   
     return (
         <div className="flex flex-col items-center gap-5 mb-5">
             <h2>Player HLS com Limpeza de Memória</h2>        

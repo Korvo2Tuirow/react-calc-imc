@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@prisma/client": "^6.2.1",
+    "@prisma/extension-accelerate": "^1.2.2",
     "firebase": "^11.1.0",
     "hls.js": "^1.5.20",
-    "next": "14.2.5",
+    "next": "^14.2.24",
     "react": "^18",
     "react-dom": "^18",
     "react-dropzone": "^14.3.5",
@@ -23,6 +25,8 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "postcss": "^8",
+    "prisma": "^6.2.1",
+    "supabase": "^2.12.1",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }

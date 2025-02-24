@@ -2,9 +2,15 @@
 
 import { Metadata } from "next"
 import Link from "next/link"
-import { receberDados } from "./actions/receber-dados"
+//import { receberDados } from "./actions/receber-dados"
 import { Form } from "@/components/form"
 import { Upload } from "./upload/page"
+
+
+import PrismaTeste from "./getPrismaTeste/page";
+
+// Carrega o PrismaTeste dinamicamente como um componente cliente
+
 
 export const metadata: Metadata = {
   title: "Home",
@@ -33,11 +39,8 @@ export default function Home() {
      
          <Form/>
          <Upload/>
-     
-
+         <PrismaTeste/>
     
-
-
 
     </div>
   )
