@@ -5,11 +5,9 @@ const prisma = new PrismaClient();
 
 export async function GET() {
   try {
-    const urls = await prisma.serverTv.findMany({
-      select:{url: true}
-    });
+    const urls = await prisma.serverTv.findMany();
 
-    return NextResponse.json(urls.map(data => data.url));
+    return NextResponse.json(urls.map(data => data));
   } catch (error) {
     return NextResponse.json({ error: "Erro ao buscar URLs" }, { status: 500 });
   }

@@ -2,8 +2,13 @@
 
 import { useEffect, useState } from "react";
 
+export type Props={
+  id: number,
+  url: string,
+
+}
 const PrismaTeste = () => {
-  const [urls, setUrls] = useState<string[]>([]);
+  const [urls, setUrls] = useState<Props[]>([]);
   const [url, setUrl] = useState(""); // Estado para armazenar a URL digitada
   const [message, setMessage] = useState(""); // Estado para mensagens de sucesso ou erro
 
@@ -12,7 +17,7 @@ const PrismaTeste = () => {
       const fetchData = async () => {
         try {
           const response = await fetch("/api/getUrls"); // Chama a API
-          const data = await response.json();
+          const data:Props[] = await response.json();
           setUrls(data);
           console.log(data);
         } catch (error) {
@@ -54,6 +59,28 @@ const PrismaTeste = () => {
     useEffect(()=>{
       fetchData();
     },[])
+    
+    const handleDelete = async (id: number) => {
+      try {
+        const response = await fetch("/api/delUrl", {
+          method: "DELETE",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ id }),
+        });
+  
+        if (response.ok) {
+          setUrls(urls.filter((item) => item.id !== id)); // Atualiza a lista após a exclusão
+        } else {
+          console.error("Erro ao deletar URL");
+        }
+      } catch (error) {
+        console.error("Erro ao deletar URL:", error);
+      }
+    };
+  
+    useEffect(() => {
+      fetchData();
+    }, []);
 
   
 
@@ -61,9 +88,13 @@ const PrismaTeste = () => {
     <div className="flex flex-col gap-3 shadow-custom bg-slate-700 border shadow-black p-5"><div>
 
       {urls.length > 0 ? (
-        urls.map((url, index) => (
-          <div key={index} className="text-white">
-            {url}
+        urls.map((item) => (
+          <div key={item.id} className="text-white flex justify-between w-full p-2 rounded-md border my-1">
+           <p>◽ {item.url}</p>
+           <button
+           value={item.id}
+           onClick={()=>handleDelete(item.id)}            
+           >❌</button>
           </div>
         ))
       ) : (
