@@ -8,7 +8,7 @@ import { useDropzone } from "react-dropzone";
 export const Upload = () => {
 
     const { acceptedFiles, getRootProps, getInputProps } = useDropzone({
-        maxFiles: 1,
+        maxFiles: 3,
         accept: {
             'image/jpeg': ['.jpg']//mime type
         }
@@ -87,7 +87,12 @@ export const Upload = () => {
 
         const formData = new FormData();
 
-        formData.append('file', acceptedFiles[0]);
+        for(let i in acceptedFiles){
+            formData.append(`file[${i}]`, acceptedFiles[i]);
+        }// para multiplos arquivos enviados
+
+      //  formData.append('file', acceptedFiles[0]);
+
 
         const url = "https://b7web.com.br/uploadtest/"
         const req = await axios.post(url, formData, {
@@ -114,11 +119,11 @@ export const Upload = () => {
     
 
     return (
-        <div className=" flex flex-col gap-3 shadow-custom bg-slate-700 border  shadow-black p-5">
+        <div className=" flex flex-col gap-3 shadow-custom bg-slate-700 border  shadow-black p-5 items-center">
             <h1 className="flex text-2xl  justify-center mb-3">Processo de Upload</h1>
 
             {viewProgress || acceptedFiles &&
-                <div className="flex flex-col justify-center items-center">
+                <div className="flex flex-col justify-center items-center w-full">
                     {(progressUpload).toFixed(0)}%
                     <div className="w-full bg-slate-700 h-2">
                         <div className=" bg-green-500 h-2" style={{ width: progressUpload + "%" }}></div>
@@ -128,7 +133,7 @@ export const Upload = () => {
 
             <hr />
 
-            <div className="bg-gray-400 p-5 h-80 flex justify-center items-center " {...getRootProps()}>
+            <div className="bg-gray-400 p-5 h-80 flex justify-center items-center w-full max-w-[900px] " {...getRootProps()}>
                 <input {...getInputProps()} />
                 <p>Arraste o arquivo aqui para fazer o upload</p>
             </div>
@@ -150,6 +155,8 @@ export const Upload = () => {
                     onClick={handleSubmit}
                 >Enviar</button>
                 {photoString &&
+
+          
                     <img src={photoString} alt="imagem do upload" className="max-w-80 " />
                 }
             </div>
